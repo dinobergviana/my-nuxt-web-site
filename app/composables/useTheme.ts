@@ -1,4 +1,3 @@
-// composables/useTheme.ts
 import { ref, watch, onMounted } from "vue";
 
 const theme = ref<"light" | "dark">("light");

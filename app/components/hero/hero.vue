@@ -1,32 +1,32 @@
 <template>
-  <section class="bg-white dark:bg-gray-800 relative flex flex-col items-center justify-center h-screen px-4 transition-colors duration-300 ease-in-out" id="hero">
+  <section class="bg-white dark:bg-gray-900 relative flex flex-col items-center justify-center h-screen px-4 transition-colors duration-300 ease-in-out" id="hero">
     <div class="mb-2">
       <h1 class="font-bold text-5xl dark:text-white">Olá, eu sou Dinobergue Viana</h1>
     </div>
-    <div class="mb-2 dark:text-white">
+    <div class="mb-2 text-gray-600 dark:text-gray-300">
       <span> Programador </span>
     </div>
-    <div class="flex items-center justify-center">
+    <div class="flex items-center justify-center gap-2">
       <a
         href="https://www.linkedin.com/in/dinobergue-viana-28574218b/"
         target="_blank"
         class="media-link"
       >
-        <IconPhLinkedinLogo size="24" color="#717c8a" />
+        <IconPhLinkedinLogo class="w-6 h-6 text-gray-600 dark:text-gray-300" />
       </a>
       <a
         href="https://github.com/dinobergviana"
         target="_blank"
         class="media-link"
       >
-        <IconPhGithubLogo size="24" color="#717c8a" />
+        <IconPhGithubLogo class="w-6 h-6 text-gray-600 dark:text-gray-300" />
       </a>
       <a
         href="https://api.whatsapp.com/send?phone=5586998055574"
         target="_blank"
         class="media-link"
       >
-        <IconPhWhatsappLogo size="24" color="#717c8a" />
+        <IconPhWhatsappLogo class="w-6 h-6 text-gray-600 dark:text-gray-300" />
       </a>
     </div>
   </section>
@@ -40,16 +40,5 @@
 
 .media-link:hover {
   opacity: 1;
-}
-
-.media-link img {
-  height: 20px;
-}
-
-.dot {
-  height: 4px;
-  width: 4px;
-  border-radius: 50%;
-  background: var(--gray-200);
 }
 </style>

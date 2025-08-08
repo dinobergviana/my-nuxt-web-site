@@ -1,5 +1,5 @@
 <template>
-  <header class="p-4 bg-white dark:bg-gray-800 text-white transition-colors duration-300 ease-in-out">
+  <header class="py-2 px-4 bg-white dark:bg-gray-900 text-white transition-colors duration-300 ease-in-out">
     <div class="flex items-center justify-end" >
       <button type="button" @click="toggleTheme">
         <IconPhSun v-if="theme === 'light'" color="#000" weight="bold" />
