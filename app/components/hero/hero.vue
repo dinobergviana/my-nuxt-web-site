@@ -12,29 +12,25 @@
         target="_blank"
         class="media-link"
       >
-        1
+        <IconPhLinkedinLogo size="24" color="#717c8a" />
       </a>
       <a
         href="https://github.com/dinobergviana"
         target="_blank"
         class="media-link"
       >
-        2
+        <IconPhGithubLogo size="24" color="#717c8a" />
       </a>
       <a
         href="https://api.whatsapp.com/send?phone=5586998055574"
         target="_blank"
         class="media-link"
       >
-        3
+        <IconPhWhatsappLogo size="24" color="#717c8a" />
       </a>
     </div>
   </section>
 </template>
-
-<script setup>
-
-</script>
 
 <style scoped>
 .media-link {

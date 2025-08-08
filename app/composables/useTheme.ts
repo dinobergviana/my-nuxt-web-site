@@ -4,7 +4,6 @@ import { ref, watch, onMounted } from "vue";
 const theme = ref<"light" | "dark">("light");
 
 export function useTheme() {
-  // Atualiza a classe no <html>
   const applyTheme = (value: "light" | "dark") => {
     const html = document.documentElement;
 
@@ -15,13 +14,11 @@ export function useTheme() {
     }
   };
 
-  // Watch para aplicar o tema ao mudar
   watch(theme, (newTheme) => {
     applyTheme(newTheme);
     localStorage.setItem("theme", newTheme);
   });
 
-  // Quando o componente montar
   onMounted(() => {
     const saved = localStorage.getItem("theme") as "light" | "dark" | null;
     if (saved === "dark" || saved === "light") {
