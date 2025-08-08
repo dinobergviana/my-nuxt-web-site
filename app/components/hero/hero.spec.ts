@@ -1,11 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { mount } from "@vue/test-utils";
 import Hero from "@/components/hero/hero.vue"; // ajuste o caminho conforme o seu projeto
-import {
-  PhLinkedinLogo,
-  PhGithubLogo,
-  PhWhatsappLogo,
-} from "@phosphor-icons/vue";
 
 describe("Hero component", () => {
   const wrapper = mount(Hero);
@@ -38,12 +33,5 @@ describe("Hero component", () => {
     links.forEach((link) => {
       expect(link.attributes("target")).toBe("_blank");
     });
-  });
-
-  it("renderiza os ícones do Phosphor corretamente", () => {
-    // Verifica se os componentes foram renderizados
-    expect(wrapper.findComponent(PhLinkedinLogo).exists()).toBe(true);
-    expect(wrapper.findComponent(PhGithubLogo).exists()).toBe(true);
-    expect(wrapper.findComponent(PhWhatsappLogo).exists()).toBe(true);
   });
 });

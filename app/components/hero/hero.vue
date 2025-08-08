@@ -12,32 +12,27 @@
         target="_blank"
         class="media-link"
       >
-        <PhLinkedinLogo size="24" color="#717c8a" />
+        1
       </a>
       <a
         href="https://github.com/dinobergviana"
         target="_blank"
         class="media-link"
       >
-        <PhGithubLogo size="24" color="#717c8a" />
+        2
       </a>
       <a
         href="https://api.whatsapp.com/send?phone=5586998055574"
         target="_blank"
         class="media-link"
       >
-        <PhWhatsappLogo size="24" color="#717c8a" />
+        3
       </a>
     </div>
   </section>
 </template>
 
 <script setup>
-import {
-  PhLinkedinLogo,
-  PhGithubLogo,
-  PhWhatsappLogo,
-} from "@phosphor-icons/vue";
 
 </script>
 
