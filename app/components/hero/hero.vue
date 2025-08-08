@@ -1,10 +1,10 @@
 <template>
   <section class="bg-white dark:bg-gray-900 relative flex flex-col items-center justify-center h-screen px-4 transition-colors duration-300 ease-in-out" id="hero">
     <div class="mb-2">
-      <h1 class="font-bold text-5xl dark:text-white">Olá, eu sou Dinobergue Viana</h1>
+      <h1 class="font-bold text-5xl dark:text-white">{{ $t('welcome') }} Dinobergue Viana</h1>
     </div>
     <div class="mb-2 text-gray-600 dark:text-gray-300">
-      <span> Programador </span>
+      <span> {{ $t('role') }} </span>
     </div>
     <div class="flex items-center justify-center gap-2">
       <a

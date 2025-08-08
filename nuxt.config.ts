@@ -6,7 +6,16 @@ import Components from "unplugin-vue-components/vite";
 export default defineNuxtConfig({
   compatibilityDate: "2025-08-07",
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n"],
+  i18n: {
+    locales: [
+      { code: "pt", name: "Português", file: "pt.json" },
+      { code: "en", name: "English", file: "en.json" },
+    ],
+    defaultLocale: "pt",
+    langDir: "locales",
+    strategy: "no_prefix",
+  },
   css: ["~/assets/css/tailwind.css"],
   vite: {
     plugins: [
