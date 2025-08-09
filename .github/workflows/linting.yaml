@@ -1,4 +1,4 @@
-name: Linting
+name: Automated Linting
 
 on: pull_request
 
@@ -11,8 +11,9 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "20.x"
 
-      - run: yarn install
+      - run: npm ci
 
-      - run: yarn lint:prettier:check
+      - run: npm run lint:prettier:check
+  
