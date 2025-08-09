@@ -1,9 +1,21 @@
 import { describe, it, expect } from "vitest";
 import { mount } from "@vue/test-utils";
-import Hero from "@/components/hero/hero.vue"; // ajuste o caminho conforme o seu projeto
+import Hero from "@/components/hero/hero.vue";
 
 describe("Hero component", () => {
-  const wrapper = mount(Hero);
+  const wrapper = mount(Hero, {
+    global: {
+      mocks: {
+        $t: (msg: string) => {
+          const translations: Record<string, string> = {
+            welcome: "Olá, eu sou",
+            role: "Programador",
+          };
+          return translations[msg] || msg;
+        },
+      },
+    },
+  });
 
   it("renderiza o título principal corretamente", () => {
     expect(wrapper.text()).toContain("Olá, eu sou Dinobergue Viana");
