@@ -5,6 +5,7 @@ import path from "path";
 export default defineConfig({
   plugins: [vue()],
   test: {
+    reporters: "verbose",
     environment: "jsdom",
     globals: true,
   },

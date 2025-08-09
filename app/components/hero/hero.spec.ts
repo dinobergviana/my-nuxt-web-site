@@ -2,6 +2,18 @@ import { describe, it, expect } from "vitest";
 import { mount } from "@vue/test-utils";
 import Hero from "@/components/hero/hero.vue";
 
+const globalComponentsMock = {
+  IconPhLinkedinLogo: {
+    template: "<svg></svg>",
+  },
+  IconPhGithubLogo: {
+    template: "<svg></svg>",
+  },
+  IconPhWhatsappLogo: {
+    template: "<svg></svg>",
+  },
+};
+
 describe("Hero component", () => {
   const wrapper = mount(Hero, {
     global: {
@@ -15,6 +27,7 @@ describe("Hero component", () => {
         },
       },
     },
+    components: globalComponentsMock,
   });
 
   it("renderiza o título principal corretamente", () => {
