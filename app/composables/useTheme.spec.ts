@@ -17,7 +17,7 @@ describe("useTheme composable (via test component)", () => {
           callback(ctx);
           return () => h("div");
         },
-      })
+      }),
     );
   }
 

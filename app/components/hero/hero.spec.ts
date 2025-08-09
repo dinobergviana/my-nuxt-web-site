@@ -18,13 +18,13 @@ describe("Hero component", () => {
     expect(links).toHaveLength(3);
 
     expect(links[0]?.attributes("href")).toBe(
-      "https://www.linkedin.com/in/dinobergue-viana-28574218b/"
+      "https://www.linkedin.com/in/dinobergue-viana-28574218b/",
     );
     expect(links[1]?.attributes("href")).toBe(
-      "https://github.com/dinobergviana"
+      "https://github.com/dinobergviana",
     );
     expect(links[2]?.attributes("href")).toBe(
-      "https://api.whatsapp.com/send?phone=5586998055574"
+      "https://api.whatsapp.com/send?phone=5586998055574",
     );
   });
 
