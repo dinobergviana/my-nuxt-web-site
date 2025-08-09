@@ -1,8 +1,8 @@
 <template>
   <Header />
-  <Hero/>
+  <Hero />
 </template>
 
 <script setup>
-  import Hero from '~/components/hero/hero.vue';
+import Hero from "~/components/hero/hero.vue";
 </script>

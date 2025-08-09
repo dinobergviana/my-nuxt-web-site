@@ -8,7 +8,9 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "test": "vitest"
+    "test": "vitest",
+    "lint:prettier:check": "prettier --check .",
+    "lint:prettier:fix": "prettier --write ."
   },
   "dependencies": {
     "@nuxtjs/i18n": "^10.0.3",
@@ -26,6 +28,7 @@
     "@vitejs/plugin-vue": "^6.0.1",
     "@vue/test-utils": "^2.4.6",
     "jsdom": "^26.1.0",
+    "prettier": "^3.6.2",
     "unplugin-icons": "^22.2.0",
     "unplugin-vue-components": "^29.0.0",
     "vitest": "^3.2.4"

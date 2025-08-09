@@ -1,11 +1,23 @@
 <template>
-  <header class="py-2 px-4 bg-white dark:bg-gray-900 text-white transition-colors duration-300 ease-in-out">
+  <header
+    class="py-2 px-4 bg-white dark:bg-gray-900 text-white transition-colors duration-300 ease-in-out"
+  >
     <div class="flex items-center justify-end gap-2">
-      <button v-if="theme === 'light'" class="p-1 rounded-md hover:bg-gray-200 text-gray-800" type="button" @click="toggleTheme">
+      <button
+        v-if="theme === 'light'"
+        class="p-1 rounded-md hover:bg-gray-200 text-gray-800"
+        type="button"
+        @click="toggleTheme"
+      >
         <IconPhSun weight="bold" />
       </button>
 
-      <button v-else class="p-1 rounded-md hover:bg-gray-800" type="button" @click="toggleTheme">
+      <button
+        v-else
+        class="p-1 rounded-md hover:bg-gray-800"
+        type="button"
+        @click="toggleTheme"
+      >
         <IconPhMoon weight="bold" />
       </button>
 
@@ -22,11 +34,11 @@
 </template>
 
 <script setup lang="ts">
-  import { useTheme } from '@/composables/useTheme'
+import { useTheme } from "@/composables/useTheme";
 
-  const { theme, toggleTheme } = useTheme()
+const { theme, toggleTheme } = useTheme();
 
-  const { locale, setLocale } = useI18n()
+const { locale, setLocale } = useI18n();
 
-  const selectedLang = ref(locale.value);
-  </script>
+const selectedLang = ref(locale.value);
+</script>
