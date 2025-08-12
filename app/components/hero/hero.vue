@@ -3,7 +3,7 @@
     class="bg-white dark:bg-gray-900 relative flex flex-col items-center justify-center h-screen px-4 transition-colors duration-300 ease-in-out"
     id="hero"
   >
-    <div class="mb-2">
+    <div class="mb-2 text-center">
       <h1 class="font-bold text-5xl dark:text-white">
         {{ $t("welcome") }} Dinobergue Viana
       </h1>
