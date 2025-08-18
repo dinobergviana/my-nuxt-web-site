@@ -1,13 +1,15 @@
 <template>
   <section
-    class="font-inter font-medium h-screen grid grid-cols-2 py-11 px-24 text-gray-700"
+    class="font-inter font-medium min-h-screen grid grid-cols-1 md:grid-cols-2 py-8 px-4 md:py-11 md:px-24 text-gray-700"
     id="about"
   >
-    <div class="flex items-center justify-center">
-      <h2 class="text-5xl font-bold">Sobre mim</h2>
+    <div class="flex items-center justify-center m-0 p-0">
+      <h2 class="text-5xl md:text-5xl font-bold m-0 p-0">Sobre mim</h2>
     </div>
 
-    <div class="flex items-center justify-center text-justify text-lg">
+    <div
+      class="flex items-center justify-center text-justify text-base md-text-lg md:m-0 p-0"
+    >
       <div>
         <p class="mb-4">
           Entrei no mercado de programação como

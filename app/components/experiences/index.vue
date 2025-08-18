@@ -2,7 +2,9 @@
   <section>
     <hr class="my-8 border-t-2 border-gray-300 w-3/4 w-screen" />
 
-    <div class="grid grid-cols-2 px-24 pb-12 pt-4">
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 px-24 md:px-24 pb-12 pt-4 gap-14"
+    >
       <div class="flex items-center justify-center text-gray-700">
         <h3 class="text-5xl font-bold">Experiências</h3>
       </div>
