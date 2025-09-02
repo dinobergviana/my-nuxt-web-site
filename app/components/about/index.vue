@@ -4,7 +4,9 @@
     id="about"
   >
     <div class="flex items-center justify-center m-0 p-0">
-      <h2 class="dark:text-white text-5xl md:text-5xl font-bold m-0 p-0">{{ $t("about.title") }}</h2>
+      <h2 class="dark:text-white text-5xl md:text-5xl font-bold m-0 p-0">
+        {{ $t("about.title") }}
+      </h2>
     </div>
 
     <div
@@ -13,36 +15,43 @@
       <div>
         <p class="dark:text-white mb-4">
           {{ $t("about.p1.partOne") }}
-          <strong>{{ $t("about.p1.strongText") }}</strong> {{ $t("about.p1.partTwo") }}
+          <strong>{{ $t("about.p1.strongText") }}</strong>
+          {{ $t("about.p1.partTwo") }}
         </p>
 
         <p class="dark:text-white mb-4">
           {{ $t("about.p2.partOne") }}
-          <strong>{{ $t("about.p2.strongTextOne") }}</strong> {{ $t("about.p2.partTwo") }}
-          <strong>{{ $t("about.p2.strongTextTwo") }}</strong> {{ $t("about.p2.partThree") }}
+          <strong>{{ $t("about.p2.strongTextOne") }}</strong>
+          {{ $t("about.p2.partTwo") }}
+          <strong>{{ $t("about.p2.strongTextTwo") }}</strong>
+          {{ $t("about.p2.partThree") }}
           <strong class="text-blue-600 hover:text-sky-500 ease-in"
-            ><a href="https://www.digitalhouse.com/br" target="_blank"
-              >{{ $t("about.p2.strongTextLink.text") }}</a
-            ></strong
+            ><a href="https://www.digitalhouse.com/br" target="_blank">{{
+              $t("about.p2.strongTextLink.text")
+            }}</a></strong
           >.
         </p>
 
         <p class="dark:text-white mb-4">
-          {{ $t("about.p3.partOne") }} <strong>{{ $t("about.p3.strongTextOne") }}</strong>
+          {{ $t("about.p3.partOne") }}
+          <strong>{{ $t("about.p3.strongTextOne") }}</strong>
           <strong class="text-blue-600 hover:text-sky-500"
-            ><a href="https://curso.dev/"> {{ $t("about.p3.strongTextLinkOne.text") }} </a></strong
+            ><a href="https://curso.dev/">
+              {{ $t("about.p3.strongTextLinkOne.text") }}
+            </a></strong
           >
           {{ $t("about.p3.partTwo") }}
           <strong class="text-blue-600 hover:text-sky-500"
-            ><a href="https://filipedeschamps.com.br/"
-              >{{ $t("about.p3.strongTextLinkTwo.text") }}</a
-            ></strong
+            ><a href="https://filipedeschamps.com.br/">{{
+              $t("about.p3.strongTextLinkTwo.text")
+            }}</a></strong
           >
         </p>
 
         <div>
-          <small class="dark:text-gray-400 text-gray-500"
-            >{{ $t("about.p4.partOne") }}</small>
+          <small class="dark:text-gray-400 text-gray-500">{{
+            $t("about.p4.partOne")
+          }}</small>
         </div>
       </div>
     </div>
