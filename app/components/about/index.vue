@@ -10,7 +10,7 @@
     </div>
 
     <div
-      class="flex items-center justify-center text-justify text-base md-text-lg md:m-0 p-4"
+      class="flex items-center justify-center text-justify text-base md:text-lg md:m-0 p-4"
     >
       <div>
         <p class="dark:text-white mb-4">

@@ -6,7 +6,7 @@
     "p1": {
       "partOne": "Entrei no mercado de programação como",
       "strongText": "Desenvolvedor Web",
-      "partTwo": "em 2021 após dicidir mudar de carreira no ano anterior."
+      "partTwo": "em 2021 após decidir mudar de carreira no ano anterior."
     },
     "p2": {
       "partOne": "Atualmente",
@@ -15,21 +15,18 @@
       "strongTextTwo": "possuo certificado em Desenvolvimento Web Full Stack Node",
       "partThree": "pela",
       "strongTextLink": {
-        "text": "Digital House",
-        "url": "https://www.digitalhouse.com/br"
+        "text": "Digital House"
       }
     },
     "p3": {
       "partOne": "Além da faculdade,",
       "strongTextOne": "também sou aluno do ",
       "strongTextLinkOne": {
-        "text": "curso.dev",
-        "url": "https://www.curso.dev"
+        "text": "curso.dev"
       },
       "partTwo": "do",
       "strongTextLinkTwo": {
-        "text": "Filipe Deschamps.",
-        "url": "https://filipedeschamps.com.br/"
+        "text": "Filipe Deschamps."
       }
     },
     "p4": {
