@@ -13,8 +13,9 @@
     </div>
     <div class="flex items-center justify-center gap-2">
       <Tooltip text="LinkedIn" tooltipPosition="bottom">
-        <template #content>
+        <template #content="{ tooltipId }">
           <a
+            :aria-describedby="tooltipId"
             href="https://www.linkedin.com/in/dinobergue-viana-28574218b/"
             target="_blank"
             class="media-link"

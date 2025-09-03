@@ -1,8 +1,10 @@
 <template>
   <div class="relative inline-block group">
-    <slot name="content"></slot>
+    <slot name="content" :tooltipId="tooltipId"></slot>
 
     <span
+      :id="tooltipId"
+      role="tooltip"
       class="absolute invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity duration-200 px-2 py-1 rounded text-sm whitespace-nowrap z-10"
       :class="[backgroundColor, textColor, positionClasses]"
     >
@@ -15,7 +17,7 @@
 import { computed } from "vue";
 
 const props = defineProps({
-  tooltipPosition: {
+  position: {
     type: String as () => "top" | "right" | "bottom" | "left",
     default: "top",
   },
@@ -33,8 +35,10 @@ const props = defineProps({
   },
 });
 
+const tooltipId = `${props.text}-${Math.random().toString(36).slice(2, 9)}`;
+
 const positionClasses = computed(() => {
-  switch (props.tooltipPosition) {
+  switch (props.position) {
     case "right":
       return "top-1/2 left-full ml-2 -translate-y-1/2";
     case "bottom":
