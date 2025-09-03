@@ -28,8 +28,9 @@
       </Tooltip>
 
       <Tooltip text="Github" tooltipPosition="bottom">
-        <template #content>
+        <template #content="{ tooltipId }">
           <a
+            :aria-describedby="tooltipId"
             href="https://github.com/dinobergviana"
             target="_blank"
             class="media-link"
@@ -42,8 +43,9 @@
       </Tooltip>
 
       <Tooltip text="Whatsapp" tooltipPosition="bottom">
-        <template #content>
+        <template #content="{ tooltipId }">
           <a
+            :aria-describedby="tooltipId"
             href="https://api.whatsapp.com/send?phone=5586998055574"
             target="_blank"
             class="media-link"
