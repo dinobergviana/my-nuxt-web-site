@@ -12,7 +12,7 @@
       <span> {{ $t("role") }} </span>
     </div>
     <div class="flex items-center justify-center gap-2">
-      <Tooltip text="LinkedIn" tooltipPosition="bottom">
+      <Tooltip text="LinkedIn" position="bottom">
         <template #content="{ tooltipId }">
           <a
             :aria-describedby="tooltipId"
@@ -27,7 +27,7 @@
         </template>
       </Tooltip>
 
-      <Tooltip text="Github" tooltipPosition="bottom">
+      <Tooltip text="Github" position="bottom">
         <template #content="{ tooltipId }">
           <a
             :aria-describedby="tooltipId"
@@ -42,7 +42,7 @@
         </template>
       </Tooltip>
 
-      <Tooltip text="Whatsapp" tooltipPosition="bottom">
+      <Tooltip text="Whatsapp" position="bottom">
         <template #content="{ tooltipId }">
           <a
             :aria-describedby="tooltipId"

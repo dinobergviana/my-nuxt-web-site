@@ -14,7 +14,7 @@
 </template>
 
 <script lang="ts" setup>
-import { computed } from "vue";
+import { computed, useId } from "vue";
 
 const props = defineProps({
   position: {
@@ -35,7 +35,7 @@ const props = defineProps({
   },
 });
 
-const tooltipId = `${props.text}-${Math.random().toString(36).slice(2, 9)}`;
+const tooltipId = `tooltip-${useId()}`;
 
 const positionClasses = computed(() => {
   switch (props.position) {
