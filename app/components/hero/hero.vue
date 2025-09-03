@@ -12,30 +12,57 @@
       <span> {{ $t("role") }} </span>
     </div>
     <div class="flex items-center justify-center gap-2">
-      <a
-        href="https://www.linkedin.com/in/dinobergue-viana-28574218b/"
-        target="_blank"
-        class="media-link"
-      >
-        <IconPhLinkedinLogo class="w-6 h-6 text-gray-600 dark:text-gray-300" />
-      </a>
-      <a
-        href="https://github.com/dinobergviana"
-        target="_blank"
-        class="media-link"
-      >
-        <IconPhGithubLogo class="w-6 h-6 text-gray-600 dark:text-gray-300" />
-      </a>
-      <a
-        href="https://api.whatsapp.com/send?phone=5586998055574"
-        target="_blank"
-        class="media-link"
-      >
-        <IconPhWhatsappLogo class="w-6 h-6 text-gray-600 dark:text-gray-300" />
-      </a>
+      <Tooltip text="LinkedIn" position="bottom">
+        <template #content="{ tooltipId }">
+          <a
+            :aria-describedby="tooltipId"
+            href="https://www.linkedin.com/in/dinobergue-viana-28574218b/"
+            target="_blank"
+            class="media-link"
+          >
+            <IconPhLinkedinLogo
+              class="w-6 h-6 text-gray-600 dark:text-gray-300"
+            />
+          </a>
+        </template>
+      </Tooltip>
+
+      <Tooltip text="Github" position="bottom">
+        <template #content="{ tooltipId }">
+          <a
+            :aria-describedby="tooltipId"
+            href="https://github.com/dinobergviana"
+            target="_blank"
+            class="media-link"
+          >
+            <IconPhGithubLogo
+              class="w-6 h-6 text-gray-600 dark:text-gray-300"
+            />
+          </a>
+        </template>
+      </Tooltip>
+
+      <Tooltip text="Whatsapp" position="bottom">
+        <template #content="{ tooltipId }">
+          <a
+            :aria-describedby="tooltipId"
+            href="https://api.whatsapp.com/send?phone=5586998055574"
+            target="_blank"
+            class="media-link"
+          >
+            <IconPhWhatsappLogo
+              class="w-6 h-6 text-gray-600 dark:text-gray-300"
+            />
+          </a>
+        </template>
+      </Tooltip>
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+import Tooltip from "../global/tooltip/tooltip.vue";
+</script>
 
 <style scoped>
 .media-link {
