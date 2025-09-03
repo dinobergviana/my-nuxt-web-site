@@ -15,12 +15,14 @@
       <Tooltip text="LinkedIn" tooltipPosition="bottom">
         <template #content>
           <a
-          href="https://www.linkedin.com/in/dinobergue-viana-28574218b/"
-          target="_blank"
-          class="media-link"
-        >
-          <IconPhLinkedinLogo class="w-6 h-6 text-gray-600 dark:text-gray-300" />
-        </a>
+            href="https://www.linkedin.com/in/dinobergue-viana-28574218b/"
+            target="_blank"
+            class="media-link"
+          >
+            <IconPhLinkedinLogo
+              class="w-6 h-6 text-gray-600 dark:text-gray-300"
+            />
+          </a>
         </template>
       </Tooltip>
 
@@ -31,7 +33,9 @@
             target="_blank"
             class="media-link"
           >
-            <IconPhGithubLogo class="w-6 h-6 text-gray-600 dark:text-gray-300" />
+            <IconPhGithubLogo
+              class="w-6 h-6 text-gray-600 dark:text-gray-300"
+            />
           </a>
         </template>
       </Tooltip>
@@ -43,7 +47,9 @@
             target="_blank"
             class="media-link"
           >
-            <IconPhWhatsappLogo class="w-6 h-6 text-gray-600 dark:text-gray-300" />
+            <IconPhWhatsappLogo
+              class="w-6 h-6 text-gray-600 dark:text-gray-300"
+            />
           </a>
         </template>
       </Tooltip>
@@ -52,7 +58,7 @@
 </template>
 
 <script setup lang="ts">
-import Tooltip from '../global/tooltip/tooltip.vue';
+import Tooltip from "../global/tooltip/tooltip.vue";
 </script>
 
 <style scoped>
