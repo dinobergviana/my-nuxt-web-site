@@ -25,7 +25,8 @@
           {{ $t("about.p2.partTwo") }}
           <strong>{{ $t("about.p2.strongTextTwo") }}</strong>
           {{ $t("about.p2.partThree") }}
-          <strong class="text-blue-600 hover:text-sky-500 ease-in"
+          <strong
+            class="text-blue-600 hover:text-sky-500 dark:text-yellow-500 dark:hover:text-yellow-600 ease-in"
             ><a href="https://www.digitalhouse.com/br" target="_blank">{{
               $t("about.p2.strongTextLink.text")
             }}</a></strong
@@ -35,13 +36,15 @@
         <p class="dark:text-white mb-4">
           {{ $t("about.p3.partOne") }}
           <strong>{{ $t("about.p3.strongTextOne") }}</strong>
-          <strong class="text-blue-600 hover:text-sky-500"
+          <strong
+            class="text-blue-600 hover:text-sky-500 dark:text-yellow-500 dark:hover:text-yellow-600"
             ><a href="https://curso.dev/">
               {{ $t("about.p3.strongTextLinkOne.text") }}
             </a></strong
           >
           {{ $t("about.p3.partTwo") }}
-          <strong class="text-blue-600 hover:text-sky-500"
+          <strong
+            class="text-blue-600 hover:text-sky-500 dark:text-yellow-500 dark:hover:text-yellow-600"
             ><a href="https://filipedeschamps.com.br/">{{
               $t("about.p3.strongTextLinkTwo.text")
             }}</a></strong

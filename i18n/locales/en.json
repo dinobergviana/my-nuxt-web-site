@@ -21,10 +21,10 @@
     "p3": {
       "partOne": "In addition to college,",
       "strongTextOne": "I am also a student at ",
-      "partTwo": "by",
       "strongTextLinkOne": {
         "text": "curso.dev"
       },
+      "partTwo": "by",
       "strongTextLinkTwo": {
         "text": "Filipe Deschamps."
       }
