@@ -1,4 +1,36 @@
 {
   "welcome": "Hi, I'm",
-  "role": "Programmer"
+  "role": "Programmer",
+  "about": {
+    "title": "about me",
+    "p1": {
+      "partOne": "I entered the programming market as a",
+      "strongText": "Web Developer",
+      "partTwo": "in 2021 after deciding to change careers the previous year."
+    },
+    "p2": {
+      "partOne": "I am currently",
+      "strongTextOne": "studying Systems Analysis and Development",
+      "partTwo": "at Uni Dom Bosco and",
+      "strongTextTwo": "hold a Full Stack Node Web Development",
+      "partThree": "certificate from",
+      "strongTextLink": {
+        "text": "Digital House"
+      }
+    },
+    "p3": {
+      "partOne": "In addition to college,",
+      "strongTextOne": "I am also a student at ",
+      "strongTextLinkOne": {
+        "text": "curso.dev"
+      },
+      "partTwo": "by",
+      "strongTextLinkTwo": {
+        "text": "Filipe Deschamps."
+      }
+    },
+    "p4": {
+      "partOne": "Soon, I will share more details about my career transition."
+    }
+  }
 }

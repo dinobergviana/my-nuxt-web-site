@@ -1,4 +1,36 @@
 {
   "welcome": "Olá, eu sou",
-  "role": "Programador"
+  "role": "Programador",
+  "about": {
+    "title": "sobre mim",
+    "p1": {
+      "partOne": "Entrei no mercado de programação como",
+      "strongText": "Desenvolvedor Web",
+      "partTwo": "em 2021 após decidir mudar de carreira no ano anterior."
+    },
+    "p2": {
+      "partOne": "Atualmente",
+      "strongTextOne": "estou cursando Análise e Desenvolvimento de Sistemas",
+      "partTwo": "pela Uni Dom Bosco e",
+      "strongTextTwo": "possuo certificado em Desenvolvimento Web Full Stack Node",
+      "partThree": "pela",
+      "strongTextLink": {
+        "text": "Digital House"
+      }
+    },
+    "p3": {
+      "partOne": "Além da faculdade,",
+      "strongTextOne": "também sou aluno do ",
+      "strongTextLinkOne": {
+        "text": "curso.dev"
+      },
+      "partTwo": "do",
+      "strongTextLinkTwo": {
+        "text": "Filipe Deschamps."
+      }
+    },
+    "p4": {
+      "partOne": "Em breve contarei com mais detalhes como foi a minha transição de carreira."
+    }
+  }
 }
