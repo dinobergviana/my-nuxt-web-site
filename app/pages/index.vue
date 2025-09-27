@@ -1,8 +1,8 @@
 <template>
-  <Header />
+  
   <Hero />
-  <About />
-  <Footer />
+  <!-- <About /> -->
+  <!-- <Footer /> -->
 </template>
 
 <script setup>

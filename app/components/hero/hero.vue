@@ -1,6 +1,6 @@
 <template>
   <section
-    class="bg-white dark:bg-gray-900 relative flex flex-col items-center justify-center h-screen px-4 transition-colors duration-300 ease-in-out"
+    class="relative bg-white dark:bg-gray-900 relative flex flex-col items-center justify-center h-[calc(100vh-2.5rem)] px-4 transition-colors duration-300 ease-in-out"
     id="hero"
   >
     <div class="mb-2 text-center">
@@ -57,6 +57,16 @@
         </template>
       </Tooltip>
     </div>
+
+    <NuxtLink to="/experiencias" class="absolute right-50 bottom-5 cursor-pointer animated-link">
+      <Tooltip text="Iniciar" position="top">
+        <template #content>
+          <IconPhArrowCircleRight
+            class="w-10 h-10 text-gray-600 dark:text-gray-300"
+          />
+        </template>
+      </Tooltip>
+    </NuxtLink>
   </section>
 </template>
 
@@ -72,5 +82,52 @@ import Tooltip from "../global/tooltip/tooltip.vue";
 
 .media-link:hover {
   opacity: 1;
+}
+
+.animated-link {
+  --fade-duration: 1s;
+  --wait-before-bounce: 5s;
+  --bounce-duration: 5s;
+  --period: calc(var(--wait-before-bounce) + var(--bounce-duration));
+
+  display: inline-block;
+  will-change: transform, opacity;
+  opacity: 0;
+  transform: translateY(40px);
+
+  animation:
+    fadeInUp var(--fade-duration) ease-out forwards,
+    periodicBounce var(--period) ease-in-out infinite;
+
+  animation-delay: 0s, calc(var(--fade-duration) + var(--wait-before-bounce));
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes periodicBounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  5% {
+    transform: translateY(-20px);
+  }
+
+  10% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 </style>

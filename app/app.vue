@@ -1,5 +1,11 @@
 <template>
-  <NuxtPage />
+  <Header />
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
 
-<script setup></script>
+<script setup>
+import Header from './components/global/header/header.vue';
+
+</script>
