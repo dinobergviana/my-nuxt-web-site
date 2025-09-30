@@ -8,15 +8,18 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    IconPhArrowCircleLeft: typeof import('~icons/ph/arrow-circle-left')['default']
     IconPhArrowCircleRight: typeof import('~icons/ph/arrow-circle-right')['default']
     IconPhArrowLeft: typeof import('~icons/ph/arrow-left')['default']
     IconPhArrowRight: typeof import('~icons/ph/arrow-right')['default']
     IconPhGithubLogo: typeof import('~icons/ph/github-logo')['default']
     IconPhHeart: typeof import('~icons/ph/heart')['default']
     IconPhLinkedinLogo: typeof import('~icons/ph/linkedin-logo')['default']
+    IconPhList: typeof import('~icons/ph/list')['default']
     IconPhMoon: typeof import('~icons/ph/moon')['default']
     IconPhSun: typeof import('~icons/ph/sun')['default']
     IconPhWhatsappLogo: typeof import('~icons/ph/whatsapp-logo')['default']
+    IconPhX: typeof import('~icons/ph/x')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
