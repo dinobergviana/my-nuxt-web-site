@@ -5,7 +5,7 @@ import Components from "unplugin-vue-components/vite";
 
 export default defineNuxtConfig({
   compatibilityDate: "2025-08-07",
-  devtools: { enabled: false },
+  devtools: { enabled: process.env.NODE_ENV === "production" ? false : true },
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n"],
   i18n: {
     locales: [
@@ -48,7 +48,7 @@ export default defineNuxtConfig({
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.svg" }],
       script: [
         {
-          // roda logo no início, antes da renderização
+          // roda imediatamente no início, antes da renderização
           innerHTML: `
             (function() {
               try {
