@@ -5,7 +5,7 @@ import Components from "unplugin-vue-components/vite";
 
 export default defineNuxtConfig({
   compatibilityDate: "2025-08-07",
-  devtools: { enabled: false },
+  devtools: { enabled: process.env.NODE_ENV === "production" ? false : true },
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n"],
   i18n: {
     locales: [
@@ -46,6 +46,24 @@ export default defineNuxtConfig({
         { name: "author", content: "Dinobergue Viana" },
       ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.svg" }],
+      script: [
+        {
+          // roda imediatamente no início, antes da renderização
+          innerHTML: `
+            (function() {
+              try {
+                const savedTheme = localStorage.getItem('theme');
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                  document.documentElement.classList.add('dark');
+                } else {
+                  document.documentElement.classList.remove('dark');
+                }
+              } catch (_) {}
+            })()
+          `,
+        },
+      ],
     },
   },
 });
