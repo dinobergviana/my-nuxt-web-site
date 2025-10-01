@@ -8,6 +8,9 @@
 </template>
 
 <script setup>
+import { onUnmounted } from "vue"
+import { useSidebar } from '@/stores/useSidebar'
+
 import MenuLateral from '@/components/MenuLateral.vue'
 
 const empresas = [
@@ -17,4 +20,10 @@ const empresas = [
   { id: 'warren', nome: 'Warren' },
   { id: 'boxti', nome: 'BoxTi' },
 ]
+
+const sidebar = useSidebar()
+
+onUnmounted(() => {
+  sidebar.close()
+})
 </script>

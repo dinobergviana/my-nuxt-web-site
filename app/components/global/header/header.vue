@@ -1,18 +1,19 @@
 <template>
   <header
-    class="py-2 px-4 bg-white dark:bg-gray-900 text-white transition-colors duration-300 ease-in-out flex items-center"
-    :class="route.path === '/' ? 'justify-end' : 'justify-between'"
+    class="py-2 px-4 bg-white dark:bg-gray-900 text-white flex items-center"
+    :class="[isHome ? 'justify-end' : 'justify-between border-b border-gray-700']"
   >
-    <!-- Voltar -->
-        <NuxtLink v-if="route.path !== '/'" to="/" class="block rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500">
-          <!-- <Tooltip class="ml-2" text="Voltar" position="top">
-            <template #content>
-            </template>
-          </Tooltip> -->
-          <IconPhArrowLeft
-            class="w-8 text-gray-600 dark:text-gray-300"
-          />
-        </NuxtLink>
+    <div v-if="!isHome" class="flex items-center">
+      <NuxtLink to="/">
+        <IconPhHouse />
+      </NuxtLink>
+      <button
+        class="ml-5 md:hidden p-2 mx-2 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500"
+        @click="sidebar.toggle"
+      >
+        <IconPhList />
+      </button>
+    </div>
     <div class="flex items-center justify-end gap-2">
       <button
         v-if="theme === 'light'"
@@ -45,7 +46,9 @@
 </template>
 
 <script setup lang="ts">
+import { ref, computed } from "vue";
 import { useTheme } from "@/composables/useTheme";
+import { useSidebar } from '@/stores/useSidebar'
 
 const { theme, toggleTheme } = useTheme();
 
@@ -53,5 +56,10 @@ const { locale, setLocale } = useI18n();
 
 const selectedLang = ref(locale.value);
 
+const isHome = computed(() => {
+  return route.path === '/'
+})
+
 const route = useRoute();
+const sidebar = useSidebar()
 </script>

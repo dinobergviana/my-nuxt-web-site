@@ -14,6 +14,7 @@ declare module 'vue' {
     IconPhArrowRight: typeof import('~icons/ph/arrow-right')['default']
     IconPhGithubLogo: typeof import('~icons/ph/github-logo')['default']
     IconPhHeart: typeof import('~icons/ph/heart')['default']
+    IconPhHouse: typeof import('~icons/ph/house')['default']
     IconPhLinkedinLogo: typeof import('~icons/ph/linkedin-logo')['default']
     IconPhList: typeof import('~icons/ph/list')['default']
     IconPhMoon: typeof import('~icons/ph/moon')['default']
