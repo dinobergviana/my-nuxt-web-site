@@ -1,7 +1,7 @@
 <template>
   <div class="flex min-h-screen">
     <MenuLateral :empresas="empresas" />
-    <main class="bg-gray-900 w-full text-white">
+    <main class="p-3 bg-gray-900 w-full text-white">
       <NuxtPage />
     </main>
   </div>

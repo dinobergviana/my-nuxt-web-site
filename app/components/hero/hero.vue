@@ -1,6 +1,6 @@
 <template>
   <section
-    class="relative bg-white dark:bg-gray-900 relative flex flex-col items-center justify-center h-[calc(100vh-2.5rem)] px-4 transition-colors duration-300 ease-in-out"
+    class="relative bg-white dark:bg-gray-900 relative flex flex-col items-center justify-center h-[calc(100vh-2.7rem)] px-4 transition-colors duration-300 ease-in-out"
     id="hero"
   >
     <div class="mb-2 text-center">

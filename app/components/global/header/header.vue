@@ -4,15 +4,15 @@
     :class="[isHome ? 'justify-end' : 'justify-between border-b border-gray-700']"
   >
     <div v-if="!isHome" class="flex items-center">
-      <NuxtLink to="/">
-        <IconPhHouse />
-      </NuxtLink>
       <button
-        class="ml-5 md:hidden p-2 mx-2 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500"
+        class="md:hidden p-2 mr-2 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500"
         @click="sidebar.toggle"
       >
-        <IconPhList />
+        <IconPhListDashes />
       </button>
+      <NuxtLink to="/">
+        <IconPhHouse class="w-6 h-6" />
+      </NuxtLink>
     </div>
     <div class="flex items-center justify-end gap-2">
       <button
@@ -41,6 +41,10 @@
         <option class="language-select-option" value="pt">BR</option>
         <option class="language-select-option" value="en">EN</option>
       </select>
+
+      <button class="md:hidden p-2 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500" @click="navbar.toggle">
+        <IconPhList />
+      </button>
     </div>
   </header>
 </template>
@@ -49,6 +53,7 @@
 import { ref, computed } from "vue";
 import { useTheme } from "@/composables/useTheme";
 import { useSidebar } from '@/stores/useSidebar'
+import { useNavbar } from '@/stores/useNavbar'
 
 const { theme, toggleTheme } = useTheme();
 
@@ -62,4 +67,5 @@ const isHome = computed(() => {
 
 const route = useRoute();
 const sidebar = useSidebar()
+const navbar = useNavbar()
 </script>

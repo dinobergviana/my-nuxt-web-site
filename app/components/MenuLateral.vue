@@ -7,7 +7,6 @@
       @click="sidebar.close"
     ></div>
 
-    <!-- Menu lateral -->
     <nav
       :class="[
         'bg-gray-900 h-screen fixed top-0 left-0 z-50 transform transition-transform duration-300 ease-in-out',
@@ -15,10 +14,10 @@
         'w-[80%] md:w-64 md:translate-x-0 md:relative'
       ]"
     >
-      <!-- Botão fechar (só no mobile) -->
-      <div class="my-4 mr-4 flex justify-end md:hidden">
+      <div class="my-4 px-4 flex items-center justify-between md:hidden">
+        <h2 class="text-xl text-white">Experiências</h2>
         <button
-          class="px-2 h-8 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500"
+          class="px-2 h-8 bg-gray-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500"
           @click="sidebar.toggle"
         >
           <IconPhX />
@@ -31,7 +30,7 @@
         <li
           v-for="empresa in empresas"
           :key="empresa.id"
-          class="hover:bg-gray-700 text-gray-400 hover:text-white mx-4 rounded-md"
+          class="hover:bg-gray-700 text-gray-400 hover:text-white mx-2 rounded-md"
         >
           <NuxtLink :to="`/experiencias/${empresa.id}`" active-class="rounded-md bg-gray-800 text-white" class="block px-2 py-1">
             {{ empresa.nome }}
