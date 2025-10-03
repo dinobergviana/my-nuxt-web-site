@@ -8,7 +8,7 @@
       </h2>
     </div>
 
-    <div class="dark:text-white flex flex-col justify-center gap-4">
+    <div class="dark:text-white flex flex-col justify-center gap-4 p-4">
       <div>
         <h3 class="font-bold text-lg">Enjoei</h3>
         <p class="text-gray-700 font-semibold dark:text-white">
