@@ -42,7 +42,7 @@
           Desenvolvedor Frontend
         </p>
         <p class="dark:text-gray-300">Jan 2022 - Ago 2022</p>
-        <span class="dark:text-gray-300">Trabalhei com: </span>
+        <span class="dark:text-gray-300">Trabalhei com:</span>
         <i class="dark:text-gray-300"> Vue.js</i>
         <i class="dark:text-gray-300">, Vuex</i>
         <i class="dark:text-gray-300">, Vuex.js</i>
@@ -54,7 +54,7 @@
         <p class="text-gray-700 font-semibold dark:text-white">Desenvolvedor</p>
         <p class="dark:text-gray-300">Mar 2021- Dez 2021</p>
         <span class="dark:text-gray-300">Trabalhei com:</span>
-        <i class="dark:text-gray-300"> HMTL</i>
+        <i class="dark:text-gray-300"> HTML</i>
         <i class="dark:text-gray-300">, CSS</i>
         <i class="dark:text-gray-300">, Javascript</i>
         <i class="dark:text-gray-300">, Vue.js</i>
