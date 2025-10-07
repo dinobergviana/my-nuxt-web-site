@@ -10,9 +10,9 @@
 
     <div class="dark:text-white flex flex-col justify-center gap-4 p-4">
       <div>
-        <h3 class="font-bold text-lg">Analise e Desenvolvimento de Sistemas</h3>
+        <h3 class="font-bold text-lg">Análise e Desenvolvimento de Sistemas</h3>
         <p class="text-gray-700 font-semibold dark:text-white">Uni Dom Bosco</p>
-        <p>Mai 2023 - em andamento</p>
+        <p class="dark:text-gray-300">Mai 2023 - em andamento</p>
       </div>
 
       <div>
