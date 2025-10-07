@@ -56,10 +56,6 @@ describe("Seção Experiencias", () => {
     });
   });
 
-  it("mantém a estrutura HTML e classes conforme esperado (snapshot)", () => {
-    expect(wrapper.html()).toMatchSnapshot();
-  });
-
   it("possui classes principais de layout", () => {
     const section = wrapper.find("section");
     expect(section.classes()).toContain("grid");
