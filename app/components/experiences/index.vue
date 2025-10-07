@@ -14,7 +14,7 @@
         <p class="text-gray-700 font-semibold dark:text-white">
           Desenvolvedor Frontend
         </p>
-        <p>Mai 2024 - Mai 2025</p>
+        <p class="dark:text-gray-300">Mai 2024 - Mai 2025</p>
         <span class="dark:text-gray-300">Trabalhei com:</span>
         <i class="dark:text-gray-300"> Vue.js</i>
         <i class="dark:text-gray-300">, Vuex</i>
