@@ -15,7 +15,9 @@
           {{ $t("experiences.enjoei.role") }}
         </p>
         <p class="dark:text-gray-300">{{ $t("experiences.enjoei.period") }}</p>
-        <span class="dark:text-gray-300">{{ $t("experiences.enjoei.workedWith") }}:</span>
+        <span class="dark:text-gray-300"
+          >{{ $t("experiences.enjoei.workedWith") }}:</span
+        >
         <i class="dark:text-gray-300"> Vue.js</i>
         <i class="dark:text-gray-300">, Vuex</i>
         <i class="dark:text-gray-300">, Typescript</i>
@@ -28,8 +30,12 @@
         <p class="text-gray-700 font-semibold dark:text-white">
           {{ $t("experiences.educacross.role") }}
         </p>
-        <p class="dark:text-gray-300">{{ $t("experiences.educacross.period") }}</p>
-        <span class="dark:text-gray-300">{{ $t("experiences.educacross.workedWith")}}:</span>
+        <p class="dark:text-gray-300">
+          {{ $t("experiences.educacross.period") }}
+        </p>
+        <span class="dark:text-gray-300"
+          >{{ $t("experiences.educacross.workedWith") }}:</span
+        >
         <i class="dark:text-gray-300"> Vue.js</i>
         <i class="dark:text-gray-300">, Vuex</i>
         <i class="dark:text-gray-300">, Bootstrap Vue</i>
@@ -42,7 +48,9 @@
           {{ $t("experiences.warren.role") }}
         </p>
         <p class="dark:text-gray-300">{{ $t("experiences.warren.period") }}</p>
-        <span class="dark:text-gray-300">{{ $t("experiences.warren.workedWith") }}:</span>
+        <span class="dark:text-gray-300"
+          >{{ $t("experiences.warren.workedWith") }}:</span
+        >
         <i class="dark:text-gray-300"> Vue.js</i>
         <i class="dark:text-gray-300">, Vuex</i>
         <i class="dark:text-gray-300">, Vuex.js</i>
@@ -51,9 +59,13 @@
 
       <div>
         <h3 class="font-bold">BoxTi</h3>
-        <p class="text-gray-700 font-semibold dark:text-white">{{ $t("experiences.boxti.role") }}</p>
+        <p class="text-gray-700 font-semibold dark:text-white">
+          {{ $t("experiences.boxti.role") }}
+        </p>
         <p class="dark:text-gray-300">{{ $t("experiences.boxti.period") }}</p>
-        <span class="dark:text-gray-300">{{ $t("experiences.boxti.workedWith") }}:</span>
+        <span class="dark:text-gray-300"
+          >{{ $t("experiences.boxti.workedWith") }}:</span
+        >
         <i class="dark:text-gray-300"> HTML</i>
         <i class="dark:text-gray-300">, CSS</i>
         <i class="dark:text-gray-300">, Javascript</i>
