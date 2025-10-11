@@ -34,29 +34,26 @@
     }
   },
   "experiences": {
+    "title": "experiências",
     "enjoei": {
       "role": "Desenvolvedor Frontend",
-      "from": "",
-      "to": "",
-      "workedWith": "Stack"
+      "period": "Mai 2024 - Mai 2025",
+      "workedWith": "Trabalhei com"
     },
     "educacross": {
       "role": "Desenvolvedor Frontend",
-      "from": "",
-      "to": "",
-      "workedWith": "Stack"
+      "period": "Set 2022 - Abr 2024",
+      "workedWith": "Trabalhei com"
     },
     "warren": {
       "role": "Desenvolvedor - JR",
-      "from": "",
-      "to": "",
-      "workedWith": "Stack"
+      "period": "",
+      "workedWith": "Trabalhei com"
     },
     "boxti": {
       "role": "Desenvolvedor - Trainee",
-      "from": "",
-      "to": "",
-      "workedWith": "Stack"
+      "period": "",
+      "workedWith": "Trabalhei com"
     }
   }
 }
