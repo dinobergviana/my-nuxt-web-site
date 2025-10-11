@@ -32,5 +32,31 @@
     "p4": {
       "partOne": "Soon, I will share more details about my career transition."
     }
+  },
+  "experiences": {
+    "enjoei": {
+      "role": "Frontend Developer",
+      "from": "",
+      "to": "",
+      "workedWith": "Stack"
+    },
+    "educacross": {
+      "role": "Frontend Developer",
+      "from": "",
+      "to": "",
+      "workedWith": "Stack"
+    },
+    "warren": {
+      "role": "Frontend Developer - JR",
+      "from": "",
+      "to": "",
+      "workedWith": "Stack"
+    },
+    "boxti": {
+      "role": "Trainee Developer",
+      "from": "",
+      "to": "",
+      "workedWith": "Stack"
+    }
   }
 }
