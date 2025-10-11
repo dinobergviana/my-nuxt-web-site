@@ -32,5 +32,28 @@
     "p4": {
       "partOne": "Em breve contarei com mais detalhes como foi a minha transição de carreira."
     }
+  },
+  "experiences": {
+    "title": "experiências",
+    "enjoei": {
+      "role": "Desenvolvedor Frontend",
+      "period": "Mai 2024 - Mai 2025",
+      "workedWith": "Trabalhei com"
+    },
+    "educacross": {
+      "role": "Desenvolvedor Frontend",
+      "period": "Set 2022 - Abr 2024",
+      "workedWith": "Trabalhei com"
+    },
+    "warren": {
+      "role": "Desenvolvedor - JR",
+      "period": "",
+      "workedWith": "Trabalhei com"
+    },
+    "boxti": {
+      "role": "Desenvolvedor - Trainee",
+      "period": "",
+      "workedWith": "Trabalhei com"
+    }
   }
 }

@@ -4,7 +4,7 @@
   >
     <div class="flex items-center justify-center mx-auto py-[80px]">
       <h2 class="dark:text-white text-5xl md:text-5xl font-bold m-0 px-4">
-        experiências
+        {{ $t("experiences.title") }}
       </h2>
     </div>
 
@@ -12,10 +12,12 @@
       <div>
         <h3 class="font-bold text-lg">Enjoei</h3>
         <p class="text-gray-700 font-semibold dark:text-white">
-          Desenvolvedor Frontend
+          {{ $t("experiences.enjoei.role") }}
         </p>
-        <p class="dark:text-gray-300">Mai 2024 - Mai 2025</p>
-        <span class="dark:text-gray-300">Trabalhei com:</span>
+        <p class="dark:text-gray-300">{{ $t("experiences.enjoei.period") }}</p>
+        <span class="dark:text-gray-300"
+          >{{ $t("experiences.enjoei.workedWith") }}:</span
+        >
         <i class="dark:text-gray-300"> Vue.js</i>
         <i class="dark:text-gray-300">, Vuex</i>
         <i class="dark:text-gray-300">, Typescript</i>
@@ -24,12 +26,16 @@
       </div>
 
       <div>
-        <h3 class="font-bold text-lg">Educacros</h3>
+        <h3 class="font-bold text-lg">Educacross</h3>
         <p class="text-gray-700 font-semibold dark:text-white">
-          Desenvolvedor Frontend
+          {{ $t("experiences.educacross.role") }}
         </p>
-        <p class="dark:text-gray-300">Set 2022 - Abr 2024</p>
-        <span class="dark:text-gray-300">Trabalhei com:</span>
+        <p class="dark:text-gray-300">
+          {{ $t("experiences.educacross.period") }}
+        </p>
+        <span class="dark:text-gray-300"
+          >{{ $t("experiences.educacross.workedWith") }}:</span
+        >
         <i class="dark:text-gray-300"> Vue.js</i>
         <i class="dark:text-gray-300">, Vuex</i>
         <i class="dark:text-gray-300">, Bootstrap Vue</i>
@@ -39,10 +45,12 @@
       <div>
         <h3 class="font-bold text-lg">Warren Investimentos</h3>
         <p class="text-gray-700 font-semibold dark:text-white">
-          Desenvolvedor Frontend
+          {{ $t("experiences.warren.role") }}
         </p>
-        <p class="dark:text-gray-300">Jan 2022 - Ago 2022</p>
-        <span class="dark:text-gray-300">Trabalhei com:</span>
+        <p class="dark:text-gray-300">{{ $t("experiences.warren.period") }}</p>
+        <span class="dark:text-gray-300"
+          >{{ $t("experiences.warren.workedWith") }}:</span
+        >
         <i class="dark:text-gray-300"> Vue.js</i>
         <i class="dark:text-gray-300">, Vuex</i>
         <i class="dark:text-gray-300">, Vuex.js</i>
@@ -51,9 +59,13 @@
 
       <div>
         <h3 class="font-bold">BoxTi</h3>
-        <p class="text-gray-700 font-semibold dark:text-white">Desenvolvedor</p>
-        <p class="dark:text-gray-300">Mar 2021- Dez 2021</p>
-        <span class="dark:text-gray-300">Trabalhei com:</span>
+        <p class="text-gray-700 font-semibold dark:text-white">
+          {{ $t("experiences.boxti.role") }}
+        </p>
+        <p class="dark:text-gray-300">{{ $t("experiences.boxti.period") }}</p>
+        <span class="dark:text-gray-300"
+          >{{ $t("experiences.boxti.workedWith") }}:</span
+        >
         <i class="dark:text-gray-300"> HTML</i>
         <i class="dark:text-gray-300">, CSS</i>
         <i class="dark:text-gray-300">, Javascript</i>

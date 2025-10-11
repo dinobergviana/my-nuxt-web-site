@@ -32,5 +32,28 @@
     "p4": {
       "partOne": "Soon, I will share more details about my career transition."
     }
+  },
+  "experiences": {
+    "title": "experiences",
+    "enjoei": {
+      "role": "Frontend Developer",
+      "period": "May 2024 - May 2025",
+      "workedWith": "I worked with"
+    },
+    "educacross": {
+      "role": "Frontend Developer",
+      "period": "Sep 2022 - Apr 2024 ",
+      "workedWith": "I worked with"
+    },
+    "warren": {
+      "role": "Frontend Developer - JR",
+      "period": "Jan 2022 - Ago 2022",
+      "workedWith": "I worked with"
+    },
+    "boxti": {
+      "role": "Trainee Developer",
+      "period": "Mar 2021- Dez 2021",
+      "workedWith": "I worked with"
+    }
   }
 }
