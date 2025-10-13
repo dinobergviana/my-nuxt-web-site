@@ -55,5 +55,28 @@
       "period": "",
       "workedWith": "Trabalhei com"
     }
+  },
+  "education": {
+    "title": "formação",
+    "uni": {
+      "title": "Análise e Desenvolvimento de Sistemas",
+      "institution": "Uni Dom Bosco",
+      "period": "Mai 2023 - em andamento"
+    },
+    "curso": {
+      "title": "Curso.dev",
+      "institution": "Felipe Deschamps",
+      "period": "Jun 2023 - em andamento"
+    },
+      "digital": {
+      "title": "Desenvolvimento Full Stack - Node.js",
+      "institution": "Digital House",
+      "period": "Jun 2020 - Jan 2021"
+    },
+    "ufmg": {
+      "title": "Música",
+      "institution": "UFMG - Universidade Federal de Minas Gerais",
+      "period": "Mar 2015 - Jun 2019"
+    }
   }
 }

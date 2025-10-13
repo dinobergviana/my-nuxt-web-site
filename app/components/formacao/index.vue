@@ -4,23 +4,23 @@
   >
     <div class="flex items-center justify-center mx-auto py-[80px]">
       <h2 class="dark:text-white text-5xl md:text-5xl font-bold m-0 px-4">
-        formação
+        {{ $t("education.title") }}
       </h2>
     </div>
 
     <div class="dark:text-white flex flex-col justify-center gap-4 p-4">
       <div>
-        <h3 class="font-bold text-lg">Análise e Desenvolvimento de Sistemas</h3>
-        <p class="text-gray-700 font-semibold dark:text-white">Uni Dom Bosco</p>
-        <p class="dark:text-gray-300">Mai 2023 - em andamento</p>
+        <h3 class="font-bold text-lg">{{ $t("education.uni.title") }}</h3>
+        <p class="text-gray-700 font-semibold dark:text-white">{{ $t("education.uni.institution") }}</p>
+        <p class="dark:text-gray-300">{{ $t("education.uni.period") }}</p>
       </div>
 
       <div>
-        <h3 class="font-bold text-lg">Curso.dev</h3>
+        <h3 class="font-bold text-lg">{{ $t("education.curso.title") }}</h3>
         <p class="text-gray-700 font-semibold dark:text-white">
-          Felipe Deschamps
+          {{ $t("education.uni.institution") }}
         </p>
-        <p class="dark:text-gray-300">Jun 2020 - Jan 2021</p>
+        <p class="dark:text-gray-300">{{ $t("education.uni.period") }}</p>
       </div>
 
       <div>
@@ -30,11 +30,11 @@
       </div>
 
       <div>
-        <h3 class="font-bold">Música</h3>
+        <h3 class="font-bold">{{ $t("education.ufmg.title") }}</h3>
         <p class="text-gray-700 font-semibold dark:text-white">
-          UFMG - Universidade Federal de Minas Gerais
+          {{ $t("education.ufmg.institution") }}
         </p>
-        <p class="dark:text-gray-300">Mar 2015- jul 2019</p>
+        <p class="dark:text-gray-300">{{ $t("education.ufmg.period") }}</p>
       </div>
     </div>
   </section>

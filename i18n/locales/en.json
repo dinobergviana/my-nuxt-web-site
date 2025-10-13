@@ -55,5 +55,28 @@
       "period": "Mar 2021- Dez 2021",
       "workedWith": "I worked with"
     }
+  },
+  "education": {
+    "title": "education",
+    "uni": {
+      "title": "Systems Analysis and Development",
+      "institution": "Uni Dom Bosco",
+      "period": "May 2023 - ongoing"
+    },
+    "curso": {
+      "title": "Curso.dev",
+      "institution": "Felipe Deschamps",
+      "period": "Oct 2023 - ongoing"
+    },
+    "digital": {
+      "title": "Full Stack Development - Node.js",
+      "institution": "Digital House",
+      "period": "Jun 2020 - Jan 2021"
+    },
+    "ufmg": {
+      "title": "Music",
+      "institution": "UFMG - Federal University of Minas Gerais",
+      "period": "Mar 2015 - Jun 2019"
+    }
   }
 }
