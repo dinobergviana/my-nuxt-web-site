@@ -11,7 +11,9 @@
     <div class="dark:text-white flex flex-col justify-center gap-4 p-4">
       <div>
         <h3 class="font-bold text-lg">{{ $t("education.uni.title") }}</h3>
-        <p class="text-gray-700 font-semibold dark:text-white">{{ $t("education.uni.institution") }}</p>
+        <p class="text-gray-700 font-semibold dark:text-white">
+          {{ $t("education.uni.institution") }}
+        </p>
         <p class="dark:text-gray-300">{{ $t("education.uni.period") }}</p>
       </div>
 
