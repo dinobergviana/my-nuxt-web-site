@@ -5,7 +5,7 @@
     <div class="flex items-center justify-end gap-2">
       <button
         v-if="theme === 'light'"
-        class="p-1 rounded-md hover:bg-gray-200 text-gray-800"
+        class="p-1 rounded-md bg-gray-200 text-gray-800"
         type="button"
         @click="toggleTheme"
       >
@@ -14,7 +14,7 @@
 
       <button
         v-else
-        class="p-1 rounded-md hover:bg-gray-800"
+        class="p-1 rounded-md bg-gray-800 text-gray-200"
         type="button"
         @click="toggleTheme"
       >
@@ -23,7 +23,7 @@
 
       <select
         v-model="selectedLang"
-        class="bg-transparent cursor-pointer text-gray-800 dark:text-gray-200 text-sm"
+        class="bg-transparent cursor-pointer text-gray-800 dark:text-gray-200 dark:bg-gray-800 text-sm"
         @change="setLocale(selectedLang)"
       >
         <option class="language-select-option" value="pt">BR</option>
