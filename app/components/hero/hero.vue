@@ -56,12 +56,29 @@
           </a>
         </template>
       </Tooltip>
+
+      <button
+        class="text-white bg-gray-600 rounded-md p-2"
+        type="button"
+        @click="handleModal"
+      >
+        Modal
+      </button>
+
+      <Modal :is-open="isOpen" @close-modal="handleModal" />
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
+import { ref } from "vue";
+
 import Tooltip from "../global/tooltip/tooltip.vue";
+import Modal from "../global/modal/modal.vue"
+const isOpen = ref(false)
+function handleModal() {
+  isOpen.value = !isOpen.value
+}
 </script>
 
 <style scoped>
