@@ -23,7 +23,7 @@
 
       <select
         v-model="selectedLang"
-        class="bg-transparent cursor-pointer text-gray-800 dark:text-gray-200 dark:bg-gray-800 text-sm"
+        class="p-1 rounded-md bg-transparent cursor-pointer text-gray-800 dark:text-gray-200 dark:bg-gray-800 text-sm"
         @change="setLocale(selectedLang)"
       >
         <option class="language-select-option" value="pt">BR</option>
