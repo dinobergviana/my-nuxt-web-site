@@ -16,16 +16,20 @@
           class="bg-white dark:bg-gray-900 rounded-xl shadow-lg w-[90%] md:w-[80%] max-w-5xl"
         >
           <!-- Header -->
-          <header class="px-4 py-3 flex items-center justify-between mb-3 border-b border-gray-300 dark:border-gray-800 shadow-sm">
+          <header
+            class="px-4 py-3 flex items-center justify-between mb-3 border-b border-gray-300 dark:border-gray-800 shadow-sm"
+          >
             <div class="text-xl font-semibold text-gray-700 dark:text-gray-300">
               <slot name="modal-title">
-                <h2>
-                  Título do modal
-                </h2>
+                <h2>Título do modal</h2>
               </slot>
             </div>
 
-            <button type="button" class="px-2 text-gray-500 hover:text-gray-600 dark:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-400 rounded-md" @click="handleCloseModal">
+            <button
+              type="button"
+              class="px-2 text-gray-500 hover:text-gray-600 dark:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-400 rounded-md"
+              @click="handleCloseModal"
+            >
               X
             </button>
           </header>
@@ -46,17 +50,16 @@
 const props = defineProps({
   isOpen: {
     type: Boolean,
-    default: false
+    default: false,
   },
-  hasFooter: {}
-})
+  hasFooter: {},
+});
 
 const emit = defineEmits<{
-  (e: 'close-modal'): void
-}>()
+  (e: "close-modal"): void;
+}>();
 
 function handleCloseModal() {
-  emit('close-modal')
+  emit("close-modal");
 }
-
 </script>

@@ -61,14 +61,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
-
 import Tooltip from "../global/tooltip/tooltip.vue";
-import Modal from "../global/modal/modal.vue"
-const isOpen = ref(false)
-function handleModal() {
-  isOpen.value = !isOpen.value
-}
 </script>
 
 <style scoped>
