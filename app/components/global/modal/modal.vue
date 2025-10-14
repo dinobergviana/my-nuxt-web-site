@@ -16,35 +16,26 @@
           class="bg-white dark:bg-gray-900 rounded-xl shadow-lg w-[90%] md:w-[80%] max-w-5xl"
         >
           <!-- Header -->
-          <header class="px-4 py-3 flex items-center justify-between mb-4 border-b border-gray-300 dark:border-gray-800 shadow-md">
-            <h2 class="text-xl font-semibold text-gray-900 dark:text-white">
-              Modal title
-            </h2>
+          <header class="px-4 py-3 flex items-center justify-between mb-3 border-b border-gray-300 dark:border-gray-800 shadow-sm">
+            <div class="text-xl font-semibold text-gray-700 dark:text-gray-300">
+              <slot name="modal-title">
+                <h2>
+                  Título do modal
+                </h2>
+              </slot>
+            </div>
 
-            <button type="button" class="p-1 bg-transparent text-gray-500 dark:text-gray-500" @click="handleCloseModal">
+            <button type="button" class="px-2 text-gray-500 hover:text-gray-600 dark:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-400 rounded-md" @click="handleCloseModal">
               X
             </button>
           </header>
 
           <!-- Corpo -->
           <div class="p-4 text-gray-700 dark:text-gray-300">
-            <p>Conteúdo do modal...</p>
+            <slot name="modal-content">
+              <span>Conteúdo do modal...</span>
+            </slot>
           </div>
-
-          <!-- Footer -->
-          <footer class="p-4 mt-6 flex justify-end gap-2">
-            <button
-              class="px-4 py-2 rounded bg-gray-200 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700"
-              @click="handleCloseModal"
-            >
-              Cancelar
-            </button>
-            <button
-              class="px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700"
-            >
-              Confirmar
-            </button>
-          </footer>
         </div>
       </div>
     </Transition>
@@ -56,7 +47,8 @@ const props = defineProps({
   isOpen: {
     type: Boolean,
     default: false
-  }
+  },
+  hasFooter: {}
 })
 
 const emit = defineEmits<{

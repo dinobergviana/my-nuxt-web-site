@@ -65,7 +65,10 @@
         Modal
       </button>
 
-      <Modal :is-open="isOpen" @close-modal="handleModal" />
+      <Modal :is-open="isOpen" @close-modal="handleModal">
+        <template #modal-title>
+        </template>
+      </Modal>
     </div>
   </section>
 </template>
