@@ -56,19 +56,6 @@
           </a>
         </template>
       </Tooltip>
-
-      <button
-        class="text-white bg-gray-600 rounded-md p-2"
-        type="button"
-        @click="handleModal"
-      >
-        Modal
-      </button>
-
-      <Modal :is-open="isOpen" @close-modal="handleModal">
-        <template #modal-title>
-        </template>
-      </Modal>
     </div>
   </section>
 </template>
