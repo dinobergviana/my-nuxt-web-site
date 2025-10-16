@@ -3,6 +3,7 @@
   <About />
   <Experiences />
   <Formation />
+  <Projetos />
   <Footer />
 </template>
 
@@ -12,4 +13,5 @@ import About from "@/components/about";
 import Footer from "@/components/footer";
 import Experiences from "@/components/experiences";
 import Formation from "@/components/formacao";
+import Projetos from "@/components/projetos";
 </script>
