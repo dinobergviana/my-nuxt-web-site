@@ -22,11 +22,10 @@
             target="_blank"
             >Repositório</a
           >
-          <span class="text-gray-700"> - </span>
+          <span class="text-gray-700 dark:text-white"> &bull;</span>
           <a
-            href="https://dinobergueviana.com.br/projects/gc-manager"
+            href="/"
             class="mb-4 text-blue-600 hover:text-sky-500 dark:text-yellow-500 dark:hover:text-yellow-600 ease-in"
-            target="_blank"
           >
             Mais informações</a
           >
