@@ -41,10 +41,6 @@
         <option class="language-select-option" value="pt">BR</option>
         <option class="language-select-option" value="en">EN</option>
       </select>
-
-      <button class="md:hidden p-2 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500" @click="navbar.toggle">
-        <IconPhList />
-      </button>
     </div>
   </header>
 </template>
@@ -53,7 +49,6 @@
 import { ref, computed } from "vue";
 import { useTheme } from "@/composables/useTheme";
 import { useSidebar } from '@/stores/useSidebar'
-import { useNavbar } from '@/stores/useNavbar'
 
 const { theme, toggleTheme } = useTheme();
 
@@ -67,5 +62,4 @@ const isHome = computed(() => {
 
 const route = useRoute();
 const sidebar = useSidebar()
-const navbar = useNavbar()
 </script>
