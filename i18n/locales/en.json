@@ -78,5 +78,22 @@
       "institution": "UFMG - Federal University of Minas Gerais",
       "period": "Mar 2015 - Jun 2019"
     }
+  },
+  "projects": {
+    "title": "projects",
+    "gc": {
+      "title": "GC Manager",
+      "description": "A system for managing small groups.",
+      "status": "Under construction - link will be available soon",
+      "repository": "Repository",
+      "details": " More information"
+    },
+    "website": {
+      "title": "My website",
+      "description": "A personal website to share information about my career and projects.",
+      "status": "Completed",
+      "repository": "Repository",
+      "details": " More information"
+    }
   }
 }
