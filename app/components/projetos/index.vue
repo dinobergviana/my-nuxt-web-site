@@ -14,7 +14,7 @@
         <p class="text-gray-700 font-semibold dark:text-white">
           Sistema para gerenciamento de pequenos grupos.
         </p>
-        <p>Em construção</p>
+        <p class="dark:text-gray-300">Em construção</p>
         <p>
           <a
             href="https://github.com/dinobergviana/gc-manager"
@@ -22,13 +22,13 @@
             target="_blank"
             >Repositório</a
           >
-          <span class="text-gray-700 dark:text-white"> &bull;</span>
+          <!-- <span class="text-gray-700 dark:text-white"> &bull;</span>
           <a
             href="/"
             class="mb-4 text-blue-600 hover:text-sky-500 dark:text-yellow-500 dark:hover:text-yellow-600 ease-in"
           >
             Mais informações</a
-          >
+          > -->
         </p>
       </div>
 
@@ -38,7 +38,7 @@
           Desenvolvedor FrontendSite pessoal para compartilhar informações sobre
           minha carreira e projetos.
         </p>
-        <p>Finalizado</p>
+        <p class="dark:text-gray-300">Finalizado</p>
         <a
           href="https://github.com/dinobergviana/meu-site"
           class="mb-4 text-blue-600 hover:text-sky-500 dark:text-yellow-500 dark:hover:text-yellow-600 ease-in"
