@@ -14,7 +14,7 @@
         <p class="text-gray-700 font-semibold dark:text-white">
           {{ $t("projects.gc.description") }}
         </p>
-        <p>{{ $t("projects.gc.status") }}</p>
+        <p class="dark:text-gray-300">Em construção</p>
         <p>
           <a
             href="https://github.com/dinobergviana/gc-manager"
@@ -22,13 +22,13 @@
             target="_blank"
             >{{ $t("projects.gc.repository") }}</a
           >
-          <span class="text-gray-700 dark:text-white"> &bull;</span>
+          <!-- <span class="text-gray-700 dark:text-white"> &bull;</span>
           <a
             href="/"
             class="mb-4 text-blue-600 hover:text-sky-500 dark:text-yellow-500 dark:hover:text-yellow-600 ease-in"
           >
-            {{ $t("projects.gc.details") }}</a
-          >
+            Mais informações</a
+          > -->
         </p>
       </div>
 
