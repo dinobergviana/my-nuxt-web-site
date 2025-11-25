@@ -1,9 +1,9 @@
 <template>
   <Hero />
-  <About />
   <Experiences />
   <Formation />
   <Projetos />
+  <About />
   <Footer />
 </template>
 
