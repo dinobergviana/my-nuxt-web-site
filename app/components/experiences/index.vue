@@ -9,71 +9,25 @@
     </div>
 
     <div class="dark:text-white flex flex-col justify-center gap-4 p-4">
-      <div>
-        <h3 class="font-bold text-lg">Enjoei</h3>
+      <div v-for="exp in EXPERIENCES" :key="exp.title">
+        <h3 class="font-bold text-lg">{{ exp.company }}</h3>
         <p class="text-gray-700 font-semibold dark:text-white">
-          {{ $t("experiences.enjoei.role") }}
+          {{ $t(`experiences.${[exp.title]}.role`) }}
         </p>
-        <p class="dark:text-gray-300">{{ $t("experiences.enjoei.period") }}</p>
-        <span class="dark:text-gray-300"
-          >{{ $t("experiences.enjoei.workedWith") }}:</span
-        >
-        <i class="dark:text-gray-300"> Vue.js</i>
-        <i class="dark:text-gray-300">, Vuex</i>
-        <i class="dark:text-gray-300">, Typescript</i>
-        <i class="dark:text-gray-300">, RailsVitest</i>
-        <i class="dark:text-gray-300">, Vue Test Utils</i>
-      </div>
+        <p class="dark:text-gray-300 mb-2 mb-2">{{ $t("experiences.enjoei.period") }}</p>
 
-      <div>
-        <h3 class="font-bold text-lg">Educacross</h3>
-        <p class="text-gray-700 font-semibold dark:text-white">
-          {{ $t("experiences.educacross.role") }}
-        </p>
-        <p class="dark:text-gray-300">
-          {{ $t("experiences.educacross.period") }}
-        </p>
-        <span class="dark:text-gray-300"
-          >{{ $t("experiences.educacross.workedWith") }}:</span
-        >
-        <i class="dark:text-gray-300"> Vue.js</i>
-        <i class="dark:text-gray-300">, Vuex</i>
-        <i class="dark:text-gray-300">, Bootstrap Vue</i>
-        <i class="dark:text-gray-300">, Vuexy</i>
-      </div>
-
-      <div>
-        <h3 class="font-bold text-lg">Warren Investimentos</h3>
-        <p class="text-gray-700 font-semibold dark:text-white">
-          {{ $t("experiences.warren.role") }}
-        </p>
-        <p class="dark:text-gray-300">{{ $t("experiences.warren.period") }}</p>
-        <span class="dark:text-gray-300"
-          >{{ $t("experiences.warren.workedWith") }}:</span
-        >
-        <i class="dark:text-gray-300"> Vue.js</i>
-        <i class="dark:text-gray-300">, Vuex</i>
-        <i class="dark:text-gray-300">, Vuex.js</i>
-        <i class="dark:text-gray-300">, Typescript</i>
-      </div>
-
-      <div>
-        <h3 class="font-bold">BoxTi</h3>
-        <p class="text-gray-700 font-semibold dark:text-white">
-          {{ $t("experiences.boxti.role") }}
-        </p>
-        <p class="dark:text-gray-300">{{ $t("experiences.boxti.period") }}</p>
-        <span class="dark:text-gray-300"
-          >{{ $t("experiences.boxti.workedWith") }}:</span
-        >
-        <i class="dark:text-gray-300"> HTML</i>
-        <i class="dark:text-gray-300">, CSS</i>
-        <i class="dark:text-gray-300">, Javascript</i>
-        <i class="dark:text-gray-300">, Vue.js</i>
-        <i class="dark:text-gray-300">, PHP</i>
-        <i class="dark:text-gray-300">, Node.js</i>
-        <i class="dark:text-gray-300">, MySQL</i>
+        <button type="button" class="px-2 py-1 border dark:border-gray-600 dark:bg-gray-700 rounded-md hover:bg-gray-100 dark:hover:bg-gray-600" @click="handleOpenModal(exp.title)">
+          <span class="text-sm font-medium">Ver detalhes</span>
+        </button>
       </div>
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+import { EXPERIENCES } from "./experiences"
+
+function handleOpenModal(experience: string) {
+  console.log(experience)
+}
+</script>
