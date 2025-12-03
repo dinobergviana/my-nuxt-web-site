@@ -24,21 +24,60 @@
 
     <Modal @close-modal="toggleModal" :is-open="isModalOpen">
       <template #modal-title>
-<div class="md:flex md:items-baseline md:gap-2">
-  <span class="mb-2 md:mb-0 block text-md leading-none">
-    {{ currentDetails?.title ?? '' }}
-  </span>
-  <span class="mb-2 md:mb-0 md:inline block text-sm leading-none text-gray-600 dark:text-gray-400">
-    {{ currentDetails.role }}
-  </span>
-  <span class="hidden md:inline text-sm leading-none text-gray-700 dark:text-gray-400">
-    &bull;
-  </span>
-  <span class="md:inline block text-sm leading-none text-gray-600 dark:text-gray-400">
-    {{ currentDetails.period }}
-  </span>
-</div>
+        <div class="md:flex md:items-baseline md:gap-2">
+          <span class="mb-2 md:mb-0 block text-md leading-none">
+            {{ currentDetails?.title ?? '' }}
+          </span>
+          <span class="mb-2 md:mb-0 md:inline block text-sm leading-none text-gray-600 dark:text-gray-400">
+            {{ currentDetails.role }}
+          </span>
+          <span class="hidden md:inline text-sm leading-none text-gray-700 dark:text-gray-400">
+            &bull;
+          </span>
+          <span class="md:inline block text-sm leading-none text-gray-600 dark:text-gray-400 font-normal">
+            {{ currentDetails.period }}
+          </span>
+        </div>
+      </template>
 
+      <template #modal-content>
+        <div class="mb-2">
+          <h5 class="font-bold mb-2">
+            Sobre a empresa
+          </h5>
+          <p class="mb-2">
+            {{ currentDetails.description }}
+          </p>
+        </div>
+
+        <div class="mb-2">
+          <h5 class="font-bold mb-2">Atividades</h5>
+
+          <ul class="list-disc list-outside pl-4 space-y-1">
+            <li v-for="action in currentDetails.actions" :key="action">
+              <span>{{ action }}</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-bold mb-2">Projetos de impacto</h5>
+
+          <ul class="list-disc list-outside pl-4 space-y-4">
+            <li
+              v-for="project in currentDetails.main_projects"
+              :key="project.title"
+              class="space-y-1"
+            >
+              <p class="font-semibold leading-tight">
+                {{ project.title }}
+              </p>
+
+              <p class="text-sm text-gray-700 dark:text-gray-300 leading-snug">
+                {{ project.description }}
+              </p>
+            </li>
+          </ul>
+        </div>
       </template>
     </Modal>
   </section>
