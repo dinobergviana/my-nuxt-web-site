@@ -1,6 +1,6 @@
 export const EXPERIENCES_DETAILS = {
   bigdata: {
-    title: "Big Data Health",
+    title: "Bigdata Health",
     role: "Desenvolvedor Fullstack",
     period: "06/2025 - 09/2025",
     description:
@@ -84,7 +84,7 @@ export const EXPERIENCES_DETAILS = {
   },
 
   warren: {
-    title: "Warren Investimentos",
+    title: "Warren",
     role: "Desenvolvedor Frontend Júnior",
     period: "01/2022 - 08/2022",
     description:
@@ -114,8 +114,8 @@ export const EXPERIENCES_DETAILS = {
     ],
   },
 
-  box: {
-    title: "BoxTi",
+  boxti: {
+    title: "Boxti",
     role: "Desenvolvedor Fullstack Júnior",
     period: "03/2021 - 12/2021",
     description:
