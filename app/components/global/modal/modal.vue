@@ -13,7 +13,7 @@
         class="fixed inset-0 bg-black/30 backdrop-blur-sm flex items-center justify-center z-50"
       >
         <div
-          class="bg-white dark:bg-gray-900 rounded-xl shadow-lg w-[90%] md:w-[80%] max-w-5xl"
+          class="bg-white dark:bg-gray-800 rounded-xl shadow-lg w-[90%] md:w-[80%] max-w-5xl"
         >
           <!-- Header -->
           <header
