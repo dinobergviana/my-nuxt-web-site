@@ -17,7 +17,7 @@
         >
           <!-- Header -->
           <header
-            class="px-4 py-3 sticky top-0 flex items-center justify-between border-b border-gray-300 dark:border-gray-800 shadow-sm"
+            class="px-4 py-3 sticky top-0 flex items-center justify-between border-b border-gray-300 dark:border-gray-600 shadow-sm"
           >
             <div class="text-xl font-semibold text-gray-700 dark:text-gray-300">
               <slot name="modal-title">
@@ -42,7 +42,7 @@
           </div>
 
           <!-- Rodapé -->
-          <div class="flex items-center justify-end px-4 py-3 border-t border-gray-300 dark:border-gray-800">
+          <div class="flex items-center justify-end px-4 py-3 border-t border-gray-300 dark:border-gray-600">
             <button type="button" class="px-2 py-1 border dark:border-gray-600 dark:bg-gray-700 rounded-md hover:bg-gray-100 dark:hover:bg-gray-600" @click="handleCloseModal">
               <span class="dark:text-white text-sm font-medium">Fechar</span>
             </button>
