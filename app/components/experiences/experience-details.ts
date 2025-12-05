@@ -1,7 +1,7 @@
 export const EXPERIENCES_DETAILS = {
   bigdata: {
     title: "Bigdata Health",
-    role: "Desenvolvedor Fullstack",
+    role: "Desenvolvedor Fullstack - Freelancer ",
     period: "06/2025 - 09/2025",
     description:
       "Software house sediada em Teresina (PI), focada em transformar dados em soluções inteligentes. Entre suas soluções estão: sistema de gestão de RH, gestão financeira, compliance para gestão pública, controle patrimonial, telemedicina, além de treinamentos e consultorias.",

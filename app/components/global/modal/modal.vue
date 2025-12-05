@@ -35,7 +35,7 @@
           </header>
 
           <!-- Corpo -->
-          <div class="flex flex-col p-4 text-gray-700 dark:text-gray-300 max-h-[60vh] overflow-hidden overflow-y-auto">
+          <div class="flex flex-col p-6 text-gray-700 dark:text-gray-300 max-h-[60vh] overflow-hidden overflow-y-auto">
             <slot name="modal-content">
               <span>Conteúdo do modal...</span>
             </slot>
