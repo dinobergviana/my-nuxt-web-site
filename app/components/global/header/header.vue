@@ -1,6 +1,6 @@
 <template>
   <header
-    class="py-2 px-4 bg-white dark:bg-gray-900 text-white transition-colors duration-300 ease-in-out"
+    class="w-full mx-auto fixed py-2 px-4 bg-gray-100 dark:bg-gray-900 text-white transition-colors duration-300 ease-in-out z-50 rounded-b-lg shadow-sm border-b dark:border-none"
   >
     <div class="flex items-center justify-end gap-2">
       <button

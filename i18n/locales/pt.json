@@ -35,8 +35,13 @@
   },
   "experiences": {
     "title": "experiências",
+    "bigdata": {
+      "role": "Desenvolvedor Fullstack",
+      "period": "Jun 2025 - Set 2025",
+      "workedWith": "Trabalhei com"
+    },
     "enjoei": {
-      "role": "Desenvolvedor Frontend",
+      "role": "Desenvolvedor Frontend Pleno",
       "period": "Mai 2024 - Mai 2025",
       "workedWith": "Trabalhei com"
     },
@@ -46,12 +51,12 @@
       "workedWith": "Trabalhei com"
     },
     "warren": {
-      "role": "Desenvolvedor - JR",
+      "role": "Desenvolvedor Frontend",
       "period": "",
       "workedWith": "Trabalhei com"
     },
     "boxti": {
-      "role": "Desenvolvedor - Trainee",
+      "role": "Desenvolvedor Fullstack",
       "period": "",
       "workedWith": "Trabalhei com"
     }
