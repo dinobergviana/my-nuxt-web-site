@@ -57,11 +57,14 @@
         </template>
       </Tooltip>
     </div>
+
+    <Button />
   </section>
 </template>
 
 <script setup lang="ts">
 import Tooltip from "../global/tooltip/tooltip.vue";
+import Button from "../button/index.vue";
 </script>
 
 <style scoped>
