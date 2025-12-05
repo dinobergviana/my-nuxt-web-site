@@ -35,15 +35,23 @@
           </header>
 
           <!-- Corpo -->
-          <div class="flex flex-col p-6 text-gray-700 dark:text-gray-300 max-h-[60vh] overflow-hidden overflow-y-auto">
+          <div
+            class="flex flex-col p-6 text-gray-700 dark:text-gray-300 max-h-[60vh] overflow-hidden overflow-y-auto"
+          >
             <slot name="modal-content">
               <span>Conteúdo do modal...</span>
             </slot>
           </div>
 
           <!-- Rodapé -->
-          <div class="flex items-center justify-end px-4 py-3 border-t border-gray-300 dark:border-gray-600">
-            <button type="button" class="px-2 py-1 border dark:border-gray-600 dark:bg-gray-700 rounded-md hover:bg-gray-100 dark:hover:bg-gray-600" @click="handleCloseModal">
+          <div
+            class="flex items-center justify-end px-4 py-3 border-t border-gray-300 dark:border-gray-600"
+          >
+            <button
+              type="button"
+              class="px-2 py-1 border dark:border-gray-600 dark:bg-gray-700 rounded-md hover:bg-gray-100 dark:hover:bg-gray-600"
+              @click="handleCloseModal"
+            >
               <span class="dark:text-white text-sm font-medium">Fechar</span>
             </button>
           </div>

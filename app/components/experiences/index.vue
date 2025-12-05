@@ -1,7 +1,6 @@
 <template>
   <section
-    class="min-h-screen grid border-t border-gray-300 dark:border-none 
-           md:grid-cols-2 py-8 px-4 text-gray-700 dark:bg-gray-800"
+    class="min-h-screen grid border-t border-gray-300 dark:border-none md:grid-cols-2 py-8 px-4 text-gray-700 dark:bg-gray-800"
   >
     <!-- Left Title -->
     <div class="flex items-center justify-center mx-auto py-[80px]">
@@ -12,18 +11,12 @@
 
     <!-- Timeline Right Side -->
     <div
-      class="dark:text-white flex flex-col justify-center gap-8 p-4 
-             relative pl-8 border-l border-dashed border-gray-400/30 dark:border-gray-200/30"
+      class="dark:text-white flex flex-col justify-center gap-8 p-4 relative pl-8 border-l border-dashed border-gray-400/30 dark:border-gray-200/30"
     >
-      <div
-        v-for="exp in EXPERIENCES"
-        :key="exp.title"
-        class="relative"
-      >
+      <div v-for="exp in EXPERIENCES" :key="exp.title" class="relative">
         <!-- Timeline Dot -->
         <span
-          class="absolute left-[-36.5px] top-[11px] h-2 w-2 rounded-full 
-                 bg-gray-300 dark:bg-gray-400 shadow"
+          class="absolute left-[-36.5px] top-[11px] h-2 w-2 rounded-full bg-gray-300 dark:bg-gray-400 shadow"
         ></span>
 
         <!-- Company -->
@@ -42,9 +35,7 @@
         <!-- Button -->
         <button
           type="button"
-          class="px-2 py-1 bg-blue-100 hover:bg-blue-200 dark:bg-gray-700 dark:border-gray-600  
-                 rounded-md dark:hover:bg-gray-600 
-                 transition-colors"
+          class="px-2 py-1 bg-blue-100 hover:bg-blue-200 dark:bg-gray-700 dark:border-gray-600 rounded-md dark:hover:bg-gray-600 transition-colors"
           @click="setExperienceDetails(exp.title)"
         >
           <span class="text-sm font-medium">Ver detalhes</span>
@@ -57,15 +48,21 @@
       <template #modal-title>
         <div class="md:flex md:items-baseline md:gap-2">
           <span class="mb-2 md:mb-0 block text-md leading-none">
-            {{ currentDetails?.title ?? '' }}
+            {{ currentDetails?.title ?? "" }}
           </span>
-          <span class="mb-2 md:mb-0 md:inline block text-sm leading-none text-gray-600 dark:text-gray-400">
+          <span
+            class="mb-2 md:mb-0 md:inline block text-sm leading-none text-gray-600 dark:text-gray-400"
+          >
             {{ currentDetails.role }}
           </span>
-          <span class="hidden md:inline text-sm leading-none text-gray-700 dark:text-gray-400">
+          <span
+            class="hidden md:inline text-sm leading-none text-gray-700 dark:text-gray-400"
+          >
             &bull;
           </span>
-          <span class="md:inline block text-sm leading-none text-gray-600 dark:text-gray-400 font-normal">
+          <span
+            class="md:inline block text-sm leading-none text-gray-600 dark:text-gray-400 font-normal"
+          >
             {{ currentDetails.period }}
           </span>
         </div>
@@ -109,13 +106,13 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue';
+import { ref, computed } from "vue";
 import Modal from "../global/modal/modal.vue";
-import { EXPERIENCES } from "./experiences"
-import { EXPERIENCES_DETAILS } from "./experience-details"
+import { EXPERIENCES } from "./experiences";
+import { EXPERIENCES_DETAILS } from "./experience-details";
 
-const isModalOpen = ref(false)
-const experienceTitle = ref("")
+const isModalOpen = ref(false);
+const experienceTitle = ref("");
 
 const currentDetails = computed(() => {
   const key = experienceTitle.value as keyof typeof EXPERIENCES_DETAILS;
@@ -123,11 +120,11 @@ const currentDetails = computed(() => {
 });
 
 function setExperienceDetails(experience: string) {
-  experienceTitle.value = experience
-  toggleModal()
+  experienceTitle.value = experience;
+  toggleModal();
 }
 
 function toggleModal() {
-  isModalOpen.value = !isModalOpen.value
+  isModalOpen.value = !isModalOpen.value;
 }
 </script>

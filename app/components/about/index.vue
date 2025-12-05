@@ -12,16 +12,16 @@
     <div
       class="flex flex-col items-center justify-center md:text-lg md:m-0 p-4"
     >
-        <div>
-          <p class="dark:text-white mb-4">
+      <div>
+        <p class="dark:text-white mb-4">
           {{ $t("about.p1.partOne") }}
           <strong>{{ $t("about.p1.strongText") }}</strong>
           {{ $t("about.p1.partTwo") }}
         </p>
-        </div>
+      </div>
 
-        <div>
-          <p class="dark:text-white mb-4">
+      <div>
+        <p class="dark:text-white mb-4">
           {{ $t("about.p2.partOne") }}
           <strong>{{ $t("about.p2.strongTextOne") }}</strong>
           {{ $t("about.p2.partTwo") }}
@@ -34,10 +34,10 @@
             }}</a></strong
           >.
         </p>
-        </div>
+      </div>
 
-        <div class="w-full">
-          <p class="dark:text-white mb-4">
+      <div class="w-full">
+        <p class="dark:text-white mb-4">
           {{ $t("about.p3.partOne") }}
           <strong>{{ $t("about.p3.strongTextOne") }}</strong>
           <strong
@@ -54,13 +54,13 @@
             }}</a></strong
           >
         </p>
-        </div>
-
-        <div class="w-full">
-          <small class="dark:text-gray-400 text-gray-500">{{
-            $t("about.p4.partOne")
-          }}</small>
-        </div>
       </div>
+
+      <div class="w-full">
+        <small class="dark:text-gray-400 text-gray-500">{{
+          $t("about.p4.partOne")
+        }}</small>
+      </div>
+    </div>
   </section>
 </template>
