@@ -58,13 +58,13 @@
       </Tooltip>
     </div>
 
-    <Button />
+    <DownloadResumeButton />
   </section>
 </template>
 
 <script setup lang="ts">
 import Tooltip from "../global/tooltip/tooltip.vue";
-import Button from "../button/index.vue";
+import DownloadResumeButton from "../buttons/DownloadResumeButton.vue";
 </script>
 
 <style scoped>
