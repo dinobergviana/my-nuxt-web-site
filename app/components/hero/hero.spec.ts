@@ -26,6 +26,11 @@ describe("Hero component", () => {
           return translations[msg] || msg;
         },
       },
+      stubs: {
+        DownloadResumeButton: {
+          template: "<button>Download</button>",
+        },
+      },
     },
     components: globalComponentsMock,
   });
