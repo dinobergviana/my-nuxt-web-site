@@ -1,10 +1,10 @@
 <template>
   <section
-    class="w-full min-h-screen pt-12 m-auto text-gray-700 font-inter dark:bg-gray-800 dark:text-white"
+    class="w-full min-h-screen pt-12 m-auto text-gray-700 font-inter dark:bg-gray-800 dark:text-gray-200"
   >
     <div class="max-w-4xl mx-auto px-4 text-justify">
       <h1
-        class="mt-4 text-5xl font-bold mb-[25px] text-gray-700 dark:text-white"
+        class="mt-4 text-5xl font-bold mb-[25px] text-gray-700 dark:text-gray-200"
       >
         Gerenciador de GC
       </h1>
