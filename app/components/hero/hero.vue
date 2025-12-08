@@ -16,7 +16,7 @@
         <template #content="{ tooltipId }">
           <a
             :aria-describedby="tooltipId"
-            href="https://www.linkedin.com/in/dinobergue-viana-28574218b/"
+            href="https://www.linkedin.com/in/dinobergue-viana-de-sousa/"
             target="_blank"
             class="media-link"
           >
