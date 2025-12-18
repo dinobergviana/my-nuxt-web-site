@@ -101,5 +101,8 @@
       "repository": "Repository",
       "details": " More information"
     }
+  },
+  "footer": {
+    "backToTop": "Back to the top"
   }
 }

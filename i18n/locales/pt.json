@@ -101,5 +101,8 @@
       "repository": "Repositório",
       "details": " Mais informaçÕes"
     }
+  },
+  "footer": {
+    "backToTop": "Voltar para o topo"
   }
 }

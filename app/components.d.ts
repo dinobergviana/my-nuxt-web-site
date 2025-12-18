@@ -8,6 +8,7 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    IconPhArrowUp: typeof import('~icons/ph/arrow-up')['default']
     IconPhGithubLogo: typeof import('~icons/ph/github-logo')['default']
     IconPhHeart: typeof import('~icons/ph/heart')['default']
     IconPhLinkedinLogo: typeof import('~icons/ph/linkedin-logo')['default']
