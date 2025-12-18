@@ -27,7 +27,9 @@
 
       <div>
         <h3 class="font-bold text-lg">Desenvolvimento Full Stack - Node.js</h3>
-        <p class="text-gray-700 font-semibold dark:text-gray-200">Digital House</p>
+        <p class="text-gray-700 font-semibold dark:text-gray-200">
+          Digital House
+        </p>
         <p class="dark:text-gray-300">Jun 2020 - Jan 2021</p>
       </div>
 

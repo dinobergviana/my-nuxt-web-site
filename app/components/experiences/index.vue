@@ -70,12 +70,16 @@
 
       <template #modal-content>
         <div class="mb-2">
-          <h5 class="font-bold mb-2">{{ $t("experienceModal.aboutTheCompany") }}</h5>
+          <h5 class="font-bold mb-2">
+            {{ $t("experienceModal.aboutTheCompany") }}
+          </h5>
           <p class="mb-2">{{ currentDetails?.description }}</p>
         </div>
 
         <div class="mb-2">
-          <h5 class="font-bold mb-2">{{ $t("experienceModal.contributions") }}</h5>
+          <h5 class="font-bold mb-2">
+            {{ $t("experienceModal.contributions") }}
+          </h5>
           <ul class="list-disc list-outside pl-4 space-y-1">
             <li v-for="action in currentDetails?.actions" :key="action">
               <span>{{ action }}</span>
@@ -84,7 +88,9 @@
         </div>
 
         <div>
-          <h5 class="font-bold mb-2">{{ $t("experienceModal.mainProjects") }}</h5>
+          <h5 class="font-bold mb-2">
+            {{ $t("experienceModal.mainProjects") }}
+          </h5>
           <ul class="list-disc list-outside pl-4 space-y-4">
             <li
               v-for="project in currentDetails?.main_projects"
@@ -140,4 +146,3 @@ function closeModal() {
   isModalOpen.value = false;
 }
 </script>
-

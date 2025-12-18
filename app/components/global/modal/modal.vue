@@ -52,7 +52,9 @@
               class="px-2 py-1 border dark:border-gray-600 dark:bg-gray-700 rounded-md hover:bg-gray-100 dark:hover:bg-gray-600"
               @click="handleCloseModal"
             >
-              <span class="dark:text-white text-sm font-medium">{{ $t("experienceModal.closeButton") }}</span>
+              <span class="dark:text-white text-sm font-medium">{{
+                $t("experienceModal.closeButton")
+              }}</span>
             </button>
           </div>
         </div>

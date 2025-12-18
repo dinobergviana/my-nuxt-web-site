@@ -2,7 +2,7 @@
   "welcome": "Hi, I'm",
   "role": "Programmer",
   "downloadResumeButton": "Download resume",
-  "seeDetailsButton":"See details",
+  "seeDetailsButton": "See details",
   "experienceModal": {
     "aboutTheCompany": "About the company",
     "contributions": "Contributions",
@@ -113,5 +113,108 @@
   },
   "footer": {
     "backToTop": "Back to the top"
+  },
+  "gcManager": {
+    "title": "How did this project start?",
+    "p1": {
+      "partOne": "A very common practice in church life is that its members gather in small groups for the purpose of relating, sharing experiences, learning about God, among other things. As the church grows, it becomes necessary to manage these groups in some way, and the most common way is to use a spreadsheet."
+    },
+    "p2": {
+      "partOne": "GC Manager is a web application that aims to facilitate the management of",
+      "strongText": "Growth Groups",
+      "partTwo": "of the Angelim Teresina Church and its campuses, allowing the creation, editing, and deletion of groups, user creation, access control via permissions, among other features."
+    },
+    "p3": {
+      "partOne": "One of the main features of this system is the ability to",
+      "strongText": "generate banners",
+      "partTwo": "with the information of a GC."
+    },
+    "p4": {
+      "partOne": "Previously, this work was done using the online tool",
+      "strongTextOne": "Canva",
+      "partTwo": "and all information was entered manually, taking around",
+      "strongTextTwo": "8 minutes",
+      "partThree": "per banner."
+    },
+    "p5": {
+      "partOne": "Later, when I took responsibility for updating GC information and generating banners, I created a script using",
+      "strongTextOne": "JavaScript",
+      "partTwo": "and the time to generate a single banner dropped to",
+      "strongTextTwo": "less than 1 second."
+    },
+    "p6": {
+      "partOne": "This script fetched GC information from a",
+      "strongTextOne": ".csv file",
+      "partTwo": "exported from Google Sheets and generated images using",
+      "strongTextTwo": "node-canvas",
+      "partThree": "and the Node.js File System module."
+    },
+    "p7": {
+      "partOne": "Although this mini project solved part of the problem, it became necessary to create a",
+      "strongText": "complete system",
+      "partTwo": "so that other people could manage this process more easily, preferably via the internet."
+    },
+
+    "technical": {
+      "title": "Technical Information",
+
+      "mvc": {
+        "title": "MVC Architecture (Model-View-Controller)",
+        "description": "Clear separation of responsibilities between business logic, user interface, and data flow control, facilitating maintenance, scalability, and testability."
+      },
+
+      "docker": {
+        "title": "Docker Infrastructure",
+        "description": "Isolated and replicable environment using Docker and docker-compose, ensuring consistency across development, testing, and production environments."
+      },
+
+      "database": {
+        "title": "Database Versioning",
+        "description": "Database structure changes managed through migrations, allowing version history, safe rollbacks, and synchronization between environments."
+      },
+
+      "quality": {
+        "title": "Code Quality and Standards",
+        "description": "Use of Prettier, linting rules, and Conventional Commits to maintain consistent code style, avoid common errors, and improve collaboration."
+      },
+
+      "tests": {
+        "title": "Automated Tests",
+        "description": "Unit and integration tests executed automatically to ensure system reliability and safer deliveries."
+      },
+
+      "auth": {
+        "title": "Authentication and Authorization",
+        "description": "Secure authentication with encrypted passwords, permission-based access control, and protected routes."
+      }
+    },
+
+    "stack": {
+      "title": "Summary of technologies used",
+
+      "frontend": {
+        "title": "Frontend",
+        "description": "Coming soon",
+        "techs": ["React", "HTML", "CSS", "JavaScript"]
+      },
+
+      "backend": {
+        "title": "Backend",
+        "techs": [
+          "Node.js",
+          "Next.js",
+          "Docker",
+          "PostgreSQL",
+          "Jest",
+          "Hosting: Vercel"
+        ]
+      }
+    },
+
+    "extra": {
+      "partOne": "In addition to a well-organized architecture with context separation and test coverage (local and CI), the system already includes features such as",
+      "strongText": "authentication, user creation, migration management, and health checks",
+      "partTwo": "available through specific endpoints."
+    }
   }
 }
