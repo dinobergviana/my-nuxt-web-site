@@ -9,6 +9,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     IconPhArrowLeft: typeof import('~icons/ph/arrow-left')['default']
+    IconPhArrowUp: typeof import('~icons/ph/arrow-up')['default']
     IconPhGithubLogo: typeof import('~icons/ph/github-logo')['default']
     IconPhHeart: typeof import('~icons/ph/heart')['default']
     IconPhLinkedinLogo: typeof import('~icons/ph/linkedin-logo')['default']
