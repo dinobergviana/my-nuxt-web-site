@@ -48,7 +48,7 @@ describe("Hero component", () => {
     expect(links).toHaveLength(3);
 
     expect(links[0]?.attributes("href")).toBe(
-      "https://www.linkedin.com/in/dinobergue-viana-28574218b/",
+      "https://www.linkedin.com/in/dinobergue-viana-de-sousa/",
     );
     expect(links[1]?.attributes("href")).toBe(
       "https://github.com/dinobergviana",

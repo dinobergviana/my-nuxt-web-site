@@ -4,7 +4,7 @@
     id="about"
   >
     <div class="flex items-center justify-center mx-auto py-[80px]">
-      <h2 class="dark:text-white text-5xl md:text-5xl font-bold m-0 p-0">
+      <h2 class="dark:text-gray-200 text-5xl md:text-5xl font-bold m-0 p-0">
         {{ $t("about.title") }}
       </h2>
     </div>
@@ -13,7 +13,7 @@
       class="flex flex-col items-center justify-center md:text-lg md:m-0 p-4"
     >
       <div>
-        <p class="dark:text-white mb-4">
+        <p class="dark:text-gray-200 mb-4">
           {{ $t("about.p1.partOne") }}
           <strong>{{ $t("about.p1.strongText") }}</strong>
           {{ $t("about.p1.partTwo") }}
@@ -21,7 +21,7 @@
       </div>
 
       <div>
-        <p class="dark:text-white mb-4">
+        <p class="dark:text-gray-200 mb-4">
           {{ $t("about.p2.partOne") }}
           <strong>{{ $t("about.p2.strongTextOne") }}</strong>
           {{ $t("about.p2.partTwo") }}
@@ -37,7 +37,7 @@
       </div>
 
       <div class="w-full">
-        <p class="dark:text-white mb-4">
+        <p class="dark:text-gray-200 mb-4">
           {{ $t("about.p3.partOne") }}
           <strong>{{ $t("about.p3.strongTextOne") }}</strong>
           <strong

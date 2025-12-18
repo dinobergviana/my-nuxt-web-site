@@ -21,7 +21,7 @@
           >
             <div class="text-xl font-semibold text-gray-700 dark:text-gray-300">
               <slot name="modal-title">
-                <h2>Título do modal</h2>
+                <h2>{{ $t("experienceModal.modalTitle") }}</h2>
               </slot>
             </div>
 
@@ -39,7 +39,7 @@
             class="flex flex-col p-6 text-gray-700 dark:text-gray-300 max-h-[60vh] overflow-hidden overflow-y-auto"
           >
             <slot name="modal-content">
-              <span>Conteúdo do modal...</span>
+              <span>{{ $t("experienceModal.modalContent") }}</span>
             </slot>
           </div>
 
@@ -52,7 +52,9 @@
               class="px-2 py-1 border dark:border-gray-600 dark:bg-gray-700 rounded-md hover:bg-gray-100 dark:hover:bg-gray-600"
               @click="handleCloseModal"
             >
-              <span class="dark:text-white text-sm font-medium">Fechar</span>
+              <span class="dark:text-white text-sm font-medium">{{
+                $t("experienceModal.closeButton")
+              }}</span>
             </button>
           </div>
         </div>

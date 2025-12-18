@@ -2,6 +2,15 @@
   "welcome": "Olá, eu sou",
   "role": "Programador",
   "downloadResumeButton": "Baixar currículo",
+  "seeDetailsButton": "Ver detalhes",
+  "experienceModal": {
+    "aboutTheCompany": "Sobre a empresa",
+    "contributions": "Contribuições",
+    "mainProjects": "Projetos de impacto",
+    "modalTitle": "Título do modal",
+    "modalContent": "Conteúdo do modal...",
+    "closeButton": "Fechar"
+  },
   "about": {
     "title": "sobre mim",
     "p1": {
@@ -100,6 +109,112 @@
       "status": "Finalizado",
       "repository": "Repositório",
       "details": " Mais informaçÕes"
+    }
+  },
+  "footer": {
+    "backToTop": "Voltar para o topo"
+  },
+  "gcManager": {
+    "title": "Como esse projeto começou?",
+    "p1": {
+      "partOne": "Uma prática muito comum na vida da igreja é que seus membros se reúnam em pequenos grupos com o objetivo de se relacionar, compartilhar experiências, aprender sobre Deus, entre outras coisas. À medida que a igreja cresce, torna-se necessário gerenciar esses grupos de alguma forma, sendo o uso de planilhas a alternativa mais comum."
+    },
+    "p2": {
+      "partOne": "O GC Manager é uma aplicação web que tem como objetivo facilitar a gestão dos",
+      "strongText": "Grupos de Crescimento",
+      "partTwo": "da Igreja Angelim Teresina e seus polos, permitindo a criação, edição e exclusão de grupos, criação de usuários e controle de acesso por permissões."
+    },
+    "p3": {
+      "partOne": "Uma das principais funcionalidades do sistema é a possibilidade de",
+      "strongText": "gerar banners",
+      "partTwo": "com as informações de um GC."
+    },
+    "p4": {
+      "partOne": "Anteriormente, esse trabalho era feito utilizando a ferramenta online",
+      "strongTextOne": "Canva",
+      "partTwo": "com todas as informações inseridas manualmente, levando cerca de",
+      "strongTextTwo": "8 minutos",
+      "partThree": "por banner."
+    },
+    "p5": {
+      "partOne": "Posteriormente, ao assumir a responsabilidade de atualizar as informações dos GCs e gerar os banners, desenvolvi um script em",
+      "strongTextOne": "JavaScript",
+      "partTwo": "e o tempo para gerar um único banner caiu para",
+      "strongTextTwo": "menos de 1 segundo."
+    },
+    "p6": {
+      "partOne": "O script buscava as informações dos GCs a partir de um",
+      "strongTextOne": "arquivo .csv",
+      "partTwo": "exportado do Google Sheets e gerava as imagens utilizando",
+      "strongTextTwo": "node-canvas",
+      "partThree": "em conjunto com o módulo File System do Node.js."
+    },
+    "p7": {
+      "partOne": "Apesar de esse mini projeto resolver parte do problema, tornou-se necessária a criação de um",
+      "strongText": "sistema completo",
+      "partTwo": "para que outras pessoas pudessem gerenciar esse processo de forma simples e, de preferência, pela internet."
+    },
+
+    "technical": {
+      "title": "Informações Técnicas",
+
+      "mvc": {
+        "title": "Arquitetura MVC (Model-View-Controller)",
+        "description": "Separação clara de responsabilidades entre lógica de negócio, interface do usuário e controle do fluxo de dados, facilitando manutenção, escalabilidade e testabilidade."
+      },
+
+      "docker": {
+        "title": "Infraestrutura com Docker",
+        "description": "Ambiente isolado e replicável utilizando Docker e docker-compose, garantindo consistência entre desenvolvimento, testes e produção."
+      },
+
+      "database": {
+        "title": "Versionamento de Banco de Dados",
+        "description": "Gerenciamento das mudanças na estrutura do banco por meio de migrations, permitindo histórico, reversões seguras e sincronização entre ambientes."
+      },
+
+      "quality": {
+        "title": "Qualidade e Padrões de Código",
+        "description": "Uso de Prettier, linting e Conventional Commits para manter consistência, evitar erros comuns e facilitar a colaboração."
+      },
+
+      "tests": {
+        "title": "Testes Automatizados",
+        "description": "Testes unitários e de integração executados automaticamente para garantir confiabilidade e entregas mais seguras."
+      },
+
+      "auth": {
+        "title": "Autenticação e Autorização",
+        "description": "Sistema de autenticação seguro com senhas criptografadas, controle de acesso baseado em permissões e proteção de rotas."
+      }
+    },
+
+    "stack": {
+      "title": "Resumo das tecnologias utilizadas",
+
+      "frontend": {
+        "title": "Frontend",
+        "description": "Em breve",
+        "techs": ["React", "HTML", "CSS", "JavaScript"]
+      },
+
+      "backend": {
+        "title": "Backend",
+        "techs": [
+          "Node.js",
+          "Next.js",
+          "Docker",
+          "PostgreSQL",
+          "Jest",
+          "Hospedagem: Vercel"
+        ]
+      }
+    },
+
+    "extra": {
+      "partOne": "Além de uma arquitetura que favorece organização, separação de contexto e cobertura de testes (local e em CI), o sistema já conta com",
+      "strongText": "autenticação, criação de usuários, gerenciamento de migrations e health checks",
+      "partTwo": "disponíveis por endpoints específicos."
     }
   }
 }
