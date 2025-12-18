@@ -3,6 +3,14 @@
   "role": "Programmer",
   "downloadResumeButton": "Download resume",
   "seeDetailsButton":"See details",
+  "experienceModal": {
+    "aboutTheCompany": "About the company",
+    "contributions": "Contributions",
+    "mainProjects": "Main projects",
+    "modalTitle": "Modal title",
+    "modalContent": "Modal content...",
+    "closeButton": "Close"
+  },
   "about": {
     "title": "about me",
     "p1": {

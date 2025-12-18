@@ -1,7 +1,7 @@
 <template>
   <footer class="px-6 py-2 bg-white dark:bg-gray-800 flex items-center justify-between md:justify-end">
     <div class="w-[100%] md:w-[50%] flex items-center justify-between">
-      <p class="text-center text-gray-500 font-medium">
+      <p class="text-center text-gray-500 font-normal text-md">
         © 2025 Dinobergue Viana
       </p>
   

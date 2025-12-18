@@ -4,7 +4,7 @@
     id="hero"
   >
     <div class="mb-2 text-center">
-      <h1 class="font-bold text-5xl dark:text-white">
+      <h1 class="font-bold text-5xl dark:text-gray-200">
         {{ $t("welcome") }} Dinobergue Viana
       </h1>
     </div>

@@ -4,14 +4,14 @@
   >
     <!-- Left Title -->
     <div class="flex items-center justify-center mx-auto py-[80px]">
-      <h2 class="dark:text-white text-5xl font-bold m-0 px-4">
+      <h2 class="dark:text-gray-200 text-5xl font-bold m-0 px-4">
         {{ $t("experiences.title") }}
       </h2>
     </div>
 
     <!-- Timeline Right Side -->
     <div
-      class="dark:text-white flex flex-col justify-center gap-8 p-4 relative pl-8 border-l border-dashed border-gray-400/30 dark:border-gray-200/30"
+      class="dark:text-gray-200 flex flex-col justify-center gap-8 p-4 relative pl-8 border-l border-dashed border-gray-400/30 dark:border-gray-200/30"
     >
       <div v-for="exp in EXPERIENCES" :key="exp.title" class="relative">
         <!-- Timeline Dot -->
@@ -23,7 +23,7 @@
         <h3 class="font-bold text-lg">{{ exp.company }}</h3>
 
         <!-- Role -->
-        <p class="text-gray-700 font-semibold dark:text-white">
+        <p class="text-gray-700 font-semibold dark:text-gray-200">
           {{ $t(`experiences.${[exp.title]}.role`) }}
         </p>
 
@@ -70,12 +70,12 @@
 
       <template #modal-content>
         <div class="mb-2">
-          <h5 class="font-bold mb-2">Sobre a empresa</h5>
+          <h5 class="font-bold mb-2">{{ $t("experienceModal.aboutTheCompany") }}</h5>
           <p class="mb-2">{{ currentDetails?.description }}</p>
         </div>
 
         <div class="mb-2">
-          <h5 class="font-bold mb-2">Atividades</h5>
+          <h5 class="font-bold mb-2">{{ $t("experienceModal.contributions") }}</h5>
           <ul class="list-disc list-outside pl-4 space-y-1">
             <li v-for="action in currentDetails?.actions" :key="action">
               <span>{{ action }}</span>
@@ -84,7 +84,7 @@
         </div>
 
         <div>
-          <h5 class="font-bold mb-2">Projetos de impacto</h5>
+          <h5 class="font-bold mb-2">{{ $t("experienceModal.mainProjects") }}</h5>
           <ul class="list-disc list-outside pl-4 space-y-4">
             <li
               v-for="project in currentDetails?.main_projects"
