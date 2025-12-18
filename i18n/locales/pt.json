@@ -2,6 +2,7 @@
   "welcome": "Olá, eu sou",
   "role": "Programador",
   "downloadResumeButton": "Baixar currículo",
+  "seeDetailsButton":"Ver detalhes",
   "about": {
     "title": "sobre mim",
     "p1": {

@@ -2,6 +2,7 @@
   "welcome": "Hi, I'm",
   "role": "Programmer",
   "downloadResumeButton": "Download resume",
+  "seeDetailsButton":"See details",
   "about": {
     "title": "about me",
     "p1": {

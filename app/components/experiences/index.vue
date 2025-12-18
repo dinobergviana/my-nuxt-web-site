@@ -36,24 +36,24 @@
         <button
           type="button"
           class="px-2 py-1 bg-blue-100 hover:bg-blue-200 dark:bg-gray-700 dark:border-gray-600 rounded-md dark:hover:bg-gray-600 transition-colors"
-          @click="setExperienceDetails(exp.title)"
+          @click="openExperienceDetails(exp.title as ExperienceKey)"
         >
-          <span class="text-sm font-medium">Ver detalhes</span>
+          <span class="text-sm font-medium">{{ $t("seeDetailsButton") }}</span>
         </button>
       </div>
     </div>
 
     <!-- Modal -->
-    <Modal @close-modal="toggleModal" :is-open="isModalOpen">
+    <Modal @close-modal="closeModal" :is-open="isModalOpen">
       <template #modal-title>
         <div class="md:flex md:items-baseline md:gap-2">
           <span class="mb-2 md:mb-0 block text-md leading-none">
-            {{ currentDetails?.title ?? "" }}
+            {{ currentDetails?.title }}
           </span>
           <span
             class="mb-2 md:mb-0 md:inline block text-sm leading-none text-gray-600 dark:text-gray-400"
           >
-            {{ currentDetails.role }}
+            {{ currentDetails?.role }}
           </span>
           <span
             class="hidden md:inline text-sm leading-none text-gray-700 dark:text-gray-400"
@@ -63,7 +63,7 @@
           <span
             class="md:inline block text-sm leading-none text-gray-600 dark:text-gray-400 font-normal"
           >
-            {{ currentDetails.period }}
+            {{ currentDetails?.period }}
           </span>
         </div>
       </template>
@@ -71,13 +71,13 @@
       <template #modal-content>
         <div class="mb-2">
           <h5 class="font-bold mb-2">Sobre a empresa</h5>
-          <p class="mb-2">{{ currentDetails.description }}</p>
+          <p class="mb-2">{{ currentDetails?.description }}</p>
         </div>
 
         <div class="mb-2">
           <h5 class="font-bold mb-2">Atividades</h5>
           <ul class="list-disc list-outside pl-4 space-y-1">
-            <li v-for="action in currentDetails.actions" :key="action">
+            <li v-for="action in currentDetails?.actions" :key="action">
               <span>{{ action }}</span>
             </li>
           </ul>
@@ -87,7 +87,7 @@
           <h5 class="font-bold mb-2">Projetos de impacto</h5>
           <ul class="list-disc list-outside pl-4 space-y-4">
             <li
-              v-for="project in currentDetails.main_projects"
+              v-for="project in currentDetails?.main_projects"
               :key="project.title"
               class="space-y-1"
             >
@@ -107,24 +107,37 @@
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
+import { useI18n } from "vue-i18n";
+
 import Modal from "../global/modal/modal.vue";
 import { EXPERIENCES } from "./experiences";
-import { EXPERIENCES_DETAILS } from "./experience-details";
+import {
+  EXPERIENCES_DETAILS_PT,
+  EXPERIENCES_DETAILS_EN,
+} from "./experience-details";
+
+const { locale } = useI18n();
+
+type ExperienceKey = keyof typeof EXPERIENCES_DETAILS_EN;
 
 const isModalOpen = ref(false);
-const experienceTitle = ref("");
+const selectedExperience = ref<ExperienceKey | null>(null);
 
 const currentDetails = computed(() => {
-  const key = experienceTitle.value as keyof typeof EXPERIENCES_DETAILS;
-  return EXPERIENCES_DETAILS[key];
+  if (!selectedExperience.value) return null;
+
+  return locale.value === "pt"
+    ? EXPERIENCES_DETAILS_PT[selectedExperience.value]
+    : EXPERIENCES_DETAILS_EN[selectedExperience.value];
 });
 
-function setExperienceDetails(experience: string) {
-  experienceTitle.value = experience;
-  toggleModal();
+function openExperienceDetails(experience: ExperienceKey) {
+  selectedExperience.value = experience;
+  isModalOpen.value = true;
 }
 
-function toggleModal() {
-  isModalOpen.value = !isModalOpen.value;
+function closeModal() {
+  isModalOpen.value = false;
 }
 </script>
+
