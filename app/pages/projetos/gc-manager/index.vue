@@ -43,7 +43,7 @@
           <span>
             {{ $t("gcManager.p4.partOne") }}
           </span>
-          <strong class="text-green-500">{{
+          <strong class="text-green-600">{{
             $t("gcManager.p4.strongTextOne")
           }}</strong>
           <span>
@@ -149,7 +149,9 @@
           Frontend - {{ $t("gcManager.stack.frontend.description") }}
         </h3>
         <ul class="list-disc pl-12">
-          <li class="text-[18px] leading-[1.8rem] mb-[.5rem]"><p>React, HTML, CSS, Javascript.</p></li>
+          <li class="text-[18px] leading-[1.8rem] mb-[.5rem]">
+            <p>React, HTML, CSS, Javascript.</p>
+          </li>
         </ul>
         <h3 class="font-bold text-[20px] my-[1rem]">Backend</h3>
         <ul class="list-disc pl-12">
