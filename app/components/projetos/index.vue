@@ -20,15 +20,15 @@
             href="https://github.com/dinobergviana/gc-manager"
             class="mb-4 text-blue-600 hover:text-sky-500 dark:text-yellow-500 dark:hover:text-yellow-600 ease-in"
             target="_blank"
-            >{{ $t("projects.gc.repository") }}</a
+            >{{ $t("projects.repository") }}</a
           >
           <span class="text-gray-700 dark:text-gray-200"> &bull;</span>
           <nuxt-link
             href="/projetos/gc-manager"
             class="mb-4 text-blue-600 hover:text-sky-500 dark:text-yellow-500 dark:hover:text-yellow-600 ease-in"
           >
-            Mais informações</nuxt-link
-          >
+            {{ $t("projects.details") }}
+          </nuxt-link>
         </p>
       </div>
 
@@ -43,7 +43,7 @@
           class="mb-4 text-blue-600 hover:text-sky-500 dark:text-yellow-500 dark:hover:text-yellow-600 ease-in"
           target="_blank"
         >
-          {{ $t("projects.website.repository") }}</a
+          {{ $t("projects.repository") }}</a
         >
       </div>
     </div>

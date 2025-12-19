@@ -6,215 +6,136 @@
       <h1
         class="mt-4 text-5xl font-bold mb-[25px] text-gray-700 dark:text-gray-200"
       >
-        Gerenciador de GC
+        {{ $t("gcManager.title") }}
       </h1>
 
       <article>
-        <h2 class="text-[25px] font-bold my-2">Como esse projeto nasceu?</h2>
+        <h2 class="text-[25px] font-bold my-2">
+          {{ $t("gcManager.howItStarted") }}
+        </h2>
         <p class="text-[18px]">
-          Uma prática muito comum na vida de Igreja é o fato de seus membros se
-          reunirem em pequenos grupos com a finalidade de se relacionarem,
-          compartilhar experiencias, aprenderem sobre Deus, entre outras coisas.
-          À medida que a Igreja cresce, faz-se necessário gerenciar esses grupos
-          de alguma forma e a mais comum delas é utilizar uma planilha.
+          {{ $t("gcManager.p1.partOne") }}
         </p>
       </article>
       <article class="mt-8">
         <p class="text-[18px]">
-          O Gerenciador de GC é uma aplicação web que visa facilitar o
-          gerenciamento dos Grupos de Crescimento da Igreja Angelim Teresina e
-          seus Campus, possibilitando a criação, edição e exclusão de grupos,
-          criação de usuários, controle de acesso via permições, etc.
+          <span>{{ $t("gcManager.p2.partOne") }}</span>
+          <strong>{{ $t("gcManager.p2.strongText") }}</strong>
+          <span>{{ $t("gcManager.p2.partTwo") }}</span>
         </p>
       </article>
       <article class="mt-8">
         <p class="text-[18px]">
-          Uma das principais funcionalidades desse sistema é a possibilidade de
-          gerar banners com as informações de um GC. Há não muito tempo atrás
-          esse trabalho era feito utilizando a ferramenta online
+          {{ $t("gcManager.p3.partOne") }}
           <a
             href="https://www.canva.com"
             class="mb-4 text-blue-600 hover:text-sky-500 dark:text-yellow-500 dark:hover:text-yellow-600 ease-in"
             target="_blank"
             >Canva</a
           >
-          e todas as informações eram inseridas manualmente, o que levava cerca
-          de 8 minutos para ficar pronto. O trabalho era: conferir os dados do
-          GC em uma planilha (previamente preenchida), adicionar as informações
-          no template e baixar o banner.
+          <strong class="text-red-500">{{
+            $t("gcManager.p3.strongText")
+          }}</strong>
         </p>
       </article>
       <article class="mt-8">
         <p class="text-[18px]">
-          Posteriormente, quando assumi a responsabilidade por atualizar as
-          informações dos GC's e gerar os banners, criei um script utilizando
-          Javascript e o tempo para gerar um único banner caiu para menos de 1
-          segundo! O script buscava as informações do GC em um arquivo .csv
-          exportado a partir de uma planilha do Google Sheets e gerava a imagem
-          utilizando a lib
+          <span>
+            {{ $t("gcManager.p4.partOne") }}
+          </span>
+          <strong class="text-green-600">{{
+            $t("gcManager.p4.strongTextOne")
+          }}</strong>
+          <span>
+            {{ $t("gcManager.p4.partTwo") }}
+          </span>
+          <span class="italic">{{ $t("gcManager.p4.strongTextTwo") }}</span>
+          <span>
+            {{ $t("gcManager.p4.partThree") }}
+          </span>
           <a
             href="https://www.npmjs.com/package/canvas/v/2.0.0-alpha.7"
             class="mb-4 text-blue-600 hover:text-sky-500 dark:text-yellow-500 dark:hover:text-yellow-600 ease-in"
             target="_blank"
             >node-canvas</a
           >
-          junto o módulo File system do Node.js. Esse mini projeto reduziu
-          significativamente o tempo gasto quando precisava gerar banners em
-          massa e foi utilizado durante muito tempo.
+          <span>
+            {{ $t("gcManager.p4.partFour") }}
+          </span>
         </p>
       </article>
       <article class="mt-8">
         <p class="text-[18px]">
-          Isso resolveu apenas uma parte do problema. Agora, é necessário que
-          outras pessoas realizem esse gerenciamento, daí a necessidade de um
-          sistema que facilite esse trabalho e que esteja disponível, de
-          preferencia na internet.
+          {{ $t("gcManager.p5.partOne") }}
         </p>
       </article>
 
       <article>
-        <h2 class="text-[25px] font-bold mt-8 mb-2">Informações técnicas</h2>
+        <h2 class="text-[25px] font-bold mt-8 mb-2">
+          {{ $t("gcManager.technical.title") }}
+        </h2>
         <h3 class="font-bold text-[20px] my-[1rem]">
-          🧱 Arquitetura MVC (Model-View-Controller)
+          🧱 {{ $t("gcManager.technical.mvc.title") }}
         </h3>
         <ul class="list-disc pl-12">
           <li class="text-[18px] leading-[1.8rem] mb-[.5rem]">
             <p>
-              Separação clara entre responsabilidades: lógica de negócio
-              (Model), interface com o usuário (View) e controle do fluxo de
-              dados (Controller).
-            </p>
-          </li>
-          <li class="text-[18px] leading-[1.8rem] mb-[.5rem]">
-            <p>
-              Facilita a manutenção, escalabilidade e testabilidade do sistema.
-            </p>
-          </li>
-          <li class="text-[18px] leading-[1.8rem] mb-[.5rem]">
-            <p>
-              Torna o código mais organizado e fácil de entender, ideal para
-              projetos que possam crescer ou ter múltiplos desenvolvedores
-              envolvidos.
+              {{ $t("gcManager.technical.mvc.description") }}
             </p>
           </li>
         </ul>
 
         <h3 class="font-bold text-[20px] my-[1rem]">
-          📦 Infraestrutura com Docker
+          📦 {{ $t("gcManager.technical.docker.title") }}
         </h3>
         <ul class="list-disc pl-12">
           <li class="text-[18px] leading-[1.8rem] mb-[.5rem]">
             <p>
-              Ambiente isolado e replicável: o sistema pode ser executado em
-              qualquer máquina com Docker, garantindo que todos os
-              desenvolvedores e ambientes usem a mesma configuração.
-            </p>
-          </li>
-          <li class="text-[18px] leading-[1.8rem] mb-[.5rem]">
-            <p>
-              Facilidade na configuração de dependências, como banco de dados e
-              serviços auxiliares, usando docker-compose.
-            </p>
-          </li>
-          <li class="text-[18px] leading-[1.8rem] mb-[.5rem]">
-            <p>
-              Preparado para deployment em containers, facilitando a transição
-              entre desenvolvimento, testes e produção.
+              {{ $t("gcManager.technical.docker.description") }}
             </p>
           </li>
         </ul>
 
         <h3 class="font-bold text-[20px] my-[1rem]">
-          🗃️ Versionamento do Banco de Dados
+          🗃️ {{ $t("gcManager.technical.database.title") }}
         </h3>
         <ul class="list-disc pl-12">
           <li class="text-[18px] leading-[1.8rem] mb-[.5rem]">
             <p>
-              Gerenciamento de alterações na estrutura do banco via migrations,
-              mantendo o histórico e controle total sobre as modificações.
-            </p>
-          </li>
-          <li class="text-[18px] leading-[1.8rem] mb-[.5rem]">
-            <p>
-              Sincronização automática entre ambientes (desenvolvimento,
-              homologação e produção), evitando conflitos ou inconsistências.
-            </p>
-          </li>
-          <li class="text-[18px] leading-[1.8rem] mb-[.5rem]">
-            <p>
-              Facilidade para reverter alterações, caso necessário, com
-              segurança e previsibilidade.
+              {{ $t("gcManager.technical.database.description") }}
             </p>
           </li>
         </ul>
 
         <h3 class="font-bold text-[20px] my-[1rem]">
-          🧹 Qualidade e Padrões de Código
+          🧹 {{ $t("gcManager.technical.quality.title") }}
         </h3>
         <ul class="list-disc pl-12">
           <li class="text-[18px] leading-[1.8rem] mb-[.5rem]">
             <p>
-              Uso do Prettier para garantir uma formatação consistente e
-              automatizada do código.
-            </p>
-          </li>
-          <li class="text-[18px] leading-[1.8rem] mb-[.5rem]">
-            <p>
-              Linting com regras definidas, ajudando a evitar erros comuns e a
-              seguir boas práticas de desenvolvimento.
-            </p>
-          </li>
-          <li class="text-[18px] leading-[1.8rem] mb-[.5rem]">
-            <p>
-              Commits padronizados com Conventional Commits, facilitando a
-              leitura do histórico de mudanças e integrando com ferramentas de
-              versionamento e automações (como geração de changelog).
-            </p>
-          </li>
-        </ul>
-
-        <h3 class="font-bold text-[20px] my-[1rem]">✅ Testes Automatizados</h3>
-        <ul class="list-disc pl-12">
-          <li class="text-[18px] leading-[1.8rem] mb-[.5rem]">
-            <p>
-              Cobertura de testes unitários para garantir que cada parte isolada
-              do sistema funcione como esperado.
-            </p>
-          </li>
-          <li class="text-[18px] leading-[1.8rem] mb-[.5rem]">
-            <p>
-              Testes de integração para validar o comportamento entre os módulos
-              e serviços do sistema.
-            </p>
-          </li>
-          <li class="text-[18px] leading-[1.8rem] mb-[.5rem]">
-            <p>
-              Execução automatizada dos testes como parte do processo de
-              desenvolvimento, contribuindo para entregas mais seguras e ágeis.
+              {{ $t("gcManager.technical.quality.description") }}
             </p>
           </li>
         </ul>
 
         <h3 class="font-bold text-[20px] my-[1rem]">
-          🔐 Autenticação e Autorização
+          ✅ {{ $t("gcManager.technical.tests.title") }}
         </h3>
         <ul class="list-disc pl-12">
           <li class="text-[18px] leading-[1.8rem] mb-[.5rem]">
             <p>
-              Sistema de autenticação seguro com armazenamento criptografado de
-              senhas.
+              {{ $t("gcManager.technical.tests.description") }}
             </p>
           </li>
+        </ul>
+
+        <h3 class="font-bold text-[20px] my-[1rem]">
+          🔐 {{ $t("gcManager.technical.auth.title") }}
+        </h3>
+        <ul class="list-disc pl-12">
           <li class="text-[18px] leading-[1.8rem] mb-[.5rem]">
             <p>
-              Controle de acesso baseado em permissões, permitindo que
-              diferentes perfis de usuários tenham acessos diferenciados.
-            </p>
-          </li>
-          <li class="text-[18px] leading-[1.8rem] mb-[.5rem]">
-            <p>
-              Proteção de rotas para garantir que apenas usuários autorizados
-              acessem determinadas partes do sistema.
+              {{ $t("gcManager.technical.auth.description") }}
             </p>
           </li>
         </ul>
@@ -222,39 +143,24 @@
 
       <article>
         <h2 class="text-[25px] font-bold mt-8 mb-2">
-          Resumo das tecnologias utilizadas
+          {{ $t("gcManager.stack.title") }}
         </h2>
-        <h3 class="font-bold text-[20px] my-[1rem]">Frontend - Em breve</h3>
+        <h3 class="font-bold text-[20px] my-[1rem]">
+          Frontend - {{ $t("gcManager.stack.frontend.description") }}
+        </h3>
         <ul class="list-disc pl-12">
-          <li class="text-[18px] leading-[1.8rem] mb-[.5rem]"><p>React.</p></li>
           <li class="text-[18px] leading-[1.8rem] mb-[.5rem]">
-            <p>Html, CSS, Javascript.</p>
+            <p>React, HTML, CSS, Javascript.</p>
           </li>
         </ul>
         <h3 class="font-bold text-[20px] my-[1rem]">Backend</h3>
         <ul class="list-disc pl-12">
           <li class="text-[18px] leading-[1.8rem] mb-[.5rem]">
-            <p>
-              Hospegagem:
-              <a
-                href="https://vercel.com/"
-                target="_blank"
-                class="mb-4 text-blue-600 hover:text-sky-500 dark:text-yellow-500 dark:hover:text-yellow-600 ease-in"
-                >Vercel;</a
-              >
-            </p>
+            <p>Node, Next, Docker, Postgres, Jest.</p>
           </li>
-          <li class="text-[18px] leading-[1.8rem] mb-[.5rem]">
-            <p>Node, Next, Docker, Postgres.</p>
-          </li>
-          <li class="text-[18px] leading-[1.8rem] mb-[.5rem]"><p>Jest.</p></li>
         </ul>
         <p class="text-[18px] leading-[1.8rem] mb-[2rem]">
-          Além de utilizar uma estrutura que possibilita organização de código,
-          separação de contextos, cobertura de testes (local e nas actions), o
-          sistema já conta com autenticação, criação de usuários, possibilidade
-          de checar e rodar migrações pendentes via endpoint /migrations,
-          verificação da saúde do via enpoint /status.
+          {{ $t("gcManager.extra.partOne") }}
         </p>
       </article>
     </div>
