@@ -96,63 +96,48 @@
   },
   "projects": {
     "title": "projetos",
+    "repository": "Repositório",
+    "details": " Mais informações",
     "gc": {
       "title": "GC Manager",
       "description": "Sistema para gerenciamento de pequenos grupos.",
-      "status": "Em construção - o link estará disponível em breve",
-      "repository": "Repositório",
-      "details": " Mais informações"
+      "status": "Em construção - o link estará disponível em breve"
     },
     "website": {
       "title": "Meu site",
       "description": "Site pessoal para compartilhar informações sobre minha carreira e projetos.",
-      "status": "Finalizado",
-      "repository": "Repositório",
-      "details": " Mais informaçÕes"
+      "status": "Finalizado"
     }
   },
   "footer": {
     "backToTop": "Voltar para o topo"
   },
   "gcManager": {
-    "title": "Como esse projeto começou?",
+    "title": "Gerenciador de GC",
+    "howItStarted": "Como esse projeto começou?",
     "p1": {
       "partOne": "Uma prática muito comum na vida da igreja é que seus membros se reúnam em pequenos grupos com o objetivo de se relacionar, compartilhar experiências, aprender sobre Deus, entre outras coisas. À medida que a igreja cresce, torna-se necessário gerenciar esses grupos de alguma forma, sendo o uso de planilhas a alternativa mais comum."
     },
     "p2": {
       "partOne": "O GC Manager é uma aplicação web que tem como objetivo facilitar a gestão dos",
-      "strongText": "Grupos de Crescimento",
+      "strongText": " Grupos de Crescimento ",
       "partTwo": "da Igreja Angelim Teresina e seus polos, permitindo a criação, edição e exclusão de grupos, criação de usuários e controle de acesso por permissões."
     },
     "p3": {
-      "partOne": "Uma das principais funcionalidades do sistema é a possibilidade de",
-      "strongText": "gerar banners",
-      "partTwo": "com as informações de um GC."
+      "partOne": " Uma das principais funcionalidades do sistema é a possibilidade de gerar banners com as informações de um GC. Anteriormente, esse trabalho era feito utilizando a ferramenta online e",
+      "strongText": " todas as informações eram inseridas manualmente, demorando cerca de 8 minutos para finalizar um único banner."
     },
     "p4": {
-      "partOne": "Anteriormente, esse trabalho era feito utilizando a ferramenta online",
-      "strongTextOne": "Canva",
-      "partTwo": "com todas as informações inseridas manualmente, levando cerca de",
-      "strongTextTwo": "8 minutos",
-      "partThree": "por banner."
+      "partOne": "Posteriormente, ao assumir a responsabilidade de atualizar as informações dos GCs e gerar os banners, desenvolvi um script em JavaScript e ",
+      "strongTextOne": " o tempo para gerar um único banner caiu para menos de 1 segundo!",
+      "partTwo": " O script buscava as informações dos GCs a partir de um arquivo",
+      "strongTextTwo": " .csv",
+      "partThree": " exportado do Google Sheets e gerava as imagens utilizando ",
+      "strongTextThree": "node-canvas",
+      "partFour": " em conjunto com o módulo File System do Node.js."
     },
     "p5": {
-      "partOne": "Posteriormente, ao assumir a responsabilidade de atualizar as informações dos GCs e gerar os banners, desenvolvi um script em",
-      "strongTextOne": "JavaScript",
-      "partTwo": "e o tempo para gerar um único banner caiu para",
-      "strongTextTwo": "menos de 1 segundo."
-    },
-    "p6": {
-      "partOne": "O script buscava as informações dos GCs a partir de um",
-      "strongTextOne": "arquivo .csv",
-      "partTwo": "exportado do Google Sheets e gerava as imagens utilizando",
-      "strongTextTwo": "node-canvas",
-      "partThree": "em conjunto com o módulo File System do Node.js."
-    },
-    "p7": {
-      "partOne": "Apesar de esse mini projeto resolver parte do problema, tornou-se necessária a criação de um",
-      "strongText": "sistema completo",
-      "partTwo": "para que outras pessoas pudessem gerenciar esse processo de forma simples e, de preferência, pela internet."
+      "partOne": "Isso resolveu apenas uma parte do problema. Agora, é necessário que outras pessoas realizem esse gerenciamento, daí a necessidade de um sistema que facilite esse trabalho e que esteja disponível na internet."
     },
 
     "technical": {
@@ -191,7 +176,7 @@
 
     "stack": {
       "title": "Resumo das tecnologias utilizadas",
-
+      "host": "Hospedagem",
       "frontend": {
         "title": "Frontend",
         "description": "Em breve",
@@ -212,9 +197,7 @@
     },
 
     "extra": {
-      "partOne": "Além de uma arquitetura que favorece organização, separação de contexto e cobertura de testes (local e em CI), o sistema já conta com",
-      "strongText": "autenticação, criação de usuários, gerenciamento de migrations e health checks",
-      "partTwo": "disponíveis por endpoints específicos."
+      "partOne": "Além de uma arquitetura que favorece organização, separação de contexto e cobertura de testes (local e em CI), o sistema já conta com autenticação, autorização, criação de usuários, gerenciamento de migrations e health checks disponíveis."
     }
   }
 }
