@@ -18,7 +18,7 @@
             :aria-describedby="tooltipId"
             href="https://www.linkedin.com/in/dinobergue-viana-de-sousa/"
             target="_blank"
-            class="media-link"
+            class="opacity-70 hover:opacity-100"
           >
             <IconPhLinkedinLogo
               class="w-6 h-6 text-gray-600 dark:text-gray-300"
@@ -33,7 +33,7 @@
             :aria-describedby="tooltipId"
             href="https://github.com/dinobergviana"
             target="_blank"
-            class="media-link"
+            class="opacity-70 hover:opacity-100"
           >
             <IconPhGithubLogo
               class="w-6 h-6 text-gray-600 dark:text-gray-300"
@@ -48,7 +48,7 @@
             :aria-describedby="tooltipId"
             href="https://api.whatsapp.com/send?phone=5586998055574"
             target="_blank"
-            class="media-link"
+            class="opacity-70 hover:opacity-100"
           >
             <IconPhWhatsappLogo
               class="w-6 h-6 text-gray-600 dark:text-gray-300"
@@ -66,14 +66,3 @@
 import Tooltip from "../global/tooltip/tooltip.vue";
 import DownloadResumeButton from "../buttons/DownloadResumeButton.vue";
 </script>
-
-<style scoped>
-.media-link {
-  text-decoration: none;
-  opacity: 0.7;
-}
-
-.media-link:hover {
-  opacity: 1;
-}
-</style>
