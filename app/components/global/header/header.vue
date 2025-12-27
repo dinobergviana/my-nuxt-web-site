@@ -5,7 +5,7 @@
     <div class="flex items-center justify-between gap-2">
       <div>
         <button
-          v-if="isGcManagerPage"
+          v-if="hasBackButton"
           class="p-1 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 text-gray-800 dark:text-gray-200"
           type="button"
           @click="goBack"
@@ -57,11 +57,11 @@ const selectedLang = ref(locale.value);
 const router = useRouter();
 const route = useRoute();
 
-const isGcManagerPage = computed(() => {
-  return route.path.includes("gc-manager");
+const hasBackButton = computed(() => {
+  return route.meta.hasBackButton;
 });
 
 const goBack = () => {
-  router.back();
+  router.push(route.meta.backButtonPath as string);
 };
 </script>

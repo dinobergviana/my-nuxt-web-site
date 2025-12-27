@@ -14,4 +14,9 @@ import Footer from "@/components/footer";
 import Experiences from "@/components/experiences";
 import Formation from "@/components/formacao";
 import Projetos from "@/components/projetos";
+
+definePageMeta({
+  hasBackToTopButton: true,
+  backToTopPath: "#hero",
+});
 </script>
