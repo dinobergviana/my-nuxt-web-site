@@ -9,7 +9,7 @@
       aria-haspopup="menu"
       :aria-expanded="isOpen"
     >
-      ⚙️
+      <IconPhDotsThreeVertical class="text-gray-600 dark:text-gray-300" />
     </button>
 
     <!-- Dropdown -->
