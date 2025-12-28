@@ -3,62 +3,66 @@
     class="bg-white dark:bg-gray-900 relative flex flex-col items-center justify-center h-screen px-4 transition-colors duration-300 ease-in-out"
     id="hero"
   >
-    <div class="mb-2 text-center">
+    <FadeInSection>
       <h1 class="font-bold text-5xl dark:text-gray-200">
         {{ $t("welcome") }} Dinobergue Viana
       </h1>
-    </div>
-    <div class="mb-2 text-gray-600 dark:text-gray-300">
-      <span> {{ $t("role") }} </span>
-    </div>
-    <div class="flex items-center justify-center gap-2">
-      <Tooltip text="LinkedIn" position="bottom">
-        <template #content="{ tooltipId }">
-          <a
-            :aria-describedby="tooltipId"
-            href="https://www.linkedin.com/in/dinobergue-viana-de-sousa/"
-            target="_blank"
-            class="opacity-70 hover:opacity-100"
-          >
-            <IconPhLinkedinLogo
-              class="w-6 h-6 text-gray-600 dark:text-gray-300"
-            />
-          </a>
-        </template>
-      </Tooltip>
+    </FadeInSection>
 
-      <Tooltip text="Github" position="bottom">
-        <template #content="{ tooltipId }">
-          <a
-            :aria-describedby="tooltipId"
-            href="https://github.com/dinobergviana"
-            target="_blank"
-            class="opacity-70 hover:opacity-100"
-          >
-            <IconPhGithubLogo
-              class="w-6 h-6 text-gray-600 dark:text-gray-300"
-            />
-          </a>
-        </template>
-      </Tooltip>
+    <FadeInSection>
+      <div class="mb-2 text-gray-600 dark:text-gray-300">
+        <span> {{ $t("role") }} </span>
+      </div>
+    </FadeInSection>
 
-      <Tooltip text="Whatsapp" position="bottom">
-        <template #content="{ tooltipId }">
-          <a
-            :aria-describedby="tooltipId"
-            href="https://api.whatsapp.com/send?phone=5586998055574"
-            target="_blank"
-            class="opacity-70 hover:opacity-100"
-          >
-            <IconPhWhatsappLogo
+    <FadeInSection>
+      <div class="flex items-center justify-center gap-2">
+        <Tooltip text="LinkedIn" position="bottom">
+          <template #content="{ tooltipId }">
+              <a
+              :aria-describedby="tooltipId"
+              href="https://www.linkedin.com/in/dinobergue-viana-de-sousa/"
+              target="_blank"
+              class="opacity-70 hover:opacity-100"
+              >
+              <IconPhLinkedinLogo
               class="w-6 h-6 text-gray-600 dark:text-gray-300"
-            />
-          </a>
-        </template>
-      </Tooltip>
-    </div>
+              />
+            </a>
+          </template>
+        </Tooltip>
 
-    <DownloadResumeButton />
+        <Tooltip text="Github" position="bottom">
+          <template #content="{ tooltipId }">
+            <a
+              :aria-describedby="tooltipId"
+              href="https://github.com/dinobergviana"
+              target="_blank"
+              class="opacity-70 hover:opacity-100"
+              >
+              <IconPhGithubLogo class="w-6 h-6 text-gray-600 dark:text-gray-300"/>
+            </a>
+          </template>
+        </Tooltip>
+        
+        <Tooltip text="Whatsapp" position="bottom">
+          <template #content="{ tooltipId }">
+            <a
+              :aria-describedby="tooltipId"
+              href="https://api.whatsapp.com/send?phone=5586998055574"
+              target="_blank"
+              class="opacity-70 hover:opacity-100"
+            >
+              <IconPhWhatsappLogo
+                class="w-6 h-6 text-gray-600 dark:text-gray-300"
+              />
+            </a>
+          </template>
+        </Tooltip>
+      </div>
+      <DownloadResumeButton />
+    </FadeInSection>
+
   </section>
 </template>
 
