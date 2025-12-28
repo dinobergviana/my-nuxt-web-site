@@ -1,8 +1,8 @@
 <template>
   <header
-    class="w-full mx-auto fixed py-2 px-4 bg-gray-100 dark:bg-gray-900 text-white transition-colors duration-300 ease-in-out z-50 rounded-b-lg shadow-sm border-b dark:border-none"
+    class="fixed top-2 left-1/2 -translate-x-1/2 w-[calc(100%-1rem)] sm:w-[calc(100%-1.5rem)] md:w-full max-w-2xl py-3 px-4 bg-gray-100 dark:bg-gray-900 z-50 rounded-full shadow-md border dark:border-gray-700 md:mx-"
   >
-    <div class="flex items-center justify-between gap-2">
+    <div class="w-full flex items-center justify-between gap-2">
       <div>
         <button
           v-if="isGcManagerPage"
@@ -21,7 +21,7 @@
           type="button"
           @click="toggleTheme"
         >
-          <IconPhMoon weight="bold" />
+          <IconPhSun weight="bold" />
         </button>
         <button
           v-else
@@ -29,7 +29,7 @@
           type="button"
           @click="toggleTheme"
         >
-          <IconPhSun weight="bold" />
+          <IconPhMoon weight="bold" />
         </button>
 
         <select
