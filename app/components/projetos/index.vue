@@ -24,7 +24,7 @@
           >
           <span class="text-gray-700 dark:text-gray-200"> &bull;</span>
           <nuxt-link
-            href="/projetos/gc-manager"
+            href="/projects/gc-manager"
             class="mb-4 text-blue-600 hover:text-sky-500 dark:text-yellow-500 dark:hover:text-yellow-600 ease-in"
           >
             {{ $t("projects.details") }}

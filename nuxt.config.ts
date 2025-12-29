@@ -16,7 +16,7 @@ export default defineNuxtConfig({
     langDir: "locales",
     strategy: "no_prefix",
   },
-  css: ["~/assets/css/tailwind.css", "@/assets/css/main.css"],
+  css: ["~/assets/css/tailwind.css", "~/assets/css/main.css"],
   vite: {
     plugins: [
       Components({

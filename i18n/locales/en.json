@@ -1,4 +1,25 @@
 {
+  "header": {
+    "nav": {
+      "home": "Home",
+      "experiences": "Experiences",
+      "projects": "Projects",
+      "education": "Education",
+      "me": "Me"
+    }
+  },
+  "dropdownMenu": {
+    "theme": {
+      "title": "Theme",
+      "light": "Light",
+      "dark": "Dark"
+    },
+    "lang": {
+      "title": "Lang",
+      "pt": "Portuguese",
+      "en": "English"
+    }
+  },
   "welcome": "Hi, I'm",
   "role": "Programmer",
   "downloadResumeButton": "Download resume",

@@ -1,3 +1,7 @@
+:root {
+  --header-height: 44px;
+}
+
 body {
   background-color: #ffffff;
 }
@@ -18,3 +22,10 @@ body {
   @apply bg-gray-100 dark:bg-gray-800 font-medium;
 }
 
+.h-header {
+  height: var(--header-height);
+}
+
+.pt-header {
+  padding-top: calc(var(--header-height) + 1rem);
+}

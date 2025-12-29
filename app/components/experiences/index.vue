@@ -116,7 +116,7 @@ import { ref, computed } from "vue";
 import { useI18n } from "vue-i18n";
 
 import Modal from "../global/modal/modal.vue";
-import { EXPERIENCES } from "./experiences";
+import { EXPERIENCES } from "./experiences-data";
 import {
   EXPERIENCES_DETAILS_PT,
   EXPERIENCES_DETAILS_EN,
