@@ -4,6 +4,7 @@
   >
     <div class="max-w-4xl mx-auto px-4 text-justify">
       <h1
+        id="gc-manager"
         class="mt-4 text-5xl font-bold mb-[25px] text-gray-700 dark:text-gray-200"
       >
         {{ $t("gcManager.title") }}
@@ -168,3 +169,12 @@
     <Footer />
   </section>
 </template>
+
+<script setup lang="ts">
+definePageMeta({
+  hasBackButton: true,
+  backButtonPath: "/",
+  hasBackToTopButton: true,
+  backToTopPath: "#gc-manager",
+});
+</script>

@@ -12,7 +12,8 @@
       </p>
 
       <NuxtLink
-        href="#hero"
+        v-if="hasBackToTopButton"
+        :href="backToTopPath"
         aria-label="Voltar para o topo"
         class="inline-block py-2 rounded-lg font-normal text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-500"
       >
@@ -24,3 +25,15 @@
     </div>
   </footer>
 </template>
+
+<script lang="ts" setup>
+const route = useRoute();
+
+const hasBackToTopButton = computed(() => {
+  return route.meta.hasBackToTopButton;
+});
+
+const backToTopPath = computed(() => {
+  return route.meta.backToTopPath as string;
+});
+</script>
