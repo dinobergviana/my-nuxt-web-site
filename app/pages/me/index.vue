@@ -1,3 +1,3 @@
 <template>
-  <Hero />
+  <h1>Sobre mim</h1>
 </template>

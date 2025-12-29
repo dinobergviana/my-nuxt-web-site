@@ -1,7 +1,29 @@
 {
+  "header": {
+    "nav": {
+      "home": "Home",
+      "experiences": "Experiências",
+      "projects": "Projetos",
+      "education": "Formação",
+      "me": "Eu"
+    }
+  },
+  "dropdownMenu": {
+    "theme": {
+      "title": "Tema",
+      "light": "Claro",
+      "dark": "Escuro"
+    },
+    "lang": {
+      "title": "Idioma",
+      "pt": "Português",
+      "en": "Inglês"
+    }
+  },
   "welcome": "Olá, eu sou",
   "role": "Programador",
   "downloadResumeButton": "Baixar currículo",
+  "availableForNewProjects": "Disponível para novos projetos",
   "seeDetailsButton": "Ver detalhes",
   "experienceModal": {
     "aboutTheCompany": "Sobre a empresa",
