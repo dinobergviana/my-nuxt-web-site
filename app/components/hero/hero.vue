@@ -20,7 +20,7 @@
             :aria-describedby="tooltipId"
             href="https://www.linkedin.com/in/dinobergue-viana-de-sousa/"
             target="_blank"
-            class="opacity-70 hover:opacity-100"
+            class="media-link opacity-70 hover:opacity-100"
           >
             <IconPhLinkedinLogo
               class="w-6 h-6 text-gray-600 dark:text-gray-300"
@@ -35,7 +35,7 @@
             :aria-describedby="tooltipId"
             href="https://github.com/dinobergviana"
             target="_blank"
-            class="opacity-70 hover:opacity-100"
+            class="media-link opacity-70 hover:opacity-100"
           >
             <IconPhGithubLogo
               class="w-6 h-6 text-gray-600 dark:text-gray-300"
@@ -50,7 +50,7 @@
             :aria-describedby="tooltipId"
             href="https://api.whatsapp.com/send?phone=5586998055574"
             target="_blank"
-            class="opacity-70 hover:opacity-100"
+            class="media-link opacity-70 hover:opacity-100"
           >
             <IconPhWhatsappLogo
               class="w-6 h-6 text-gray-600 dark:text-gray-300"
