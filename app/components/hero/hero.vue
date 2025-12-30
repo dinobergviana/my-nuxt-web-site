@@ -9,11 +9,11 @@
       </h1>
     </div>
 
-    <div class="mb-2 text-gray-600 dark:text-gray-300">
+    <div class="mb-6 md:mb-2 text-gray-600 dark:text-gray-300">
       <span> {{ $t("role") }} </span>
     </div>
 
-    <div class="flex items-center justify-center gap-2">
+    <div class="flex items-center justify-center gap-2 mb-2 md:mb-0">
       <Tooltip text="LinkedIn" position="bottom">
         <template #content="{ tooltipId }">
           <a
@@ -52,7 +52,7 @@
         <template #content="{ tooltipId }">
           <a
             :aria-describedby="tooltipId"
-            aria-label="Contato via Whatsapp (abre em nova aba)"
+            aria-label="Contato via (abre em nova aba)"
             href="https://api.whatsapp.com/send?phone=5586998055574"
             target="_blank"
             class="media-link opacity-70 hover:opacity-100"

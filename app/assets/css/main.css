@@ -29,14 +29,3 @@ body {
 .h-header {
   height: var(--header-height);
 }
-
-.pt-header {
-  padding-top: calc(var(--header-height) + 1rem);
-}
-
-@layer components {
-  .container-default {
-    width: min(90vw, 800px);
-    margin: 0 auto;
-  }
-}

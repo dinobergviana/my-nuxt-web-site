@@ -1,8 +1,16 @@
 <template>
   <div class="min-h-screen bg-white dark:bg-gray-900">
     <Header />
+
     <main
-      class="container-default pt-header flex flex-col"
+      class="
+        mx-auto
+        w-[90vw]
+        max-w-[800px]
+        pt-[calc(44px+1rem)]
+        flex
+        flex-col
+      "
     >
       <slot />
     </main>
@@ -12,3 +20,4 @@
 <script setup lang="ts">
 import Header from '@/components/global/header/header.vue'
 </script>
+
