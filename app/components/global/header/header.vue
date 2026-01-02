@@ -10,7 +10,7 @@
           <li>
             <NuxtLink
               to="/"
-              class="text-sm text-gray-400 dark:text-gray-400"
+              class="text-sm text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-white transition-colors duration-200 ease-out"
               active-class="text-gray-600 dark:text-white"
               >{{ $t("header.nav.home") }}</NuxtLink
             >
@@ -18,7 +18,7 @@
           <li>
             <NuxtLink
               to="/experiences"
-              class="text-sm text-gray-400 dark:text-gray-400"
+              class="text-sm text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-white transition-colors duration-200 ease-out"
               active-class="text-gray-600 dark:text-white"
               >{{ $t("header.nav.experiences") }}</NuxtLink
             >
@@ -26,7 +26,7 @@
           <li>
             <NuxtLink
               to="/projects"
-              class="text-sm text-gray-400 dark:text-gray-400"
+              class="text-sm text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-white transition-colors duration-200 ease-out"
               active-class="text-gray-600 dark:text-white"
               >{{ $t("header.nav.projects") }}</NuxtLink
             >
@@ -34,7 +34,7 @@
           <li>
             <NuxtLink
               to="/education"
-              class="text-sm text-gray-400 dark:text-gray-400"
+              class="text-sm text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-white transition-colors duration-200 ease-out"
               active-class="text-gray-600 dark:text-white"
               >{{ $t("header.nav.education") }}</NuxtLink
             >
@@ -42,7 +42,7 @@
           <li>
             <NuxtLink
               to="/me"
-              class="text-sm text-gray-400 dark:text-gray-400"
+              class="text-sm text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-white transition-colors duration-200 ease-out"
               active-class="text-gray-600 dark:text-white"
               >{{ $t("header.nav.me") }}</NuxtLink
             >
