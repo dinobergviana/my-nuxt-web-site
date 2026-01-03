@@ -1,6 +1,6 @@
 <template>
-  <section class="mt-4">
-    <ExperiencesNavBar />
+  <section class="mt-5">
+    <ExperiencesNavBar class="mb-4" />
     <NuxtPage />
   </section>
 </template>
