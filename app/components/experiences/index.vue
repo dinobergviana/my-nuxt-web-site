@@ -20,7 +20,7 @@
         ></span>
 
         <!-- Company -->
-        <h3 class="font-bold text-lg">{{ exp.company }}</h3>
+        <h3 class="font-bold text-lg">{{ exp.company_name }}</h3>
 
         <!-- Role -->
         <p class="text-gray-700 font-semibold dark:text-gray-200">
