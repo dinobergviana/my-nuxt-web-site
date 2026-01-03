@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="h-[calc(100dvh-(70px+1rem))] px-4">
     <div class="mb-4">
       <span class="block text-sm font-medium text-gray-600 dark:text-gray-200 mb-1">Cargo</span>
     

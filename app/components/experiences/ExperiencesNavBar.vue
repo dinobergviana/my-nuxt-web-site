@@ -1,7 +1,7 @@
 <template>
     <nav class="border-b dark:border-gray-600">
       <ul class="flex gap-2 overflow-x-auto whitespace-nowrap md:overflow-visible md:whitespace-normal">
-        <li v-for="item in EXPERIENCES" :key="item.title" class="flex-1 mr-1">
+        <li v-for="item in EXPERIENCES" :key="item.title" class="flex-1">
           <NuxtLink
           :to="item.link"
           class="

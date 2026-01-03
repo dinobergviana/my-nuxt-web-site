@@ -1,8 +1,8 @@
 <template>
   <header
-    class="fixed top-4 left-1/2 -translate-x-1/2 w-[100%-1rem)] md:w-[450px] py-1 px-4 bg-gray-100 dark:bg-gray-800 z-50 rounded-full shadow-md border dark:border-gray-700 h-header"
+    class="flex w-full border dark:border-gray-700 h-header"
   >
-    <div class="w-full flex items-center justify-between gap-2">
+    <div class="w-full flex items-center justify-center gap-2">
       <nav>
         <ul
           class="flex gap-4 md:gap-6 items-center text-sm md:text-md text-gray-100"

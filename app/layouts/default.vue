@@ -7,7 +7,7 @@
         mx-auto
         w-[90vw]
         max-w-[800px]
-        pt-[calc(44px+1rem)]
+        h-[calc(100dvh-(70px+1rem))]
         flex
         flex-col
       "
