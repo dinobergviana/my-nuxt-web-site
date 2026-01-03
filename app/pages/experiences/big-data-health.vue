@@ -4,13 +4,13 @@
       <span class="block text-sm font-medium text-gray-600 dark:text-gray-200 mb-1">Cargo</span>
     
       <h2 class="text-xl font-medium dark:text-white">
-        Desenvolvedor Fullstack
+        {{ EXPERIENCES_DETAILS_PT.bigdata.role }}
         <span
           class="hidden md:inline text-sm leading-none text-gray-700 dark:text-gray-500"
         >
           &bull;
         </span>
-        <span class="font-normal text-xs ">06/2025 - 09/2025</span>
+        <span class="font-normal text-xs ">{{ EXPERIENCES_DETAILS_PT.bigdata.period.start }} - {{ EXPERIENCES_DETAILS_PT.bigdata.period.end }}</span>
       </h2>
     </div>
 
