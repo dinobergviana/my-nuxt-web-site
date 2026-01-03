@@ -1,63 +1,107 @@
-
-
 <template>
-  <h2 class="text-xl font-semibold dark:text-white">Meus projetos</h2>
+  <h2 class="text-xl font-semibold dark:text-white mb-4">Meus projetos</h2>
   <section class="w-full">
-    <!-- ===== TABLE (md+) ===== -->
-    <div class="overflow-hidden rounded-xl border border-gray-100 dark:border-gray-700">
-  <table class="w-full border-collapse">
-    <!-- thead (se existir) -->
+    <div
+      class="hidden md:block overflow-hidden rounded-md border border-gray-200 dark:border-gray-700"
+    >
+      <table class="w-full border-collapse">
+        <thead>
+          <tr class="border-b border-gray-200 dark:border-gray-700">
+            <th
+              scope="col"
+              class="px-6 py-3 text-left text-sm font-medium text-gray-700 dark:text-gray-100"
+            >
+              Nome do projeto
+            </th>
 
-    <!-- tbody -->
-    <tbody>
-      <tr
-        v-for="project in projects"
-        :key="project.id"
-        class="border-b border-gray-100 dark:border-gray-700
-               last:border-b-0"
-      >
-        <td class="px-6 py-4 text-gray-900 dark:text-gray-100">
-          {{ project.name }}
-        </td>
+            <th
+              scope="col"
+              class="px-6 py-3 text-left text-sm font-medium text-gray-700 dark:text-gray-100"
+            >
+              Status
+            </th>
 
-        <td class="px-6 py-4">
-          <span
-            class="inline-flex items-center gap-2 text-sm"
-            :class="project.status === 'finalizado'
-              ? 'text-emerald-600 dark:text-emerald-400'
-              : 'text-amber-600 dark:text-amber-400'"
+            <th
+              scope="col"
+              class="px-6 py-3 text-left text-sm font-medium text-gray-700 dark:text-gray-100"
+            >
+              Ações
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            v-for="project in projects"
+            :key="project.id"
+            class="border-b border-gray-200 dark:border-gray-700 last:border-b-0"
           >
-            <span
-              class="h-2 w-2 rounded-full"
-              :class="project.status === 'finalizado'
-                ? 'bg-emerald-600 dark:bg-emerald-400'
-                : 'bg-amber-600 dark:bg-amber-400'"
-            />
-            {{ project.status }}
-          </span>
-        </td>
+            <td class="text-sm px-6 py-4 text-gray-600 dark:text-gray-200">
+              {{ project.name }}
+            </td>
 
-        <td class="px-6 py-4 text-right">
-          <div class="flex justify-end gap-3 text-sm">
-            <button
-              class="text-gray-600 hover:text-gray-900
-                     dark:text-gray-400 dark:hover:text-white transition"
-            >
-              Ver detalhes
-            </button>
-            <button
-              class="text-sky-600 hover:text-sky-500
-                     dark:text-sky-400 dark:hover:text-sky-300 transition"
-            >
-              Acessar
-            </button>
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+            <td class="text-sm px-6 py-4 flex items-center gap-2">
+              <div class="flex py-1 items-center gap-2 rounded-full px-2" :class="project.status === 'finalizado' ? 'bg-green-500/10 text-green-400' : 'bg-orange-500/10 text-orange-400'">
+                <div
+                  class="h-2 w-2 rounded-full"
+                  :class="
+                    project.status === 'finalizado'
+                      ? 'bg-emerald-600 dark:bg-emerald-400'
+                      : 'bg-amber-600 dark:bg-amber-600'
+                  "
+                />
 
+                <span class="text-xs dart:text-black">{{
+                  project.label
+                }}</span>
+              </div>
+            </td>
+
+            <td class="px-6 py-4 text-right">
+              <div class="flex justify-start gap-3 text-sm">
+                <Tooltip text="Ver detalhes" position="top">
+                  <template #content="{ tooltipId }">
+                    <button
+                      class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition"
+                      aria-label="Ver detalhes do projeto"
+                      :aria-describedby="tooltipId"
+                    >
+                      <IconPhEye />
+                    </button>
+                  </template>
+                </Tooltip>
+
+                <Tooltip text="Repositório" position="top">
+                  <template #content="{ tooltipId }">
+                    <a
+                      :href="project.github_url"
+                      target="_blank"
+                      class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition"
+                      aria-label="Abrir repositório no GitHub"
+                      :aria-describedby="tooltipId"
+                    >
+                      <IconPhGithubLogo />
+                    </a>
+                  </template>
+                </Tooltip>
+
+                <Tooltip v-if="project.has_access_link" text="Acessar" position="top">
+                  <template #content="{ tooltipId }">
+                    <a
+                      :href="project.access_link"
+                      class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition"
+                      aria-label="Acessar projeto"
+                      :aria-describedby="tooltipId"
+                    >
+                      <IconPhArrowSquareOut />
+                    </a>
+                  </template>
+                </Tooltip>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
     <!-- ===== CARDS (< md) ===== -->
     <div class="grid gap-4 md:hidden">
@@ -74,24 +118,58 @@
         <div class="mt-4 space-y-3 text-sm text-gray-400">
           <!-- Status -->
           <div class="flex items-center justify-between">
-            <span>Situação</span>
+            <span>Status</span>
             <span
               class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-medium"
               :class="statusClass(project.status)"
             >
               <span class="h-2 w-2 rounded-full bg-current"></span>
-              {{ project.status }}
+              {{ project.label }}
             </span>
           </div>
 
           <!-- Ações -->
           <div class="flex justify-end gap-4 pt-4 border-t border-white/10">
-            <button class="text-gray-400 hover:text-white transition">
-              Ver detalhes
-            </button>
-            <button class="text-blue-400 hover:text-blue-300 transition">
-              Acessar
-            </button>
+            <div class="flex justify-start gap-3 text-sm">
+                <Tooltip text="Ver detalhes" position="top">
+                  <template #content="{ tooltipId }">
+                    <button
+                      class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition"
+                      aria-label="Ver detalhes do projeto"
+                      :aria-describedby="tooltipId"
+                    >
+                      <IconPhEye />
+                    </button>
+                  </template>
+                </Tooltip>
+
+                <Tooltip text="Repositório" position="top">
+                  <template #content="{ tooltipId }">
+                    <a
+                      :href="project.github_url"
+                      target="_blank"
+                      class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition"
+                      aria-label="Abrir repositório no GitHub"
+                      :aria-describedby="tooltipId"
+                    >
+                      <IconPhGithubLogo />
+                    </a>
+                  </template>
+                </Tooltip>
+
+                <Tooltip v-if="project.has_access_link" text="Acessar" position="top">
+                  <template #content="{ tooltipId }">
+                    <a
+                      :href="project.access_link"
+                      class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition"
+                      aria-label="Acessar projeto"
+                      :aria-describedby="tooltipId"
+                    >
+                      <IconPhArrowSquareOut />
+                    </a>
+                  </template>
+                </Tooltip>
+              </div>
           </div>
         </div>
       </div>
@@ -103,26 +181,38 @@
 const projects = [
   {
     id: 1,
-    name: 'my-nuxt-website',
-    status: 'Em andamento',
+    name: "Website",
+    status: "finalizado",
+    label: "Finalizado",
+    github_url: "https://github.com/dinobergviana/my-nuxt-web-site",
+    has_access_link: false,
   },
   {
     id: 2,
-    name: 'dashboard-admin',
-    status: 'Finalizado',
+    name: "Migração do Website",
+    status: "em andamento",
+    label: "Em andamento",
+    github_url: "https://github.com/dinobergviana/my-nuxt-web-site",
+    has_access_link: true,
+    access_link: "#",
   },
   {
     id: 3,
-    name: 'landing-page',
-    status: 'Em andamento',
+    name: "GC Manager",
+    status: "em andamento",
+    label: "Em andamento",
+    github_url:
+      "https://github.com/dinobergviana/https://github.com/dinobergviana/gc-manager",
+    has_access_link: true,
+    access_link: "#",
   },
-]
+];
 
 const statusClass = (status: string) => {
-  if (status === 'Finalizado') {
-    return 'bg-green-500/10 text-green-400'
+  if (status === "Finalizado") {
+    return "bg-green-500/10 text-green-400";
   }
 
-  return 'bg-emerald-500/10 text-emerald-400'
-}
+  return "bg-orange-500/10 text-orange-400";
+};
 </script>

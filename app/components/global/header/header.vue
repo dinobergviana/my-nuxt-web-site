@@ -1,7 +1,5 @@
 <template>
-  <header
-    class="flex w-full border dark:border-gray-700 h-header"
-  >
+  <header class="flex w-full border dark:border-gray-700 h-header">
     <div class="w-full flex items-center justify-center gap-2">
       <nav>
         <ul

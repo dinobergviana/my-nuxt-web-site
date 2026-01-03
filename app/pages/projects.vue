@@ -6,6 +6,6 @@
 
 <script setup lang="ts">
 definePageMeta({
-  redirect: '/projects/overview'
-})
+  redirect: "/projects/overview",
+});
 </script>

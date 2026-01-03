@@ -1,7 +1,7 @@
 <template>
   <section
     class="bg-white dark:bg-gray-900 relative flex flex-col items-center justify-center min-h-[calc(100vh-var(--header-height))] px-4 transition-colors duration-300 ease-in-out"
-    id="hero" 
+    id="hero"
   >
     <div class="text-center mb-3">
       <h1 class="font-bold text-5xl dark:text-gray-200" id="hero-title">
@@ -65,23 +65,28 @@
       </Tooltip>
     </div>
 
-    <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between mt-4">
+    <div
+      class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between mt-4"
+    >
       <DownloadResumeButton class="text-center" />
 
       <div class="relative flex items-center gap-1">
         <div class="relative flex items-center justify-center w-4 h-4">
-        <div
-          class="absolute inset-0 rounded-full bg-green-600/50 dark:bg-green-400/50 pulse"
-        />
+          <div
+            class="absolute inset-0 rounded-full bg-green-600/50 dark:bg-green-400/50 pulse"
+          />
 
-        <div
-          class="w-1.5 h-1.5 rounded-full bg-green-600 dark:bg-green-400 z-10"
-        />
-      </div>
+          <div
+            class="w-1.5 h-1.5 rounded-full bg-green-600 dark:bg-green-400 z-10"
+          />
+        </div>
 
-      <span role="status" class="text-green-600 dark:text-green-400 text-sm font-semibold">
-        {{ $t("availableForNewProjects") }}
-      </span>
+        <span
+          role="status"
+          class="text-green-600 dark:text-green-400 text-sm font-semibold"
+        >
+          {{ $t("availableForNewProjects") }}
+        </span>
       </div>
     </div>
   </section>
