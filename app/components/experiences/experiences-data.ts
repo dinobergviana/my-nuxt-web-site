@@ -1,32 +1,63 @@
 export const EXPERIENCES = [
   {
     title: "bigdata",
-    company: "Bigdata Health",
+    img_path: "/images/big_data_logo.jpeg",
+    img_alt: "Bigdata Health",
+    link: "/experiences/big-data-health",
+    company_name: "Bigdata Health",
     role: "Desenvolvedor Fullstack",
-    period: "06/2025 - 09/2025",
+    period: {
+      start: "06/2025",
+      end: "09/2025",
+    },
   },
   {
     title: "enjoei",
-    company: "Enjoei",
+    img_path: "/images/enjoei_logo.jpeg",
+    img_alt: "",
+    link: "/experiences/enjoei",
+
+    company_name: "Enjoei",
     role: "Desenvolvedor Frontend",
-    period: "05/2024 - 05/2025",
+    period: {
+      start: "05/2024",
+      end: "05/2025",
+    },
   },
   {
     title: "educacross",
-    company: "Educacross",
+    img_path: "/images/educacross_logo.jpeg",
+    img_alt: "",
+    link: "/experiences/educacross",
+    company_name: "Educacross",
     role: "Desenvolvedor Frontend",
-    period: "09/2022 - 04/2024",
+    period: {
+      start: "09/2022",
+      end: "04/2024",
+    },
   },
   {
     title: "warren",
-    company: "Warren",
+    img_path: "/images/warren_logo.jpeg",
+    img_alt: "",
+    link: "/experiences/warren",
+    company_name: "Warren",
     role: "Desenvolvedor Frontend - Jr",
-    period: "01/2022 - 08/2022",
+    period: {
+      start: "01/2022",
+      end: "08/2022",
+    },
   },
   {
     title: "boxti",
-    company: "Boxti",
+    img_path: "/images/box_ti_logo.jpeg",
+    img_alt: "",
+    link: "/experiences/boxti",
+    company_name: "BoxTi",
     role: "Desenvolvedor Fullstack",
-    period: "03/2021 - 12/2021",
+    period: {
+      start: "03/2021",
+      end: "12/2021",
+    },
   },
 ];

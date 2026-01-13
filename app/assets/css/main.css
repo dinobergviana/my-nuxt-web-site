@@ -1,5 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  --header-height: 44px;
+  --header-height: 70px;
 }
 
 body {
@@ -24,8 +28,4 @@ body {
 
 .h-header {
   height: var(--header-height);
-}
-
-.pt-header {
-  padding-top: calc(var(--header-height) + 1rem);
 }

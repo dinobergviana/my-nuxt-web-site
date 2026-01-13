@@ -1,6 +1,6 @@
 <template>
   <section
-    class="min-h-screen grid border-t border-gray-300 dark:border-none md:grid-cols-2 py-8 px-4 text-gray-700 dark:bg-gray-800"
+    class="min-h-screen grid border-t border-gray-300 dark:border-none md:grid-cols-2 py-8 px-4 text-gray-700"
   >
     <!-- Left Title -->
     <div class="flex items-center justify-center mx-auto py-[80px]">
@@ -20,7 +20,7 @@
         ></span>
 
         <!-- Company -->
-        <h3 class="font-bold text-lg">{{ exp.company }}</h3>
+        <h3 class="font-bold text-lg">{{ exp.company_name }}</h3>
 
         <!-- Role -->
         <p class="text-gray-700 font-semibold dark:text-gray-200">
