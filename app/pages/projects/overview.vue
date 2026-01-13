@@ -2,7 +2,7 @@
   <h2 class="text-xl font-semibold dark:text-white mb-4">Meus projetos</h2>
   <section class="w-full">
     <div
-      class="hidden md:block overflow-hidden rounded-md border border-gray-200 dark:border-gray-700"
+      class="hidden md:block overflow-hidden rounded-md border border-gray-200 dark:border-gray-700 shadow-sm"
     >
       <table class="w-full border-collapse">
         <thead>
@@ -40,7 +40,14 @@
             </td>
 
             <td class="text-sm px-6 py-4 flex items-center gap-2">
-              <div class="flex py-1 items-center gap-2 rounded-full px-2" :class="project.status === 'finalizado' ? 'bg-green-500/10 text-green-400' : 'bg-orange-500/10 text-orange-400'">
+              <div
+                class="flex py-1 items-center gap-2 rounded-full px-2"
+                :class="
+                  project.status === 'finalizado'
+                    ? 'bg-green-500/10 text-green-600 dark:text-green-400'
+                    : 'bg-orange-500/10 text-orange-400'
+                "
+              >
                 <div
                   class="h-2 w-2 rounded-full"
                   :class="
@@ -50,9 +57,7 @@
                   "
                 />
 
-                <span class="text-xs dart:text-black">{{
-                  project.label
-                }}</span>
+                <span class="text-xs dart:text-black">{{ project.label }}</span>
               </div>
             </td>
 
@@ -84,7 +89,11 @@
                   </template>
                 </Tooltip>
 
-                <Tooltip v-if="project.has_access_link" text="Acessar" position="top">
+                <Tooltip
+                  v-if="project.has_access_link"
+                  text="Acessar"
+                  position="top"
+                >
                   <template #content="{ tooltipId }">
                     <a
                       :href="project.access_link"
@@ -103,15 +112,15 @@
       </table>
     </div>
 
-    <!-- ===== CARDS (< md) ===== -->
+    <!-- ===== CARDS -->
     <div class="grid gap-4 md:hidden">
       <div
         v-for="project in projects"
         :key="project.id"
-        class="rounded-xl border border-white/10 bg-white/5 p-5"
+        class="rounded-xl border dark:border-white/10 bg-white/5 p-5 shadow-sm"
       >
         <!-- Nome -->
-        <h3 class="text-lg font-medium text-white">
+        <h3 class="text-lg font-medium text-gray-700 dark:text-white">
           {{ project.name }}
         </h3>
 
@@ -129,47 +138,53 @@
           </div>
 
           <!-- Ações -->
-          <div class="flex justify-end gap-4 pt-4 border-t border-white/10">
+          <div
+            class="flex justify-end gap-4 pt-4 border-t dark:border-white/10"
+          >
             <div class="flex justify-start gap-3 text-sm">
-                <Tooltip text="Ver detalhes" position="top">
-                  <template #content="{ tooltipId }">
-                    <button
-                      class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition"
-                      aria-label="Ver detalhes do projeto"
-                      :aria-describedby="tooltipId"
-                    >
-                      <IconPhEye />
-                    </button>
-                  </template>
-                </Tooltip>
+              <Tooltip text="Ver detalhes" position="top">
+                <template #content="{ tooltipId }">
+                  <button
+                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition"
+                    aria-label="Ver detalhes do projeto"
+                    :aria-describedby="tooltipId"
+                  >
+                    <IconPhEye />
+                  </button>
+                </template>
+              </Tooltip>
 
-                <Tooltip text="Repositório" position="top">
-                  <template #content="{ tooltipId }">
-                    <a
-                      :href="project.github_url"
-                      target="_blank"
-                      class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition"
-                      aria-label="Abrir repositório no GitHub"
-                      :aria-describedby="tooltipId"
-                    >
-                      <IconPhGithubLogo />
-                    </a>
-                  </template>
-                </Tooltip>
+              <Tooltip text="Repositório" position="top">
+                <template #content="{ tooltipId }">
+                  <a
+                    :href="project.github_url"
+                    target="_blank"
+                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition"
+                    aria-label="Abrir repositório no GitHub"
+                    :aria-describedby="tooltipId"
+                  >
+                    <IconPhGithubLogo />
+                  </a>
+                </template>
+              </Tooltip>
 
-                <Tooltip v-if="project.has_access_link" text="Acessar" position="top">
-                  <template #content="{ tooltipId }">
-                    <a
-                      :href="project.access_link"
-                      class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition"
-                      aria-label="Acessar projeto"
-                      :aria-describedby="tooltipId"
-                    >
-                      <IconPhArrowSquareOut />
-                    </a>
-                  </template>
-                </Tooltip>
-              </div>
+              <Tooltip
+                v-if="project.has_access_link"
+                text="Acessar"
+                position="top"
+              >
+                <template #content="{ tooltipId }">
+                  <a
+                    :href="project.access_link"
+                    class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition"
+                    aria-label="Acessar projeto"
+                    :aria-describedby="tooltipId"
+                  >
+                    <IconPhArrowSquareOut />
+                  </a>
+                </template>
+              </Tooltip>
+            </div>
           </div>
         </div>
       </div>
@@ -193,7 +208,7 @@ const projects = [
     status: "em andamento",
     label: "Em andamento",
     github_url: "https://github.com/dinobergviana/my-nuxt-web-site",
-    has_access_link: true,
+    has_access_link: false,
     access_link: "#",
   },
   {
@@ -203,14 +218,14 @@ const projects = [
     label: "Em andamento",
     github_url:
       "https://github.com/dinobergviana/https://github.com/dinobergviana/gc-manager",
-    has_access_link: true,
+    has_access_link: false,
     access_link: "#",
   },
 ];
 
 const statusClass = (status: string) => {
-  if (status === "Finalizado") {
-    return "bg-green-500/10 text-green-400";
+  if (status === "finalizado") {
+    return "bg-green-500/10 text-green-600 dark:text-green-400";
   }
 
   return "bg-orange-500/10 text-orange-400";
