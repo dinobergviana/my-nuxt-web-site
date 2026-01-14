@@ -75,7 +75,11 @@
                   </template>
                 </Tooltip>
 
-                <Tooltip text="Repositório" position="top">
+                <Tooltip
+                  v-if="project.show_github_link"
+                  text="Repositório"
+                  position="top"
+                >
                   <template #content="{ tooltipId }">
                     <a
                       :href="project.github_url"
@@ -154,7 +158,11 @@
                 </template>
               </Tooltip>
 
-              <Tooltip text="Repositório" position="top">
+              <Tooltip
+                v-if="project.show_github_link"
+                text="Repositório"
+                position="top"
+              >
                 <template #content="{ tooltipId }">
                   <a
                     :href="project.github_url"
@@ -199,6 +207,7 @@ const projects = [
     name: "Website",
     status: "finalizado",
     label: "Finalizado",
+    show_github_link: false,
     github_url: "https://github.com/dinobergviana/my-nuxt-web-site",
     has_access_link: false,
   },
@@ -207,6 +216,7 @@ const projects = [
     name: "Migração do Website",
     status: "em andamento",
     label: "Em andamento",
+    show_github_link: false,
     github_url: "https://github.com/dinobergviana/my-nuxt-web-site",
     has_access_link: false,
     access_link: "#",
@@ -216,6 +226,7 @@ const projects = [
     name: "GC Manager",
     status: "em andamento",
     label: "Em andamento",
+    show_github_link: true,
     github_url:
       "https://github.com/dinobergviana/https://github.com/dinobergviana/gc-manager",
     has_access_link: false,
