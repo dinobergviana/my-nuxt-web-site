@@ -107,7 +107,6 @@
           </div>
         </div>
 
-        <!-- Card 2 -->
         <div
           class="border dark:border-gray-600 bg-white dark:bg-gray-800 rounded-lg shadow-md p-5 flex flex-col gap-4"
         >
@@ -144,24 +143,21 @@
           </div>
         </div>
 
-        <!-- Card 3 -->
         <div
           class="border dark:border-gray-600 bg-white dark:bg-gray-800 rounded-lg shadow-md p-5 flex flex-col gap-4"
         >
           <img
-            src="/images/fullstack-logo.png"
-            alt="Fullstack Course"
+            src="/images/vue-logo.png"
+            alt="Logo do curso de Vue 2"
             class="w-[70px] h-[70px] object-cover rounded-full shadow-md hidden md:block"
           />
 
           <div>
-            <h3 class="text-lg font-semibold dark:text-white">
-              Desenvolvimento Fullstack
-            </h3>
+            <h3 class="text-lg font-semibold dark:text-white">Vue.js 2</h3>
             <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">
-              Formação completa em desenvolvimento web, utilizando Node.js,
-              MySQL, HTML, CSS, JavaScript, React e MVC para criação de
-              aplicações fullstack.
+              Curso focado no desenvolvimento de interfaces reativas utilizando
+              Vue 2, abordando componentes, diretivas, estado e boas práticas no
+              front-end.
             </p>
           </div>
 
@@ -169,17 +165,17 @@
             <span
               class="px-2 py-1 text-xs rounded-full bg-gray-100 dark:bg-gray-700 dark:text-gray-200"
             >
-              6 meses
+              40h
             </span>
             <span
               class="px-2 py-1 text-xs rounded-full bg-gray-100 dark:bg-gray-700 dark:text-gray-200"
             >
-              07/2020 – 01/2021
+              01/2022
             </span>
             <span
               class="px-2 py-1 text-xs rounded-full bg-gray-100 dark:bg-gray-700 dark:text-gray-200"
             >
-              Digital House
+              Alura
             </span>
           </div>
         </div>
