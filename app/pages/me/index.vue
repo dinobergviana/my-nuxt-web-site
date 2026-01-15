@@ -70,7 +70,7 @@
       <h2 class="text-gray-700 dark:text-gray-200 font-bold mb-2">
         Olá, Dino aqui!
       </h2>
-      <p class="text-gray-600 mb-2">
+      <p class="text-gray-600 dark:text-gray-300 mb-2">
         Sou desenvolvedor web com quase cinco anos de experiencia no mercado de
         trabalho. Nesse período, meu foco principal tem sido em desenvolvimento
         frontend, porém, nos últimos dois anos tenho me dedicado a estudar e
@@ -79,17 +79,17 @@
         <a
           href="http://curso.dev/"
           target="_blank"
-          class="text-blue-500 hover:text-blue-600 font-semibold"
+          class="text-blue-500 dark:text-yellow-300 dark:hover:text-yellow-500 hover:text-blue-600 font-semibold"
           >curso.dev</a
         >.
       </p>
 
-      <p class="text-gray-600 mb-2">
+      <p class="text-gray-600 dark:text-gray-300 mb-2">
         Minha intensão nesse espaço é compartilhar minha experiencia por meio da
         minha trajetória e dos projetos que venho desenvolvendo.
       </p>
 
-      <p>
+      <p class="text-gray-600 dark:text-gray-300">
         Caso queira conhecer mais sobre meu trabalho, por favor entre em contato
         comigo por meio das minhas redes. Abraço!
       </p>
