@@ -45,7 +45,7 @@ export default defineNuxtConfig({
         { charset: "utf-8" },
         { name: "author", content: "Dinobergue Viana" },
       ],
-      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.svg" }],
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
       script: [
         {
           // roda imediatamente no início, antes da renderização
