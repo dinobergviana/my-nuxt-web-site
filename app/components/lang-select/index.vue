@@ -1,54 +1,28 @@
 <template>
   <div class="relative" ref="menuRef">
     <!-- Botão principal -->
+    <!-- <IconPhGlobe class="text-gray-600 dark:text-gray-300" /> -->
     <button
       ref="triggerRef"
-      class="p-1 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 text-gray-800 dark:text-gray-200"
+      class="p-1 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-200"
       @click.stop="toggleMenu"
       aria-label="Configurações"
       aria-haspopup="menu"
       :aria-expanded="isOpen"
     >
-      <IconPhDotsThreeVertical class="text-gray-600 dark:text-gray-300" />
+      <IconPhGlobe
+        class="w-5 h-5 text-gray-500 hover:text-gray-800 dark:text-gray-400 hover:dark:text-gray-200"
+      />
     </button>
 
     <!-- Dropdown -->
     <div
       v-if="isOpen"
-      class="absolute right-0 mt-2 w-48 rounded-lg bg-white dark:bg-gray-900 shadow-lg border dark:border-gray-800 z-50"
+      class="absolute right-0 w-48 rounded-lg bg-white dark:bg-gray-900 shadow-lg border dark:border-gray-800 z-50"
       role="menu"
       @keydown.esc="closeMenu()"
     >
       <ul class="text-sm">
-        <!-- Tema -->
-        <li
-          class="px-4 py-2 text-gray-500 dark:text-gray-400 uppercase text-xs"
-        >
-          {{ $t("dropdownMenu.theme.title") }}
-        </li>
-
-        <li
-          tabindex="0"
-          class="dropdown-item"
-          :class="{ 'dropdown-item--selected': theme === 'light' }"
-          @click="changeTheme('light')"
-        >
-          <IconPhSun class="w-4 h-4" />
-          {{ $t("dropdownMenu.theme.light") }}
-        </li>
-
-        <li
-          tabindex="0"
-          class="dropdown-item"
-          :class="{ 'dropdown-item--selected': theme === 'dark' }"
-          @click="changeTheme('dark')"
-        >
-          <IconPhMoon class="w-4 h-4" />
-          {{ $t("dropdownMenu.theme.dark") }}
-        </li>
-
-        <div class="h-px bg-gray-200 dark:bg-gray-800 my-1"></div>
-
         <!-- Idioma -->
         <li
           class="px-4 py-2 text-gray-500 dark:text-gray-400 uppercase text-xs"
