@@ -1,8 +1,34 @@
 {
+  "header": {
+    "nav": {
+      "home": "Home",
+      "experiences": "Experiences",
+      "projects": "Projects",
+      "education": "Education",
+      "me": "Me"
+    }
+  },
+  "dropdownMenu": {
+    "theme": {
+      "title": "Theme",
+      "light": "Light",
+      "dark": "Dark"
+    },
+    "lang": {
+      "title": "Lang",
+      "pt": "Portuguese",
+      "en": "English"
+    }
+  },
   "welcome": "Hi, I'm",
   "role": "Programmer",
   "downloadResumeButton": "Download resume",
+  "availableForNewProjects": "Available for new projects",
   "seeDetailsButton": "See details",
+  "projectDeatils": "Project details",
+  "description": "Description",
+  "repository": "Repository",
+  "access": "Access",
   "experienceModal": {
     "aboutTheCompany": "About the company",
     "contributions": "Contributions",
@@ -44,7 +70,10 @@
     }
   },
   "experiences": {
-    "title": "experiences",
+    "position": "Position",
+    "title": "My experiences",
+    "aboutTheCompany": "About the company",
+    "contributions": "Contributions",
     "bigdata": {
       "role": "Fullstack Developer",
       "period": "Jun 2025 - Sep 2025",
@@ -72,7 +101,8 @@
     }
   },
   "education": {
-    "title": "education",
+    "title": "Academic background",
+    "courses": "Courses",
     "uni": {
       "title": "Systems Analysis and Development",
       "institution": "Uni Dom Bosco",
@@ -95,8 +125,10 @@
     }
   },
   "projects": {
-    "title": "projects",
-    "repository": "Repository",
+    "title": "My projects",
+    "projectName": "Project name",
+    "status": "Status",
+    "actions": "Actions",
     "details": " See details",
     "gc": {
       "title": "GC Manager",
@@ -108,6 +140,12 @@
       "description": "A personal website to share information about my career and projects.",
       "status": "Completed"
     }
+  },
+  "me": {
+    "title": "Hi, Dino here!",
+    "p1": "I am a web developer with nearly five years of experience in the job market. During this time, my main focus has been frontend development; however, over the past two years, I have been dedicated to studying and building backend solutions, especially since I started college and became a student at ",
+    "p2": "My intention with this space is to share my experience through my journey and the projects I have been developing.",
+    "p3": "If you would like to learn more about my work, please feel free to get in touch with me through my social networks. Best regards!"
   },
   "footer": {
     "backToTop": "Back to the top"

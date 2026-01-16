@@ -1,8 +1,34 @@
 {
+  "header": {
+    "nav": {
+      "home": "Home",
+      "experiences": "Experiências",
+      "projects": "Projetos",
+      "education": "Formação",
+      "me": "Eu"
+    }
+  },
+  "dropdownMenu": {
+    "theme": {
+      "title": "Tema",
+      "light": "Claro",
+      "dark": "Escuro"
+    },
+    "lang": {
+      "title": "Idioma",
+      "pt": "Português",
+      "en": "Inglês"
+    }
+  },
   "welcome": "Olá, eu sou",
   "role": "Programador",
   "downloadResumeButton": "Baixar currículo",
+  "availableForNewProjects": "Disponível para novos projetos",
   "seeDetailsButton": "Ver detalhes",
+  "projectDeatils": "Detalhes do projeto",
+  "description": "Descrição",
+  "repository": "Repositório",
+  "access": "Acessar",
   "experienceModal": {
     "aboutTheCompany": "Sobre a empresa",
     "contributions": "Contribuições",
@@ -44,7 +70,10 @@
     }
   },
   "experiences": {
-    "title": "experiências",
+    "title": "Minhas experiências",
+    "position": "Cargo",
+    "aboutTheCompany": "Sobre a empresa",
+    "contributions": "Contribuições",
     "bigdata": {
       "role": "Desenvolvedor Fullstack",
       "period": "Jun 2025 - Set 2025",
@@ -72,7 +101,8 @@
     }
   },
   "education": {
-    "title": "formação",
+    "title": "Formação acadêmica",
+    "courses": "Cursos",
     "uni": {
       "title": "Análise e Desenvolvimento de Sistemas",
       "institution": "Uni Dom Bosco",
@@ -94,10 +124,18 @@
       "period": "Mar 2015 - Jun 2019"
     }
   },
+  "me": {
+    "title": "Olá, Dino aqui!",
+    "p1": "Sou desenvolvedor web com quase cinco anos de experiencia no mercado de trabalho. Nesse período, meu foco principal tem sido em desenvolvimento frontend, porém, nos últimos dois anos tenho me dedicado a estudar e criar soluções backend e desde que iniciei a faculdade e me tornei aluno no ",
+    "p2": "Minha intensão nesse espaço é compartilhar minha experiencia por meio da minha trajetória e dos projetos que venho desenvolvendo.",
+    "p3": "Caso queira conhecer mais sobre meu trabalho, por favor entre em contato comigo por meio das minhas redes. Abraço!"
+  },
   "projects": {
-    "title": "projetos",
-    "repository": "Repositório",
-    "details": " Mais informações",
+    "title": "Meus projetos",
+    "projectName": "Nome do projeto",
+    "status": "Status",
+    "actions": "Ações",
+    "details": "Mais informações",
     "gc": {
       "title": "GC Manager",
       "description": "Sistema para gerenciamento de pequenos grupos.",

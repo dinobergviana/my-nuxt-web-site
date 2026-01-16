@@ -1,67 +1,57 @@
 <template>
-  <header
-    class="w-full mx-auto fixed py-2 px-4 bg-gray-100 dark:bg-gray-900 text-white transition-colors duration-300 ease-in-out z-50 rounded-b-lg shadow-sm border-b dark:border-none"
-  >
-    <div class="flex items-center justify-between gap-2">
-      <div>
-        <button
-          v-if="hasBackButton"
-          class="p-1 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 text-gray-800 dark:text-gray-200"
-          type="button"
-          @click="goBack"
-          title="Voltar"
+  <header class="flex w-full border-b dark:border-b-gray-700 h-header">
+    <div class="w-full flex items-center justify-center gap-2">
+      <nav>
+        <ul
+          class="flex gap-4 md:gap-6 items-center text-sm md:text-md text-gray-100"
         >
-          <IconPhArrowLeft weight="bold" size="24" />
-        </button>
-      </div>
-      <div class="flex items-center justify-end gap-2">
-        <button
-          v-if="theme === 'light'"
-          class="p-1 rounded-md hover:bg-gray-200 text-gray-800"
-          type="button"
-          @click="toggleTheme"
-        >
-          <IconPhMoon weight="bold" />
-        </button>
-        <button
-          v-else
-          class="p-1 rounded-md hover:bg-gray-800 text-gray-200"
-          type="button"
-          @click="toggleTheme"
-        >
-          <IconPhSun weight="bold" />
-        </button>
-
-        <select
-          v-model="selectedLang"
-          class="p-1 rounded-md bg-transparent cursor-pointer text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-800 text-sm"
-          @change="setLocale(selectedLang)"
-        >
-          <option class="language-select-option" value="pt">BR</option>
-          <option class="language-select-option" value="en">EN</option>
-        </select>
-      </div>
+          <li>
+            <NuxtLink
+              to="/"
+              class="text-sm text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-white transition-colors duration-200 ease-out"
+              active-class="text-gray-600 dark:text-white font-semibold"
+              >{{ $t("header.nav.home") }}</NuxtLink
+            >
+          </li>
+          <li>
+            <NuxtLink
+              to="/experiences"
+              class="text-sm text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-white transition-colors duration-200 ease-out"
+              active-class="text-gray-600 dark:text-white font-semibold"
+              >{{ $t("header.nav.experiences") }}</NuxtLink
+            >
+          </li>
+          <li>
+            <NuxtLink
+              to="/projects"
+              class="text-sm text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-white transition-colors duration-200 ease-out"
+              active-class="text-gray-600 dark:text-white font-semibold"
+              >{{ $t("header.nav.projects") }}</NuxtLink
+            >
+          </li>
+          <li>
+            <NuxtLink
+              to="/education"
+              class="text-sm text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-white transition-colors duration-200 ease-out"
+              active-class="text-gray-600 dark:text-white font-semibold"
+              >{{ $t("header.nav.education") }}</NuxtLink
+            >
+          </li>
+          <li>
+            <NuxtLink
+              to="/me"
+              class="text-sm text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-white transition-colors duration-200 ease-out"
+              active-class="text-gray-600 dark:text-white font-semibold"
+              >{{ $t("header.nav.me") }}</NuxtLink
+            >
+          </li>
+        </ul>
+      </nav>
+      <MenuDropdown />
     </div>
   </header>
 </template>
 
 <script setup lang="ts">
-import { useTheme } from "@/composables/useTheme";
-
-const { theme, toggleTheme } = useTheme();
-
-const { locale, setLocale } = useI18n();
-
-const selectedLang = ref(locale.value);
-
-const router = useRouter();
-const route = useRoute();
-
-const hasBackButton = computed(() => {
-  return route.meta.hasBackButton;
-});
-
-const goBack = () => {
-  router.push(route.meta.backButtonPath as string);
-};
+import MenuDropdown from "../../dropdown-menu/index.vue";
 </script>
