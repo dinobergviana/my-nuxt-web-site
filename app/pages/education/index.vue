@@ -1,7 +1,7 @@
 <template>
   <section class="mt-5 w-full">
     <!-- ACADEMIC BACKGROUND SECTION -->
-    <div class="mb-10">
+    <div>
       <h2 class="text-xl font-semibold dark:text-white mb-4">
         {{ $t("education.title") }}
       </h2>
@@ -26,27 +26,30 @@
             {{ item.description }}
           </p>
 
-          <span class="text-xs text-green-600 dark:text-green-500"
-            >{{ item.status }}</span
-          >
+          <span class="text-xs text-green-600 dark:text-green-500">{{
+            item.status
+          }}</span>
 
           <span class="text-sm leading-none text-gray-700 dark:text-gray-400">
             &bull;
           </span>
-          <span class="font-normal text-xs text-gray-500 dark:text-gray-200"
-            >{{ item.period }}</span
-          >
+          <span class="font-normal text-xs text-gray-500 dark:text-gray-200">{{
+            item.period
+          }}</span>
         </div>
       </div>
     </div>
 
     <!-- COURSES SECTION -->
     <div class="pb-5">
-      <h2 class="text-xl font-semibold dark:text-white mb-4">{{ $t("education.courses") }}</h2>
+      <h2 class="text-xl font-semibold dark:text-white mb-4">
+        {{ $t("education.courses") }}
+      </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div
-          v-for="item in courses" :key="item.id"
+          v-for="item in courses"
+          :key="item.id"
           class="border dark:border-gray-600 bg-white dark:bg-gray-800 rounded-lg shadow-md p-5 flex flex-col gap-4"
         >
           <img
@@ -56,7 +59,9 @@
           />
 
           <div>
-            <h3 class="text-lg font-semibold dark:text-white">{{ item.title }}</h3>
+            <h3 class="text-lg font-semibold dark:text-white">
+              {{ item.title }}
+            </h3>
             <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">
               {{ item.description }}
             </p>
@@ -78,19 +83,25 @@
 </template>
 
 <script lang="ts" setup>
-  import { ref, computed } from "vue";
-  import { useI18n } from "vue-i18n";
+import { computed } from "vue";
+import { useI18n } from "vue-i18n";
 
-  import { EDUCATION_PT, EDUCATION_EN, COURSES_PT, COURSES_EN } from "@/consts/education"
+import {
+  EDUCATION_PT,
+  EDUCATION_EN,
+  COURSES_PT,
+  COURSES_EN,
+} from "@/consts/education";
 
-  const { locale } = useI18n();
+const { locale } = useI18n();
 
-  const education = computed(() => {
-    return (locale.value === "pt" ? EDUCATION_PT : EDUCATION_EN) as EducationItem[];
-  });
+const education = computed(() => {
+  return (
+    locale.value === "pt" ? EDUCATION_PT : EDUCATION_EN
+  ) as EducationItem[];
+});
 
-  const courses = computed(() => {
-    return (locale.value === "pt" ? COURSES_PT : COURSES_EN) as CourseItem[];
-  });
-
+const courses = computed(() => {
+  return (locale.value === "pt" ? COURSES_PT : COURSES_EN) as CourseItem[];
+});
 </script>

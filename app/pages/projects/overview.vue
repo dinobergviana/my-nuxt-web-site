@@ -1,5 +1,7 @@
 <template>
-  <h1 class="text-xl font-semibold dark:text-white mb-4">Meus projetos</h1>
+  <h1 class="text-xl font-semibold dark:text-white mb-4">
+    {{ $t("projects.title") }}
+  </h1>
   <section class="w-full">
     <div
       class="hidden md:block overflow-hidden rounded-md border border-gray-200 dark:border-gray-700 shadow-sm"
@@ -11,21 +13,21 @@
               scope="col"
               class="px-6 py-3 text-left text-sm font-medium text-gray-700 dark:text-gray-100"
             >
-              Nome do projeto
+              {{ $t("projects.projectName") }}
             </th>
 
             <th
               scope="col"
               class="px-6 py-3 text-left text-sm font-medium text-gray-700 dark:text-gray-100"
             >
-              Status
+              {{ $t("projects.status") }}
             </th>
 
             <th
               scope="col"
               class="px-6 py-3 text-left text-sm font-medium text-gray-700 dark:text-gray-100"
             >
-              Ações
+              {{ $t("projects.actions") }}
             </th>
           </tr>
         </thead>
@@ -65,7 +67,7 @@
 
             <td class="px-6 py-4 text-right">
               <div class="flex justify-start gap-3 text-sm">
-                <Tooltip text="Ver detalhes" position="top">
+                <Tooltip :text="$t('seeDetailsButton')" position="top">
                   <template #content="{ tooltipId }">
                     <button
                       class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition"
@@ -80,7 +82,7 @@
 
                 <Tooltip
                   v-if="project.show_github_link"
-                  text="Repositório"
+                  :text="$t('repository')"
                   position="top"
                 >
                   <template #content="{ tooltipId }">

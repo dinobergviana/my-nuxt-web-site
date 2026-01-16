@@ -2,9 +2,9 @@ export const EXPERIENCES = [
   {
     title: "bigdata",
     img_path: "/images/big_data_logo.jpeg",
-    img_alt: "Bigdata Health",
+    img_alt: "Big Data Health",
     link: "/experiences/big-data-health",
-    company_name: "Bigdata Health",
+    company_name: "Big Data Health",
     role: "Desenvolvedor Fullstack",
     period: {
       start: "06/2025",

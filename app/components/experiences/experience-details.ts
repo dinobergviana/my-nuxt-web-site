@@ -168,8 +168,11 @@ export const EXPERIENCES_DETAILS_PT = {
 export const EXPERIENCES_DETAILS_EN = {
   bigdata: {
     title: "Bigdata Health",
-    role: "Fullstack Developer - Freelancer",
-    period: "06/2025 - 09/2025",
+    role: "Fullstack Developer",
+    period: {
+      start: "06/2025",
+      end: "09/2025",
+    },
     description:
       "A software house based in Teresina (PI), focused on transforming data into intelligent solutions. Its products include HR management systems, financial management, compliance solutions for public administration, asset management, telemedicine, as well as training and consulting services.",
     actions: [
@@ -189,7 +192,10 @@ export const EXPERIENCES_DETAILS_EN = {
   enjoei: {
     title: "Enjoei",
     role: "Mid-level Frontend Developer",
-    period: "05/2024 - 05/2025",
+    period: {
+      start: "05/2024",
+      end: "05/2025",
+    },
     description:
       "Enjoei is a Brazilian marketplace for second-hand items that evolved from a blog into an e-commerce platform and now also invests in physical retail, focusing on sustainability and the circular economy.",
     actions: [
@@ -229,7 +235,10 @@ export const EXPERIENCES_DETAILS_EN = {
   educacross: {
     title: "Educacross",
     role: "Frontend Developer",
-    period: "09/2022 - 04/2024",
+    period: {
+      start: "09/2022",
+      end: "04/2024",
+    },
     description:
       "Educacross is an edtech company that uses digital games to support the teaching of Portuguese and Mathematics. With strong market recognition and rapid growth, it is an example of how technology can be applied to education.",
     actions: [
@@ -255,7 +264,10 @@ export const EXPERIENCES_DETAILS_EN = {
   warren: {
     title: "Warren",
     role: "Junior Frontend Developer",
-    period: "01/2022 - 08/2022",
+    period: {
+      start: "01/2022",
+      end: "08/2022",
+    },
     description:
       "Warren is an investment fintech that aims to make the financial market more accessible and transparent by offering diversified portfolios, a fixed-fee model, and a strong technological foundation.",
     actions: [
@@ -287,7 +299,10 @@ export const EXPERIENCES_DETAILS_EN = {
   boxti: {
     title: "Boxti",
     role: "Junior Fullstack Developer",
-    period: "03/2021 - 12/2021",
+    period: {
+      start: "03/2021",
+      end: "12/2021",
+    },
     description:
       "BoxTi is a software development company that previously operated as a service provider and now integrates Warren’s technology structure, combining technical expertise with financial services.",
     actions: [

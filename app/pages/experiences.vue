@@ -1,7 +1,7 @@
 <template>
   <section class="mt-5">
     <h2 class="text-xl font-semibold dark:text-white mb-4">
-      Minhas experiências
+      {{ $t("experiences.title") }}
     </h2>
     <ExperiencesNavBar class="mb-4" />
     <NuxtPage />
