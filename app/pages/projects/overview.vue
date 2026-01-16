@@ -1,5 +1,5 @@
 <template>
-  <h2 class="text-xl font-semibold dark:text-white mb-4">Meus projetos</h2>
+  <h1 class="text-xl font-semibold dark:text-white mb-4">Meus projetos</h1>
   <section class="w-full">
     <div
       class="hidden md:block overflow-hidden rounded-md border border-gray-200 dark:border-gray-700 shadow-sm"
@@ -43,7 +43,8 @@
               <div
                 class="flex py-1 items-center gap-2 rounded-full px-2"
                 :class="
-                  project.status === 'finalizado'
+                  project.status === 'finalizado' ||
+                  project.status === 'completed'
                     ? 'bg-green-500/10 text-green-600 dark:text-green-400'
                     : 'bg-orange-500/10 text-orange-400'
                 "
@@ -51,7 +52,8 @@
                 <div
                   class="h-2 w-2 rounded-full"
                   :class="
-                    project.status === 'finalizado'
+                    project.status === 'finalizado' ||
+                    project.status === 'completed'
                       ? 'bg-emerald-600 dark:bg-emerald-400'
                       : 'bg-amber-600 dark:bg-amber-600'
                   "
@@ -69,6 +71,7 @@
                       class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition"
                       aria-label="Ver detalhes do projeto"
                       :aria-describedby="tooltipId"
+                      @click="setSelectedProject(project)"
                     >
                       <IconPhEye />
                     </button>
@@ -124,9 +127,9 @@
         class="rounded-xl border dark:border-white/10 bg-white/5 p-5 shadow-sm"
       >
         <!-- Nome -->
-        <h3 class="text-lg font-medium text-gray-700 dark:text-white">
+        <h2 class="text-lg font-medium text-gray-700 dark:text-white">
           {{ project.name }}
-        </h3>
+        </h2>
 
         <div class="mt-4 space-y-3 text-sm text-gray-400">
           <!-- Status -->
@@ -152,6 +155,7 @@
                     class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition"
                     aria-label="Ver detalhes do projeto"
                     :aria-describedby="tooltipId"
+                    @click="setSelectedProject(project)"
                   >
                     <IconPhEye />
                   </button>
@@ -197,45 +201,88 @@
         </div>
       </div>
     </div>
+
+    <Modal @close-modal="closeModal" :is-open="isModalOpen">
+      <template #modal-title>
+        <h3>{{ $t("projectDeatils") }}</h3>
+      </template>
+      <template #modal-content>
+        <div class="mb-2">
+          <h3 class="font-bold mb-2">
+            {{ $t("description") }}
+          </h3>
+
+          <p class="mb-2">{{ selectedProject?.details.description }}</p>
+
+          <h3 class="font-bold mb-3">Stack</h3>
+
+          <div class="flex items-center justify-start gap-4">
+            <span
+              v-for="tech in selectedProject?.details.stacks"
+              :key="tech"
+              class="p-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 rounded-md text-sm"
+            >
+              {{ tech }}
+            </span>
+          </div>
+        </div>
+      </template>
+    </Modal>
   </section>
 </template>
 
 <script setup lang="ts">
-const projects = [
-  {
-    id: 1,
-    name: "Website",
-    status: "finalizado",
-    label: "Finalizado",
-    show_github_link: false,
-    github_url: "https://github.com/dinobergviana/my-nuxt-web-site",
-    has_access_link: false,
-  },
-  {
-    id: 2,
-    name: "Migração do Website",
-    status: "em andamento",
-    label: "Em andamento",
-    show_github_link: false,
-    github_url: "https://github.com/dinobergviana/my-nuxt-web-site",
-    has_access_link: false,
-    access_link: "#",
-  },
-  {
-    id: 3,
-    name: "GC Manager",
-    status: "em andamento",
-    label: "Em andamento",
-    show_github_link: true,
-    github_url:
-      "https://github.com/dinobergviana/https://github.com/dinobergviana/gc-manager",
-    has_access_link: false,
-    access_link: "#",
-  },
-];
+import { ref, computed } from "vue";
+import { useI18n } from "vue-i18n";
+const { locale } = useI18n();
+
+import Modal from "@/components/global/modal/modal.vue";
+
+import { PROJECTS_PT, PROJECTS_EN } from "./consts/projects";
+
+type ProjectStatus =
+  | "finalizado"
+  | "em-andamento"
+  | "completed"
+  | "in-progress";
+
+interface Project {
+  id: number;
+  name: string;
+  status: ProjectStatus;
+  label: string;
+  show_github_link: boolean;
+  github_url: string;
+  has_access_link: boolean;
+  details: {
+    description: string;
+    stacks: string[];
+  };
+  access_link?: string;
+}
+
+const isModalOpen = ref(false);
+const selectedProject = ref<Project | null>(null);
+
+const projects = computed(() => {
+  return (locale.value === "pt" ? PROJECTS_PT : PROJECTS_EN) as Project[];
+});
+
+function closeModal() {
+  isModalOpen.value = false;
+}
+
+function openModal() {
+  isModalOpen.value = true;
+}
+
+function setSelectedProject(project: Project) {
+  selectedProject.value = Object.assign(project);
+  openModal();
+}
 
 const statusClass = (status: string) => {
-  if (status === "finalizado") {
+  if (status === "finalizado" || status === "completed") {
     return "bg-green-500/10 text-green-600 dark:text-green-400";
   }
 
