@@ -27,6 +27,8 @@
   "seeDetailsButton": "Ver detalhes",
   "projectDeatils": "Detalhes do projeto",
   "description": "Descrição",
+  "repository": "Repositório",
+  "access": "Acessar",
   "experienceModal": {
     "aboutTheCompany": "Sobre a empresa",
     "contributions": "Contribuições",
@@ -68,7 +70,10 @@
     }
   },
   "experiences": {
-    "title": "experiências",
+    "title": "Minhas experiências",
+    "position": "Cargo",
+    "aboutTheCompany": "Sobre a empresa",
+    "contributions": "Contribuições",
     "bigdata": {
       "role": "Desenvolvedor Fullstack",
       "period": "Jun 2025 - Set 2025",
@@ -96,7 +101,8 @@
     }
   },
   "education": {
-    "title": "formação",
+    "title": "Formação acadêmica",
+    "courses": "Cursos",
     "uni": {
       "title": "Análise e Desenvolvimento de Sistemas",
       "institution": "Uni Dom Bosco",
@@ -125,9 +131,11 @@
     "p3": "Caso queira conhecer mais sobre meu trabalho, por favor entre em contato comigo por meio das minhas redes. Abraço!"
   },
   "projects": {
-    "title": "projetos",
-    "repository": "Repositório",
-    "details": " Mais informações",
+    "title": "Meus projetos",
+    "projectName": "Nome do projeto",
+    "status": "Status",
+    "actions": "Ações",
+    "details": "Mais informações",
     "gc": {
       "title": "GC Manager",
       "description": "Sistema para gerenciamento de pequenos grupos.",

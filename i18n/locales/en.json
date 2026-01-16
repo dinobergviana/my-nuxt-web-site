@@ -27,6 +27,8 @@
   "seeDetailsButton": "See details",
   "projectDeatils": "Project details",
   "description": "Description",
+  "repository": "Repository",
+  "access": "Access",
   "experienceModal": {
     "aboutTheCompany": "About the company",
     "contributions": "Contributions",
@@ -68,7 +70,10 @@
     }
   },
   "experiences": {
-    "title": "experiences",
+    "position": "Position",
+    "title": "My experiences",
+    "aboutTheCompany": "About the company",
+    "contributions": "Contributions",
     "bigdata": {
       "role": "Fullstack Developer",
       "period": "Jun 2025 - Sep 2025",
@@ -96,7 +101,8 @@
     }
   },
   "education": {
-    "title": "education",
+    "title": "Academic background",
+    "courses": "Courses",
     "uni": {
       "title": "Systems Analysis and Development",
       "institution": "Uni Dom Bosco",
@@ -119,8 +125,10 @@
     }
   },
   "projects": {
-    "title": "projects",
-    "repository": "Repository",
+    "title": "My projects",
+    "projectName": "Project name",
+    "status": "Status",
+    "actions": "Actions",
     "details": " See details",
     "gc": {
       "title": "GC Manager",
