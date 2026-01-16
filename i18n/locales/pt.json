@@ -96,7 +96,8 @@
     }
   },
   "education": {
-    "title": "formação",
+    "title": "Formação Acadêmica",
+    "courses": "Cursos",
     "uni": {
       "title": "Análise e Desenvolvimento de Sistemas",
       "institution": "Uni Dom Bosco",

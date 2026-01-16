@@ -238,7 +238,7 @@ const { locale } = useI18n();
 
 import Modal from "@/components/global/modal/modal.vue";
 
-import { PROJECTS_PT, PROJECTS_EN } from "./consts/projects";
+import { PROJECTS_PT, PROJECTS_EN } from "@/consts/projects";
 
 type ProjectStatus =
   | "finalizado"

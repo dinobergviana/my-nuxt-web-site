@@ -96,7 +96,8 @@
     }
   },
   "education": {
-    "title": "education",
+    "title": "Academic Background",
+    "courses": "Courses",
     "uni": {
       "title": "Systems Analysis and Development",
       "institution": "Uni Dom Bosco",
