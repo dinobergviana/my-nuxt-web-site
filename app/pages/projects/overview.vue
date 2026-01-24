@@ -235,10 +235,10 @@
 
 <script setup lang="ts">
 definePageMeta({
-  pageKey: "projects-overview"
+  pageKey: "projects-overview",
 });
 
-import { useNavigationStore } from '@/stores/navigation'
+import { useNavigationStore } from "@/stores/navigation";
 
 import { ref, computed } from "vue";
 import { useI18n } from "vue-i18n";
@@ -250,10 +250,10 @@ import Modal from "@/components/global/modal/modal.vue";
 import { PROJECTS_PT, PROJECTS_EN } from "@/consts/projects";
 
 type ProjectStatus =
-| "finalizado"
-| "em-andamento"
-| "completed"
-| "in-progress";
+  | "finalizado"
+  | "em-andamento"
+  | "completed"
+  | "in-progress";
 
 interface Project {
   id: number;
@@ -270,12 +270,12 @@ interface Project {
   access_link?: string;
 }
 
-const navigationStore = useNavigationStore()
+const navigationStore = useNavigationStore();
 
 const isModalOpen = ref(false);
 const selectedProject = ref<Project | null>(null);
-  
-  const projects = computed(() => {
+
+const projects = computed(() => {
   return (locale.value === "pt" ? PROJECTS_PT : PROJECTS_EN) as Project[];
 });
 
@@ -288,8 +288,10 @@ function openModal() {
 }
 
 function setSelectedProject(project: Project) {
-  console.log(project)
-  navigationStore.registerSection(`project-details-${project.name.toLowerCase()}`)
+  console.log(project);
+  navigationStore.registerSection(
+    `project-details-${project.name.toLowerCase()}`,
+  );
   selectedProject.value = Object.assign(project);
   openModal();
 }

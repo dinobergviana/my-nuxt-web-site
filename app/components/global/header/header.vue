@@ -3,8 +3,21 @@
     <div class="w-full flex items-center">
       <!-- Área de navegação -->
       <div class="pl-2">
-        <small>Você ja visitou {{  navigation.currentProgressBarValue  }}% do meu site!</small>
+        <img
+          class="h-[60px] w-[60px] object-cover"
+          src="/images/golden-trophy.png"
+          alt=""
+        />
       </div>
+
+      <div class="pl-2">
+        <img
+          class="h-[60px] w-[60px] object-cover"
+          src="/images/silver-trophy.png"
+          alt=""
+        />
+      </div>
+
       <div class="flex-1 flex justify-center">
         <nav>
           <ul
@@ -95,11 +108,11 @@
 <script setup lang="ts">
 import LangSelect from "@/components/lang-select/index.vue";
 import MenuDropDown from "@/components/dropdown-menu/index.vue";
-import { useNavigationStore } from "@/stores/navigation"
+import { useNavigationStore } from "@/stores/navigation";
 
 const { theme, toggleTheme } = useTheme();
 const { setLocale } = useI18n();
-const navigation = useNavigationStore()
+const navigation = useNavigationStore();
 
 const changeTheme = (value: "light" | "dark") => {
   if (theme.value !== value) toggleTheme();

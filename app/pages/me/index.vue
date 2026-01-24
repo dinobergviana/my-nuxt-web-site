@@ -101,6 +101,6 @@
 import DownloadResumeButton from "@/components/buttons/DownloadResumeButton.vue";
 
 definePageMeta({
-  pageKey: "me"
+  pageKey: "me",
 });
 </script>

@@ -1,15 +1,13 @@
-import { useNavigationStore } from '@/stores/navigation'
+import { useNavigationStore } from "@/stores/navigation";
 
 export default defineNuxtPlugin(() => {
-  const router = useRouter()
-  const navigationStore = useNavigationStore()
+  const router = useRouter();
+  const navigationStore = useNavigationStore();
 
   router.afterEach((to) => {
     const pageKey =
-      (to.meta.pageKey as string) ??
-      to.name?.toString() ??
-      to.path
+      (to.meta.pageKey as string) ?? to.name?.toString() ?? to.path;
 
-    navigationStore.registerPage(pageKey)
-  })
-})
+    navigationStore.registerPage(pageKey);
+  });
+});
