@@ -2,22 +2,16 @@
   <header class="flex w-full border-b dark:border-b-gray-700 h-header">
     <div class="w-full flex items-center">
       <!-- Área de navegação -->
-      <div class="pl-2">
-        <img
-          class="h-[60px] w-[60px] object-cover"
-          src="/images/golden-trophy.png"
-          alt=""
-        />
-      </div>
+      <AchievementRing
+        class="ml-4"
+        :size="48"
+        :progress="(9 / 9) * 100"
+        :unlocked="9 >= 9"
+      >
 
-      <div class="pl-2">
-        <img
-          class="h-[60px] w-[60px] object-cover"
-          src="/images/silver-trophy.png"
-          alt=""
-        />
-      </div>
-
+      <!-- <IconPhMedal class="h-8 w-8" :class="9 >= 9 ? 'text-yellow-400' : 'text-slate-300'" weight="duotone" /> -->
+      <img src="/images/silver-trophy.png" class="object-cover h-14 w-14" />
+      </AchievementRing>
       <div class="flex-1 flex justify-center">
         <nav>
           <ul
@@ -108,6 +102,7 @@
 <script setup lang="ts">
 import LangSelect from "@/components/lang-select/index.vue";
 import MenuDropDown from "@/components/dropdown-menu/index.vue";
+import AchievementRing  from "@/components/medal/index.vue"
 import { useNavigationStore } from "@/stores/navigation";
 
 const { theme, toggleTheme } = useTheme();
