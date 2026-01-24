@@ -2,6 +2,9 @@
   <header class="flex w-full border-b dark:border-b-gray-700 h-header">
     <div class="w-full flex items-center">
       <!-- Área de navegação -->
+      <div class="pl-2">
+        <small>Você ja visitou {{  navigation.currentProgressBarValue  }}% do meu site!</small>
+      </div>
       <div class="flex-1 flex justify-center">
         <nav>
           <ul
@@ -92,9 +95,11 @@
 <script setup lang="ts">
 import LangSelect from "@/components/lang-select/index.vue";
 import MenuDropDown from "@/components/dropdown-menu/index.vue";
+import { useNavigationStore } from "@/stores/navigation"
 
 const { theme, toggleTheme } = useTheme();
 const { setLocale } = useI18n();
+const navigation = useNavigationStore()
 
 const changeTheme = (value: "light" | "dark") => {
   if (theme.value !== value) toggleTheme();
