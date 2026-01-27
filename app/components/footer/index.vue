@@ -1,17 +1,16 @@
 <template>
   <footer
-    class="px-6 py-2 bg-white dark:bg-gray-800 flex items-center justify-between md:justify-end"
+    class="px-6 py-2 bg-white dark:bg-gray-900 text-center"
   >
-    <div
-      class="w-[100%] flex items-center justify-center md:justify-between flex-col-reverse md:flex-row"
-    >
-      <p
-        class="text-center text-gray-500 dark:text-gray-400 font-normal text-sm"
-      >
-        © 2025 Dinobergue Viana
-      </p>
 
-      <NuxtLink
+      <span
+        id="year"
+        class="text-center text-gray-500 dark:text-gray-600 font-normal text-sm"
+      >
+        Copyright © 2025 - {{ currentYear }} &bull; <span>Dinobergue Viana</span> &bull; <span>Os projetos apresentados têm fins demonstrativos.</span>
+      </span>
+
+      <!-- <NuxtLink
         v-if="hasBackToTopButton"
         :href="backToTopPath"
         aria-label="Voltar para o topo"
@@ -21,19 +20,13 @@
           <IconPhArrowUp size="16" weight="bold" aria-hidden="true" />
           {{ $t("footer.backToTop") }}
         </span>
-      </NuxtLink>
-    </div>
+      </NuxtLink> -->
+
   </footer>
 </template>
 
 <script lang="ts" setup>
-const route = useRoute();
-
-const hasBackToTopButton = computed(() => {
-  return route.meta.hasBackToTopButton;
-});
-
-const backToTopPath = computed(() => {
-  return route.meta.backToTopPath as string;
-});
+const currentYear = computed(() => {
+  return new Date().getFullYear()
+})
 </script>

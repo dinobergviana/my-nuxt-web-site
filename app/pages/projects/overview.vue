@@ -1,8 +1,8 @@
 <template>
-  <h1 class="text-xl font-semibold dark:text-white mb-4">
-    {{ $t("projects.title") }}
-  </h1>
-  <section class="w-full">
+  <section class="w-full min-h-[calc(100vh-var(--header-height))]">
+    <h1 class="text-xl font-semibold dark:text-white mb-4">
+      {{ $t("projects.title") }}
+    </h1>
     <div
       class="hidden md:block overflow-hidden rounded-md border border-gray-200 dark:border-gray-700 shadow-sm"
     >
