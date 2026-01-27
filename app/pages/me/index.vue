@@ -1,5 +1,5 @@
 <template>
-  <section class="mt-10">
+  <section class="mt-10 min-h-[calc(100vh-var(--header-height))]">
     <div class="pb-5 mb-5 w-full border-b dark:border-gray-600">
       <div class="flex items-center justify-center mb-5">
         <img
