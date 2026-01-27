@@ -1,16 +1,15 @@
 <template>
-  <footer
-    class="px-6 py-2 bg-white dark:bg-gray-900 text-center"
-  >
+  <footer class="px-6 py-2 bg-white dark:bg-gray-900 text-center">
+    <span
+      id="year"
+      class="text-center text-gray-500 dark:text-gray-600 font-normal text-sm"
+    >
+      Copyright © 2025 - {{ currentYear }} &bull;
+      <span>Dinobergue Viana</span> &bull;
+      <span>Os projetos apresentados têm fins demonstrativos.</span>
+    </span>
 
-      <span
-        id="year"
-        class="text-center text-gray-500 dark:text-gray-600 font-normal text-sm"
-      >
-        Copyright © 2025 - {{ currentYear }} &bull; <span>Dinobergue Viana</span> &bull; <span>Os projetos apresentados têm fins demonstrativos.</span>
-      </span>
-
-      <!-- <NuxtLink
+    <!-- <NuxtLink
         v-if="hasBackToTopButton"
         :href="backToTopPath"
         aria-label="Voltar para o topo"
@@ -21,12 +20,11 @@
           {{ $t("footer.backToTop") }}
         </span>
       </NuxtLink> -->
-
   </footer>
 </template>
 
 <script lang="ts" setup>
 const currentYear = computed(() => {
-  return new Date().getFullYear()
-})
+  return new Date().getFullYear();
+});
 </script>

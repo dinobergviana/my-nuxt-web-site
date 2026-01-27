@@ -6,5 +6,5 @@
 </template>
 
 <script setup>
-import Footer from "@/components/footer/index.vue"
+import Footer from "@/components/footer/index.vue";
 </script>
