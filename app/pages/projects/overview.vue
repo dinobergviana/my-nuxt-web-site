@@ -210,22 +210,82 @@
       </template>
       <template #modal-content>
         <div class="mb-2">
-          <h3 class="font-bold mb-2">
-            {{ $t("description") }}
-          </h3>
+          <div>
+            <h3 class="font-bold mb-2">
+              {{ $t("description") }}
+            </h3>
 
-          <p class="mb-2">{{ selectedProject?.details.description }}</p>
+            <p class="mb-2">{{ selectedProject?.details.description }}</p>
+          </div>
 
-          <h3 class="font-bold mb-3">Stack</h3>
+          <div v-if="!!selectedProject?.details.results">
+            <h3 class="font-bold mb-2">
+              Resultados - Google PageSpeed Insights
+            </h3>
 
-          <div class="flex items-center justify-start gap-4">
-            <span
-              v-for="tech in selectedProject?.details.stacks"
-              :key="tech"
-              class="p-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 rounded-md text-sm"
-            >
-              {{ tech }}
-            </span>
+            <div class="mb-2">
+              <p
+                v-for="(item, index) in selectedProject?.details.results
+                  .summary"
+                :key="`summary-${index}`"
+              >
+                {{ item }}
+              </p>
+            </div>
+
+            <div class="mb-2">
+              <h3 class="font-bold mb-2">
+                {{ selectedProject?.details.results.keyImprovements.title }}
+              </h3>
+
+              <ul class="list-disc list-outside pl-8 space-y-1">
+                <li
+                  v-for="highlight in selectedProject?.details.results
+                    .keyImprovements.highlights"
+                >
+                  {{ highlight }}
+                </li>
+              </ul>
+            </div>
+
+            <div class="mb-2">
+              <div
+                v-for="action in selectedProject?.details.results
+                  .keyImprovements.actionsTaken"
+              >
+                <div>
+                  <h3 class="font-bold mb-2 pl-4">{{ action.title }}</h3>
+
+                  <ul class="list-disc list-outside pl-8 space-y-1">
+                    <li v-for="step in action.steps">
+                      {{ step }}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-2">
+              <h3 class="font-bold mb-2">Conclusão</h3>
+
+              <p v-for="item in selectedProject?.details.results.conclusion">
+                {{ item }}
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="font-bold mb-3">Stack</h3>
+
+            <div class="flex items-center justify-start gap-4">
+              <span
+                v-for="tech in selectedProject?.details.stacks"
+                :key="tech"
+                class="p-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 rounded-md text-sm"
+              >
+                {{ tech }}
+              </span>
+            </div>
           </div>
         </div>
       </template>
@@ -241,6 +301,20 @@ const { locale } = useI18n();
 import Modal from "@/components/global/modal/modal.vue";
 
 import { PROJECTS_PT, PROJECTS_EN } from "@/consts/projects";
+
+interface ImprovementSection {
+  summary: string[];
+  keyImprovements: {
+    title: string;
+    highlights: string[];
+    actionsTaken: {
+      title: string;
+      steps: string[];
+      conclusion?: string;
+    }[];
+  };
+  conclusion?: string[];
+}
 
 type ProjectStatus =
   | "finalizado"
@@ -259,6 +333,7 @@ interface Project {
   details: {
     description: string;
     stacks: string[];
+    results?: ImprovementSection;
   };
   access_link?: string;
 }

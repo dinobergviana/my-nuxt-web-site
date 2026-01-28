@@ -24,7 +24,45 @@ export const PROJECTS_PT = [
     access_link: null,
     details: {
       description:
-        "Evolução do projeto original com foco em melhorar SEO, adotar tecnologias mais alinhadas ao mercado e implementar testes unitários. Desenvolvido com Vue 3, Nuxt e TypeScript, este projeto também foi utilizado como oportunidade de mentoria, auxiliando no desenvolvimento técnico e profissional do meu irmão.",
+        "Evolução do projeto original com foco em melhorar SEO, adotar tecnologias mais alinhadas ao mercado e implementar testes unitários. Desenvolvido com tecnologias modernas, este projeto também foi utilizado como oportunidade de mentoria, auxiliando no desenvolvimento técnico e profissional do meu irmão.",
+      results: {
+        summary: [
+          "Após a migração do website, foi possível observar melhorias significativas nos indicadores de Acessibilidade e SEO, mantendo a Performance máxima (100) já alcançada anteriormente.",
+          "O comparativo abaixo mostra claramente a evolução entre o estado anterior e o atual do site, medida através do Google PageSpeed Insights.",
+        ],
+        keyImprovements: {
+          title: "Principais melhorias alcançadas",
+          highlights: [
+            "Acessibilidade: aumento de 83 para 90",
+            "SEO: aumento de 75 para 100",
+            "Performance: mantida em 100",
+          ],
+          actionsTaken: [
+            {
+              title: "Acessibilidade",
+              steps: [
+                "Reestruturação do HTML com foco em semântica correta (uso adequado de header, main, section, nav, entre outros)",
+                "Inclusão de atributos de acessibilidade como aria-label e alt em elementos visuais e interativos",
+                "Melhoria na hierarquia de títulos e na navegação por leitores de tela",
+              ],
+              conclusion:
+                "Essas mudanças tornam o site mais acessível para usuários com deficiências visuais e também melhor interpretado por mecanismos de busca.",
+            },
+            {
+              title: "SEO",
+              steps: [
+                "Uso consistente de HTML semântico, facilitando o entendimento do conteúdo pelos crawlers",
+                "Ajustes na configuração do nuxt.config.ts, incluindo metadados essenciais para indexação",
+                "Melhor definição de títulos, descrições e estrutura da página",
+              ],
+            },
+          ],
+        },
+        conclusion: [
+          "Mesmo com ajustes simples e bem direcionados, a migração foi capaz de gerar um impacto positivo direto na qualidade, acessibilidade e indexação do site, que eram alguns dos principais objetivos do projeto.",
+          "O resultado é um website mais inclusivo, melhor ranqueado e tecnicamente mais sólido, sem comprometer a performance.",
+        ],
+      },
       stacks: ["Vue 3", "Nuxt", "Typescript", "Vitest"],
     },
   },
