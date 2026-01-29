@@ -215,7 +215,9 @@
               {{ $t("description") }}
             </h3>
 
-            <p class="mb-2 dark:text-gray-300">{{ selectedProject?.details.description }}</p>
+            <p class="mb-2 dark:text-gray-300">
+              {{ selectedProject?.details.description }}
+            </p>
           </div>
 
           <div v-if="!!selectedProject?.details.results">
@@ -254,7 +256,9 @@
                   .keyImprovements.actionsTaken"
               >
                 <div>
-                  <h3 class="font-bold my-2 pl-4 dark:text-gray-200">{{ action.title }}</h3>
+                  <h3 class="font-bold my-2 pl-4 dark:text-gray-200">
+                    {{ action.title }}
+                  </h3>
 
                   <ul class="list-disc list-outside pl-8 space-y-1">
                     <li v-for="step in action.steps">
@@ -266,19 +270,46 @@
             </div>
 
             <div>
-              <h3 class="font-bold my-4 pl-4 dark:text-gray-200">{{ $t("experienceModal.analisysBefore") }}</h3>
+              <div class="my-2 flex items-center gap-2">
+                <h3 class="font-bold dark:text-gray-200">
+                  {{ $t("experienceModal.analisysBefore") }}
+                </h3>
+                <a
+                  class="m-0 font-semibold text-xs dark:text-gray-200 border dark:border-gray-600 dark:bg-gray-700 border-dashed rounded-sm p-1"
+                  href="https://pagespeed.web.dev/analysis/https-meu-site-dinoberguevianas-projects-vercel-app/myy1uek5vw?form_factor=desktop"
+                  target="_blank"
+                >
+                  <span>{{ $t("experienceModal.fullAnalisys") }}</span>
+                </a>
+              </div>
               <NuxtImg src="/images/before.png" class="w-full rounded-md" />
             </div>
 
             <div class="mb-4">
-              <h3 class="font-bold my-4 pl-4 dark:text-gray-200">{{ $t("experienceModal.analisysAfter") }}</h3>
+              <div class="my-4 flex items-center gap-2">
+                <h3 class="font-bold dark:text-gray-200">
+                  {{ $t("experienceModal.analisysAfter") }}
+                </h3>
+                <a
+                  class="m-0 font-semibold text-xs dark:text-gray-200 border dark:border-gray-600 dark:bg-gray-700 border-dashed rounded-sm p-1"
+                  href="https://pagespeed.web.dev/analysis/https-www-dinobergueviana-com-br/ymrutvnidu?form_factor=desktop"
+                  target="_blank"
+                >
+                  <span>{{ $t("experienceModal.fullAnalisys") }}</span>
+                </a>
+              </div>
               <NuxtImg src="/images/after.png" class="w-full rounded-md" />
             </div>
 
             <div>
-              <h3 class="font-bold mb-2 dark:text-gray-200">{{ $t("experienceModal.conclusion") }}</h3>
+              <h3 class="font-bold mb-2 dark:text-gray-200">
+                {{ $t("experienceModal.conclusion") }}
+              </h3>
 
-              <p v-for="item in selectedProject?.details.results.conclusion">
+              <p
+                class="mb-2"
+                v-for="item in selectedProject?.details.results.conclusion"
+              >
                 {{ item }}
               </p>
             </div>

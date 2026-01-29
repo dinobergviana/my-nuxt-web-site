@@ -61,6 +61,7 @@ export const PROJECTS_PT = [
         conclusion: [
           "Mesmo com ajustes simples e bem direcionados, a migração foi capaz de gerar um impacto positivo direto na qualidade, acessibilidade e indexação do site, que eram alguns dos principais objetivos do projeto.",
           "O resultado é um website mais inclusivo, melhor ranqueado e tecnicamente mais sólido, sem comprometer a performance.",
+          "Como próximo passo, o foco passa a ser a evolução contínua da Acessibilidade, com o objetivo de alcançar 100% de conformidade, reforçando ainda mais o compromisso com inclusão, boas práticas e qualidade técnica.",
         ],
       },
       stacks: ["Vue 3", "Nuxt", "Typescript", "Vitest"],
@@ -145,8 +146,8 @@ export const PROJECTS_EN = [
           ],
         },
         conclusion: [
-          "Even with simple and well-targeted adjustments, the migration was able to generate a direct positive impact on the quality, accessibility, and indexing of the website, which were some of the main goals of the project.",
-          "The result is a more inclusive website, better ranked in search engines, and technically more solid, without compromising performance.",
+          "Even with simple and well-targeted adjustments, the migration was able to generate a direct positive impact on the quality, accessibility, and indexing of the website, which were some of the main goals of the project. The result is a more inclusive website, better ranked in search engines, and technically more solid, without compromising performance.",
+          "As a next step, the focus shifts to the continuous improvement of Accessibility, with the goal of reaching 100% compliance, further reinforcing the commitment to inclusion, best practices, and technical quality.",
         ],
       },
 
