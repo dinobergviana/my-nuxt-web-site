@@ -206,35 +206,35 @@
 
     <Modal @close-modal="closeModal" :is-open="isModalOpen">
       <template #modal-title>
-        <h3>{{ $t("projectDeatils") }}</h3>
+        <h3 class="dark:text-gray-100">{{ $t("projectDeatils") }}</h3>
       </template>
       <template #modal-content>
         <div class="mb-2">
-          <div>
-            <h3 class="font-bold mb-2">
+          <div class="border-b dark:border-b-gray-600 pb-2 mb-4">
+            <h3 class="font-bold mb-2 dark:text-gray-200">
               {{ $t("description") }}
             </h3>
 
-            <p class="mb-2">{{ selectedProject?.details.description }}</p>
+            <p class="mb-2 dark:text-gray-300">{{ selectedProject?.details.description }}</p>
           </div>
 
           <div v-if="!!selectedProject?.details.results">
-            <h3 class="font-bold mb-2">
+            <h3 class="font-bold mb-2 dark:text-gray-200">
               Resultados - Google PageSpeed Insights
             </h3>
 
-            <div class="mb-2">
+            <div class="border-b dark:border-b-gray-600 pb-4 mb-4">
               <p
                 v-for="(item, index) in selectedProject?.details.results
                   .summary"
                 :key="`summary-${index}`"
-              >
-                {{ item }}
-              </p>
+                class="dark:text-gray-300"
+                v-html="item"
+              />
             </div>
 
             <div class="mb-2">
-              <h3 class="font-bold mb-2">
+              <h3 class="font-bold mb-2 dark:text-gray-100">
                 {{ selectedProject?.details.results.keyImprovements.title }}
               </h3>
 
@@ -243,18 +243,18 @@
                   v-for="highlight in selectedProject?.details.results
                     .keyImprovements.highlights"
                 >
-                  {{ highlight }}
+                  <span v-html="highlight" />
                 </li>
               </ul>
             </div>
 
-            <div class="mb-2">
+            <div class="border-b dark:border-b-gray-600 pb-4 mb-4">
               <div
                 v-for="action in selectedProject?.details.results
                   .keyImprovements.actionsTaken"
               >
                 <div>
-                  <h3 class="font-bold mb-2 pl-4">{{ action.title }}</h3>
+                  <h3 class="font-bold my-2 pl-4 dark:text-gray-200">{{ action.title }}</h3>
 
                   <ul class="list-disc list-outside pl-8 space-y-1">
                     <li v-for="step in action.steps">
@@ -265,8 +265,8 @@
               </div>
             </div>
 
-            <div class="mb-2">
-              <h3 class="font-bold mb-2">Conclusão</h3>
+            <div class="border-b dark:border-b-gray-600 pb-4 mb-4">
+              <h3 class="font-bold mb-2 dark:text-gray-200">Conclusão</h3>
 
               <p v-for="item in selectedProject?.details.results.conclusion">
                 {{ item }}
@@ -275,7 +275,7 @@
           </div>
 
           <div>
-            <h3 class="font-bold mb-3">Stack</h3>
+            <h3 class="font-bold mb-3 dark:text-gray-200">Stack</h3>
 
             <div class="flex items-center justify-start gap-4">
               <span
