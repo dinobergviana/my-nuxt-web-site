@@ -16,8 +16,8 @@ export const PROJECTS_PT = [
   {
     id: 2,
     name: "Migração do Website",
-    status: "em andamento",
-    label: "Em andamento",
+    status: "finalizado",
+    label: "Finalizado",
     show_github_link: false,
     github_url: "https://github.com/dinobergviana/my-nuxt-web-site",
     has_access_link: false,
@@ -103,8 +103,8 @@ export const PROJECTS_EN = [
   {
     id: 2,
     name: "Website Migration",
-    status: "in progress",
-    label: "In progress",
+    status: "completed",
+    label: "Completed",
     show_github_link: false,
     github_url: "https://github.com/dinobergviana/my-nuxt-web-site",
     has_access_link: false,
