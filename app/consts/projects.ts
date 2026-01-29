@@ -33,7 +33,7 @@ export const PROJECTS_PT = [
         keyImprovements: {
           title: "Principais melhorias alcançadas",
           highlights: [
-            "<span class='font-semibold'>Acessibilidade</span>: aumento de <span class='font-semibold'>83</span> para <span class='font-semibold'>90</span>;",
+            "<span class='font-semibold'>Acessibilidade</span>: aumento de <span class='font-semibold'>83</span> para <span class='font-semibold'>91</span>;",
             "<span class='font-semibold'>SEO</span>: aumento de <span class='font-semibold'>75</span> para <span class='font-semibold'>100</span>;",
             "<span class='font-semibold'>Performance</span>: mantida em <span class='font-semibold'>100</span>;",
           ],
@@ -119,7 +119,7 @@ export const PROJECTS_EN = [
         keyImprovements: {
           title: "Key improvements achieved",
           highlights: [
-            "<span class='font-semibold'>Accessibility</span>: increased from <span class='font-semibold'>83</span> to <span class='font-semibold'>90</span>;",
+            "<span class='font-semibold'>Accessibility</span>: increased from <span class='font-semibold'>83</span> to <span class='font-semibold'>91</span>;",
             "<span class='font-semibold'>SEO</span>: increased from <span class='font-semibold'>75</span> to <span class='font-semibold'>100</span>;",
             "<span class='font-semibold'>Performance</span>: maintained at <span class='font-semibold'>100</span>;",
           ],

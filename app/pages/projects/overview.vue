@@ -265,8 +265,18 @@
               </div>
             </div>
 
-            <div class="border-b dark:border-b-gray-600 pb-4 mb-4">
-              <h3 class="font-bold mb-2 dark:text-gray-200">Conclusão</h3>
+            <div>
+              <h3 class="font-bold my-4 pl-4 dark:text-gray-200">{{ $t("experienceModal.analisysBefore") }}</h3>
+              <NuxtImg src="/images/before.png" class="w-full rounded-md" />
+            </div>
+
+            <div class="mb-4">
+              <h3 class="font-bold my-4 pl-4 dark:text-gray-200">{{ $t("experienceModal.analisysAfter") }}</h3>
+              <NuxtImg src="/images/after.png" class="w-full rounded-md" />
+            </div>
+
+            <div>
+              <h3 class="font-bold mb-2 dark:text-gray-200">{{ $t("experienceModal.conclusion") }}</h3>
 
               <p v-for="item in selectedProject?.details.results.conclusion">
                 {{ item }}

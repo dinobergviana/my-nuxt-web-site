@@ -33,6 +33,11 @@
     "aboutTheCompany": "Sobre a empresa",
     "contributions": "Contribuições",
     "mainProjects": "Projetos de impacto",
+    "results":"Resultados",
+    "conclusion":"Conclusão",
+    "analisysBefore":"Análise ANTES da migração",
+    "analisysAfter":"Análise DEPOIS da migração",
+    "":"",
     "modalTitle": "Título do modal",
     "modalContent": "Conteúdo do modal...",
     "closeButton": "Fechar"
