@@ -151,7 +151,7 @@ export const PROJECTS_EN = [
         ],
       },
 
-      stacks: ["Vue 3", "Nuxt 4", "TypeScript", "Vitest", "TailwindCSS"], 
+      stacks: ["Vue 3", "Nuxt 4", "TypeScript", "Vitest", "TailwindCSS"],
     },
   },
   {
