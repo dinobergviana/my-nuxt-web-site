@@ -275,7 +275,7 @@
                   {{ $t("experienceModal.analisysBefore") }}
                 </h3>
                 <a
-                  class="m-0 font-semibold text-xs dark:text-gray-200 border dark:border-gray-600 dark:bg-gray-700 border-dashed rounded-sm p-1"
+                  class="m-0 font-semibold text-xs text-gray-600 dark:text-gray-200 border hover:border-green-500 hover:text-green-600 dark:hover:border-green-500 dark:hover:text-green-500 border-gray-400 dark:border-gray-600 dark:bg-gray-700 border-dashed rounded-sm p-1 transition-colors duration-400 ease-out"
                   href="https://pagespeed.web.dev/analysis/https-meu-site-dinoberguevianas-projects-vercel-app/myy1uek5vw?form_factor=desktop"
                   target="_blank"
                 >
@@ -291,7 +291,7 @@
                   {{ $t("experienceModal.analisysAfter") }}
                 </h3>
                 <a
-                  class="m-0 font-semibold text-xs dark:text-gray-200 border dark:border-gray-600 dark:bg-gray-700 border-dashed rounded-sm p-1"
+                  class="m-0 font-semibold text-xs text-gray-600 dark:text-gray-200 border hover:border-green-600 hover:text-green-600 dark:hover:border-green-500 dark:hover:text-green-500 border-gray-400 dark:border-gray-600 dark:bg-gray-700 border-dashed rounded-sm p-1 transition-colors duration-200 ease-out"
                   href="https://pagespeed.web.dev/analysis/https-www-dinobergueviana-com-br/ymrutvnidu?form_factor=desktop"
                   target="_blank"
                 >
