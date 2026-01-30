@@ -141,7 +141,7 @@
               class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs"
               :class="statusClass(project.status)"
             >
-              <div class="h-2 w-2 rounded-full bg-emerald-600" />
+              <div class="h-2 w-2 rounded-full bg-current" />
               <span>{{ project.label }}</span>
             </div>
           </div>
