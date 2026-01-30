@@ -47,7 +47,7 @@
                 :class="
                   project.status === 'finalizado' ||
                   project.status === 'completed'
-                    ? 'bg-green-500/10 text-green-600 dark:text-green-400'
+                    ? 'bg-green-500/20 text-green-700 dark:text-green-400'
                     : 'bg-orange-500/10 text-orange-400'
                 "
               >
@@ -137,13 +137,13 @@
           <!-- Status -->
           <div class="flex items-center justify-between">
             <span>Status</span>
-            <span
-              class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-medium"
+            <div
+              class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs"
               :class="statusClass(project.status)"
             >
-              <span class="h-2 w-2 rounded-full bg-current"></span>
-              {{ project.label }}
-            </span>
+              <div class="h-2 w-2 rounded-full bg-emerald-600" />
+              <span>{{ project.label }}</span>
+            </div>
           </div>
 
           <!-- Ações -->
@@ -401,7 +401,7 @@ function setSelectedProject(project: Project) {
 
 const statusClass = (status: string) => {
   if (status === "finalizado" || status === "completed") {
-    return "bg-green-500/10 text-green-600 dark:text-green-400";
+    return "bg-green-500/20 text-green-700 dark:text-green-400";
   }
 
   return "bg-orange-500/10 text-orange-400";
