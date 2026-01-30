@@ -12,5 +12,5 @@ interface CourseItem {
   title: string;
   image: string;
   description: string;
-  tags: string[];
+  tags: Tag[];
 }

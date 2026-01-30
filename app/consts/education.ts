@@ -19,6 +19,13 @@ export const EDUCATION_PT: EducationItem[] = [
   },
 ];
 
+const TAG_BASE_CLASSES =
+  "px-2 py-1 text-xs font-semibold rounded-md bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-200";
+const TAG_STATUS_COMPLETED_CLASSES =
+  "bg-green-300 text-green-900 dark:bg-green-800 dark:text-white";
+const TAG_STATUS_IN_PROGRESS_CLASSES =
+  "bg-orange-200 dark:bg-orange-400 dark:text-white";
+
 export const EDUCATION_EN: EducationItem[] = [
   {
     id: "ads",
@@ -47,7 +54,16 @@ export const COURSES_PT: CourseItem[] = [
     image: "/images/curso-dev.png",
     description:
       "Formação focada em fundamentos de desenvolvimento de software, abordando JavaScript, Node.js, backend, arquitetura, testes, CI/CD, boas práticas de código e muito mais.",
-    tags: ["Em andamento", "Felipe Deschamps"],
+    tags: [
+      {
+        label: "Em andamento",
+        classes: [TAG_BASE_CLASSES, TAG_STATUS_IN_PROGRESS_CLASSES],
+      },
+      {
+        label: "Felipe Deschamps",
+        classes: [TAG_BASE_CLASSES],
+      },
+    ],
   },
   {
     id: "typescript",
@@ -55,7 +71,24 @@ export const COURSES_PT: CourseItem[] = [
     image: "/images/ts-logo.png",
     description:
       "Curso voltado ao uso de TypeScript para aumentar a segurança e escalabilidade do código JavaScript por meio de tipagem estática.",
-    tags: ["40h", "02/2022", "Alura"],
+    tags: [
+      {
+        label: "Finalizado",
+        classes: [TAG_BASE_CLASSES, TAG_STATUS_COMPLETED_CLASSES],
+      },
+      {
+        label: "40h",
+        classes: [TAG_BASE_CLASSES],
+      },
+      {
+        label: "02/2022",
+        classes: [TAG_BASE_CLASSES],
+      },
+      {
+        label: "Alura",
+        classes: [TAG_BASE_CLASSES],
+      },
+    ],
   },
   {
     id: "vue-2",
@@ -63,7 +96,24 @@ export const COURSES_PT: CourseItem[] = [
     image: "/images/vue-logo.png",
     description:
       "Curso focado no desenvolvimento de interfaces reativas utilizando Vue 2, abordando componentes, diretivas, estado e boas práticas no front-end.",
-    tags: ["40h", "01/2022", "Alura"],
+    tags: [
+      {
+        label: "Finalizado",
+        classes: [TAG_BASE_CLASSES, TAG_STATUS_COMPLETED_CLASSES],
+      },
+      {
+        label: "40h",
+        classes: [TAG_BASE_CLASSES],
+      },
+      {
+        label: "01/2022",
+        classes: [TAG_BASE_CLASSES],
+      },
+      {
+        label: "Alura",
+        classes: [TAG_BASE_CLASSES],
+      },
+    ],
   },
   {
     id: "fullstack",
@@ -71,7 +121,21 @@ export const COURSES_PT: CourseItem[] = [
     image: "/images/fullstack-logo.png",
     description:
       "Formação completa em desenvolvimento web, utilizando Node.js, MySQL, HTML, CSS, JavaScript, React e MVC para criação de aplicações fullstack.",
-    tags: ["6 meses", "07/2020 – 01/2021", "Digital House"],
+    tags: [
+      {
+        label: "Finalizado",
+        classes: [TAG_BASE_CLASSES, TAG_STATUS_COMPLETED_CLASSES],
+      },
+      { label: "6 meses", classes: [TAG_BASE_CLASSES] },
+      {
+        label: "07/2020 – 01/2021",
+        classes: [TAG_BASE_CLASSES],
+      },
+      {
+        label: "Digital House",
+        classes: [TAG_BASE_CLASSES],
+      },
+    ],
   },
 ];
 
@@ -82,7 +146,16 @@ export const COURSES_EN: CourseItem[] = [
     image: "/images/curso-dev.png",
     description:
       "Program focused on software development fundamentals, covering JavaScript, Node.js, backend development, architecture, testing, CI/CD, code best practices, and more.",
-    tags: ["In progress", "Felipe Deschamps"],
+    tags: [
+      {
+        label: "In progress",
+        classes: [TAG_BASE_CLASSES, TAG_STATUS_IN_PROGRESS_CLASSES],
+      },
+      {
+        label: "Felipe Deschamps",
+        classes: [TAG_BASE_CLASSES],
+      },
+    ],
   },
   {
     id: "typescript",
@@ -90,7 +163,15 @@ export const COURSES_EN: CourseItem[] = [
     image: "/images/ts-logo.png",
     description:
       "Course focused on using TypeScript to improve JavaScript code safety and scalability through static typing.",
-    tags: ["40h", "02/2022", "Alura"],
+    tags: [
+      {
+        label: "Completed",
+        classes: [TAG_BASE_CLASSES, TAG_STATUS_COMPLETED_CLASSES],
+      },
+      { label: "40h", classes: [TAG_BASE_CLASSES] },
+      { label: "02/2022", classes: [TAG_BASE_CLASSES] },
+      { label: "Alura", classes: TAG_BASE_CLASSES },
+    ],
   },
   {
     id: "vue-2",
@@ -98,7 +179,15 @@ export const COURSES_EN: CourseItem[] = [
     image: "/images/vue-logo.png",
     description:
       "Course focused on building reactive interfaces using Vue 2, covering components, directives, state management, and front-end best practices.",
-    tags: ["40h", "01/2022", "Alura"],
+    tags: [
+      {
+        label: "Completed",
+        classes: [TAG_BASE_CLASSES, TAG_STATUS_COMPLETED_CLASSES],
+      },
+      { label: "40h", classes: [TAG_BASE_CLASSES] },
+      { label: "01/2022", classes: [TAG_BASE_CLASSES] },
+      { label: "Alura", classes: [TAG_BASE_CLASSES] },
+    ],
   },
   {
     id: "fullstack",
@@ -106,6 +195,20 @@ export const COURSES_EN: CourseItem[] = [
     image: "/images/fullstack-logo.png",
     description:
       "Comprehensive web development program using Node.js, MySQL, HTML, CSS, JavaScript, React, and MVC architecture to build fullstack applications.",
-    tags: ["6 months", "07/2020 – 01/2021", "Digital House"],
+    tags: [
+      {
+        label: "Completed",
+        classes: [TAG_BASE_CLASSES, TAG_STATUS_COMPLETED_CLASSES],
+      },
+      { label: "6 months", classes: [TAG_BASE_CLASSES] },
+      {
+        label: "07/2020 – 01/2021",
+        classes: [TAG_BASE_CLASSES],
+      },
+      {
+        label: "Digital House",
+        classes: [TAG_BASE_CLASSES],
+      },
+    ],
   },
 ];
