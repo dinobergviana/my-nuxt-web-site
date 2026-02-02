@@ -64,7 +64,7 @@ export const PROJECTS_PT = [
           "Como próximo passo, o foco passa a ser a evolução contínua da Acessibilidade, com o objetivo de alcançar 100% de conformidade, reforçando ainda mais o compromisso com inclusão, boas práticas e qualidade técnica.",
         ],
       },
-      stacks: ["Vue 3", "Nuxt", "Typescript", "Vitest"],
+      stacks: ["Vue 3", "Nuxt 4", "Typescript", "Vitest", "TailwindCSS"],
     },
   },
   {
@@ -151,7 +151,7 @@ export const PROJECTS_EN = [
         ],
       },
 
-      stacks: ["Vue 3", "Nuxt", "TypeScript", "Vitest"],
+      stacks: ["Vue 3", "Nuxt 4", "TypeScript", "Vitest", "Tailwind"],
     },
   },
   {
