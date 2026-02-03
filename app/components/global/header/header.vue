@@ -8,9 +8,8 @@
         :progress="(9 / 9) * 100"
         :unlocked="9 >= 9"
       >
-
-      <!-- <IconPhMedal class="h-8 w-8" :class="9 >= 9 ? 'text-yellow-400' : 'text-slate-300'" weight="duotone" /> -->
-      <img src="/images/silver-trophy.png" class="object-cover h-14 w-14" />
+        <!-- <IconPhMedal class="h-8 w-8" :class="9 >= 9 ? 'text-yellow-400' : 'text-slate-300'" weight="duotone" /> -->
+        <img src="/images/silver-trophy.png" class="object-cover h-14 w-14" />
       </AchievementRing>
       <div class="flex-1 flex justify-center">
         <nav>
@@ -102,7 +101,7 @@
 <script setup lang="ts">
 import LangSelect from "@/components/lang-select/index.vue";
 import MenuDropDown from "@/components/dropdown-menu/index.vue";
-import AchievementRing  from "@/components/medal/index.vue"
+import AchievementRing from "@/components/medal/index.vue";
 import { useNavigationStore } from "@/stores/navigation";
 
 const { theme, toggleTheme } = useTheme();
