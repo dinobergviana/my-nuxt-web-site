@@ -1,16 +1,14 @@
 <template>
   <header class="flex w-full border-b dark:border-b-gray-700 h-header">
     <div class="w-full flex items-center">
-      <!-- Área de navegação -->
+      <!-- Área das conquistas -->
       <AchievementRing
         class="ml-4"
         :size="48"
-        :progress="(9 / 9) * 100"
-        :unlocked="9 >= 9"
+        :progress="progressBarValue"
+        :unlocked="progressBarValue === 100"
       >
-
-      <!-- <IconPhMedal class="h-8 w-8" :class="9 >= 9 ? 'text-yellow-400' : 'text-slate-300'" weight="duotone" /> -->
-      <img src="/images/silver-trophy.png" class="object-cover h-14 w-14" />
+      <IconPhMedal class="h-8 w-8" :class="progressBarValue === 100 ? 'text-green-600' : 'text-slate-300'" weight="duotone" />
       </AchievementRing>
       <div class="flex-1 flex justify-center">
         <nav>
@@ -106,14 +104,12 @@ import AchievementRing  from "@/components/medal/index.vue"
 import { useNavigationStore } from "@/stores/navigation";
 
 const { theme, toggleTheme } = useTheme();
-const { setLocale } = useI18n();
-const navigation = useNavigationStore();
 
 const changeTheme = (value: "light" | "dark") => {
   if (theme.value !== value) toggleTheme();
 };
 
-const changeLang = (value: "pt" | "en") => {
-  setLocale(value);
-};
+const navigation = useNavigationStore()
+
+const progressBarValue = computed(() => navigation.currentProgressBarValue)
 </script>

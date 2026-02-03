@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 
-const TOTAL_PAGES_WITH_SECTIONS = 12; // numero de paginas disponiveis no site
+const MAIN_PAGES = 5; // total de areas principais do site
 
 export const useNavigationStore = defineStore("navigation", () => {
   // state
@@ -14,7 +14,7 @@ export const useNavigationStore = defineStore("navigation", () => {
   const currentProgressBarValue = computed(() =>
     Math.ceil(
       ((accessedPages.value.length + accessedSectionsList.value.length) /
-        TOTAL_PAGES_WITH_SECTIONS) *
+        MAIN_PAGES) *
         100,
     ),
   );
