@@ -1,8 +1,8 @@
 <template>
-  <h1 class="text-xl font-semibold dark:text-white mb-4">
-    {{ $t("projects.title") }}
-  </h1>
-  <section class="w-full">
+  <section class="w-full min-h-[calc(100vh-var(--header-height))]">
+    <h1 class="text-xl font-semibold dark:text-white mb-4">
+      {{ $t("projects.title") }}
+    </h1>
     <div
       class="hidden md:block overflow-hidden rounded-md border border-gray-200 dark:border-gray-700 shadow-sm"
     >
@@ -47,7 +47,7 @@
                 :class="
                   project.status === 'finalizado' ||
                   project.status === 'completed'
-                    ? 'bg-green-500/10 text-green-600 dark:text-green-400'
+                    ? 'bg-green-500/20 text-green-700 dark:text-green-400'
                     : 'bg-orange-500/10 text-orange-400'
                 "
               >
@@ -137,13 +137,13 @@
           <!-- Status -->
           <div class="flex items-center justify-between">
             <span>Status</span>
-            <span
-              class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-medium"
+            <div
+              class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs"
               :class="statusClass(project.status)"
             >
-              <span class="h-2 w-2 rounded-full bg-current"></span>
-              {{ project.label }}
-            </span>
+              <div class="h-2 w-2 rounded-full bg-current" />
+              <span>{{ project.label }}</span>
+            </div>
           </div>
 
           <!-- Ações -->
@@ -206,26 +206,127 @@
 
     <Modal @close-modal="closeModal" :is-open="isModalOpen">
       <template #modal-title>
-        <h3>{{ $t("projectDeatils") }}</h3>
+        <h3 class="dark:text-gray-100">{{ $t("projectDeatils") }}</h3>
       </template>
       <template #modal-content>
         <div class="mb-2">
-          <h3 class="font-bold mb-2">
-            {{ $t("description") }}
-          </h3>
+          <div class="border-b dark:border-b-gray-600 pb-2 mb-4">
+            <h3 class="font-bold mb-2 dark:text-gray-200">
+              {{ $t("description") }}
+            </h3>
 
-          <p class="mb-2">{{ selectedProject?.details.description }}</p>
+            <p class="mb-2 dark:text-gray-300">
+              {{ selectedProject?.details.description }}
+            </p>
+          </div>
 
-          <h3 class="font-bold mb-3">Stack</h3>
+          <div v-if="!!selectedProject?.details.results">
+            <h3 class="font-bold mb-2 dark:text-gray-200">
+              Resultados - Google PageSpeed Insights
+            </h3>
 
-          <div class="flex items-center justify-start gap-4">
-            <span
-              v-for="tech in selectedProject?.details.stacks"
-              :key="tech"
-              class="p-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 rounded-md text-sm"
-            >
-              {{ tech }}
-            </span>
+            <div class="border-b dark:border-b-gray-600 pb-4 mb-4">
+              <p
+                v-for="(item, index) in selectedProject?.details.results
+                  .summary"
+                :key="`summary-${index}`"
+                class="dark:text-gray-300"
+                v-html="item"
+              />
+            </div>
+
+            <div class="mb-2">
+              <h3 class="font-bold mb-2 dark:text-gray-100">
+                {{ selectedProject?.details.results.keyImprovements.title }}
+              </h3>
+
+              <ul class="list-disc list-outside pl-8 space-y-1">
+                <li
+                  v-for="highlight in selectedProject?.details.results
+                    .keyImprovements.highlights"
+                >
+                  <span v-html="highlight" />
+                </li>
+              </ul>
+            </div>
+
+            <div class="border-b dark:border-b-gray-600 pb-4 mb-4">
+              <div
+                v-for="action in selectedProject?.details.results
+                  .keyImprovements.actionsTaken"
+              >
+                <div>
+                  <h3 class="font-bold my-2 pl-4 dark:text-gray-200">
+                    {{ action.title }}
+                  </h3>
+
+                  <ul class="list-disc list-outside pl-8 space-y-1">
+                    <li v-for="step in action.steps">
+                      {{ step }}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="my-2 flex items-center gap-2">
+                <h3 class="font-bold dark:text-gray-200">
+                  {{ $t("experienceModal.analisysBefore") }}
+                </h3>
+                <a
+                  class="m-0 font-semibold text-xs text-gray-600 dark:text-gray-200 border hover:border-green-500 hover:text-green-600 dark:hover:border-green-500 dark:hover:text-green-500 border-gray-400 dark:border-gray-600 dark:bg-gray-700 border-dashed rounded-sm p-1 transition-colors duration-400 ease-out"
+                  href="https://pagespeed.web.dev/analysis/https-meu-site-dinoberguevianas-projects-vercel-app/myy1uek5vw?form_factor=desktop"
+                  target="_blank"
+                >
+                  <span>{{ $t("experienceModal.fullAnalisys") }}</span>
+                </a>
+              </div>
+              <NuxtImg src="/images/before.png" class="w-full rounded-md" />
+            </div>
+
+            <div class="mb-4">
+              <div class="my-4 flex items-center gap-2">
+                <h3 class="font-bold dark:text-gray-200">
+                  {{ $t("experienceModal.analisysAfter") }}
+                </h3>
+                <a
+                  class="m-0 font-semibold text-xs text-gray-600 dark:text-gray-200 border hover:border-green-600 hover:text-green-600 dark:hover:border-green-500 dark:hover:text-green-500 border-gray-400 dark:border-gray-600 dark:bg-gray-700 border-dashed rounded-sm p-1 transition-colors duration-200 ease-out"
+                  href="https://pagespeed.web.dev/analysis/https-www-dinobergueviana-com-br/ymrutvnidu?form_factor=desktop"
+                  target="_blank"
+                >
+                  <span>{{ $t("experienceModal.fullAnalisys") }}</span>
+                </a>
+              </div>
+              <NuxtImg src="/images/after.png" class="w-full rounded-md" />
+            </div>
+
+            <div>
+              <h3 class="font-bold mb-2 dark:text-gray-200">
+                {{ $t("experienceModal.conclusion") }}
+              </h3>
+
+              <p
+                class="mb-2"
+                v-for="item in selectedProject?.details.results.conclusion"
+              >
+                {{ item }}
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="font-bold mb-3 dark:text-gray-200">Stack</h3>
+
+            <div class="flex items-center justify-start gap-4">
+              <span
+                v-for="tech in selectedProject?.details.stacks"
+                :key="tech"
+                class="p-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 rounded-md text-sm"
+              >
+                {{ tech }}
+              </span>
+            </div>
           </div>
         </div>
       </template>
@@ -249,6 +350,20 @@ import Modal from "@/components/global/modal/modal.vue";
 
 import { PROJECTS_PT, PROJECTS_EN } from "@/consts/projects";
 
+interface ImprovementSection {
+  summary: string[];
+  keyImprovements: {
+    title: string;
+    highlights: string[];
+    actionsTaken: {
+      title: string;
+      steps: string[];
+      conclusion?: string;
+    }[];
+  };
+  conclusion?: string[];
+}
+
 type ProjectStatus =
   | "finalizado"
   | "em-andamento"
@@ -266,6 +381,7 @@ interface Project {
   details: {
     description: string;
     stacks: string[];
+    results?: ImprovementSection;
   };
   access_link?: string;
 }
@@ -298,7 +414,7 @@ function setSelectedProject(project: Project) {
 
 const statusClass = (status: string) => {
   if (status === "finalizado" || status === "completed") {
-    return "bg-green-500/10 text-green-600 dark:text-green-400";
+    return "bg-green-500/20 text-green-700 dark:text-green-400";
   }
 
   return "bg-orange-500/10 text-orange-400";

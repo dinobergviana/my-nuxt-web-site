@@ -71,9 +71,9 @@
             <span
               v-for="(tag, index) in item.tags"
               :key="`${tag}-${index}`"
-              class="px-2 py-1 text-xs rounded-full bg-gray-100 dark:bg-gray-700 dark:text-gray-200"
+              :class="tag.classes"
             >
-              {{ tag }}
+              {{ tag.label }}
             </span>
           </div>
         </div>

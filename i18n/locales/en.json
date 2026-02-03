@@ -33,6 +33,11 @@
     "aboutTheCompany": "About the company",
     "contributions": "Contributions",
     "mainProjects": "Main projects",
+    "results": "Results",
+    "conclusion": "Conclusion",
+    "fullAnalisys": "Check out full analisys",
+    "analisysBefore": "Analysis BEFORE migration",
+    "analisysAfter": "Analysis AFTER migration",
     "modalTitle": "Modal title",
     "modalContent": "Modal content...",
     "closeButton": "Close"

@@ -77,7 +77,7 @@
           />
 
           <div
-            class="w-1.5 h-1.5 rounded-full bg-green-600 dark:bg-green-400 z-10"
+            class="w-1.5 h-1.5 rounded-full bg-green-600 dark:bg-green-400"
           />
         </div>
 
