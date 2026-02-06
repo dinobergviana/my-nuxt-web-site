@@ -318,7 +318,7 @@
           <div>
             <h3 class="font-bold mb-3 dark:text-gray-200">Stack</h3>
 
-            <div class="flex items-center justify-start gap-4">
+            <div class="flex flex-wrap gap-4">
               <span
                 v-for="tech in selectedProject?.details.stacks"
                 :key="tech"
