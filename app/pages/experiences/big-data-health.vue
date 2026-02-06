@@ -49,6 +49,10 @@
 import { computed } from "vue";
 import { useI18n } from "vue-i18n";
 
+definePageMeta({
+  pageKey: "experiences-big-data-health",
+});
+
 import {
   EXPERIENCES_DETAILS_PT,
   EXPERIENCES_DETAILS_EN,

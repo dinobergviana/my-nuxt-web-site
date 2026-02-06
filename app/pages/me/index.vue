@@ -99,4 +99,8 @@
 
 <script lang="ts" setup>
 import DownloadResumeButton from "@/components/buttons/DownloadResumeButton.vue";
+
+definePageMeta({
+  pageKey: "me",
+});
 </script>

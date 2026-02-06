@@ -335,8 +335,15 @@
 </template>
 
 <script setup lang="ts">
+definePageMeta({
+  pageKey: "projects-overview",
+});
+
+import { useNavigationStore } from "@/stores/navigation";
+
 import { ref, computed } from "vue";
 import { useI18n } from "vue-i18n";
+
 const { locale } = useI18n();
 
 import Modal from "@/components/global/modal/modal.vue";
@@ -379,6 +386,8 @@ interface Project {
   access_link?: string;
 }
 
+const navigationStore = useNavigationStore();
+
 const isModalOpen = ref(false);
 const selectedProject = ref<Project | null>(null);
 
@@ -395,6 +404,10 @@ function openModal() {
 }
 
 function setSelectedProject(project: Project) {
+  console.log(project);
+  navigationStore.registerSection(
+    `project-details-${project.name.toLowerCase()}`,
+  );
   selectedProject.value = Object.assign(project);
   openModal();
 }
