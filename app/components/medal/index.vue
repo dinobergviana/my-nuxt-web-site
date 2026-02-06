@@ -11,8 +11,11 @@
       <slot />
     </div>
 
-    <div class="h-1 w-full bg-gray-700/30 rounded-lg">
-      <div class="h-1 w-1 bg-green-700 rounded-lg"></div>
+    <div class="h-1 bg-gray-400/30 rounded-lg">
+      <div
+        class="h-1 bg-green-600 rounded-lg"
+        :style="{ width: `${progressBar}%` }"
+      ></div>
     </div>
   </div>
 </template>
@@ -26,8 +29,19 @@ interface Props {
 }
 
 const props = withDefaults(defineProps<Props>(), {
+  progress: 0,
   size: 56,
   stroke: 2,
   unlocked: false,
 });
+
+const mounted = ref(false);
+
+onMounted(() => {
+  mounted.value = true;
+});
+
+const progressBar = computed(() =>
+  mounted.value ? Math.floor(props.progress) : 0,
+);
 </script>
