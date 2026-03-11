@@ -70,7 +70,7 @@
     >
       <DownloadResumeButton class="text-center" />
 
-      <div class="relative flex items-center gap-1">
+      <!-- <div class="relative flex items-center gap-1">
         <div class="relative flex items-center justify-center w-4 h-4">
           <div
             class="absolute inset-0 rounded-full bg-green-600/50 dark:bg-green-400/50 pulse"
@@ -87,7 +87,7 @@
         >
           {{ $t("availableForNewProjects") }}
         </span>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
