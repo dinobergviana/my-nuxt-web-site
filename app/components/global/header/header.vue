@@ -63,17 +63,17 @@
       <div class="hidden md:flex md:items-center md:gap-2">
         <div>
           <button
-            v-if="theme === 'light'"
-            class="p-1 rounded-md hover:bg-gray-200 text-gray-500 hover:text-gray-800"
-            @click="changeTheme('dark')"
+            v-if="theme === 'dark'"
+            class="p-1 rounded-md hover:bg-gray-700 text-gray-400 hover:text-gray-200"
+            @click="changeTheme('light')"
           >
             <IconPhSun class="w-5 h-5" />
           </button>
 
           <button
             v-else
-            class="p-1 rounded-md hover:dark:bg-gray-700 text-gray-400 hover:text-gray-100"
-            @click="changeTheme('light')"
+            class="p-1 rounded-md hover:bg-gray-200 text-gray-500 hover:text-gray-800"
+            @click="changeTheme('dark')"
           >
             <IconPhMoon class="w-5 h-5" />
           </button>
