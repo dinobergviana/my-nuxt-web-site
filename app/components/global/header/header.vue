@@ -10,7 +10,7 @@
             <li>
               <NuxtLink
                 to="/"
-                class="text-sm text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-white transition-colors duration-200 ease-out"
+                class="text-sm text-gray-500 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors duration-200 ease-out"
                 active-class="text-gray-600 dark:text-white font-semibold"
               >
                 {{ $t("header.nav.home") }}
@@ -20,7 +20,7 @@
             <li>
               <NuxtLink
                 to="/experiences"
-                class="text-sm text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-white transition-colors duration-200 ease-out"
+                class="text-sm text-gray-500 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors duration-200 ease-out"
                 active-class="text-gray-600 dark:text-white font-semibold"
               >
                 {{ $t("header.nav.experiences") }}
@@ -30,7 +30,7 @@
             <li>
               <NuxtLink
                 to="/projects"
-                class="text-sm text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-white transition-colors duration-200 ease-out"
+                class="text-sm text-gray-500 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors duration-200 ease-out"
                 active-class="text-gray-600 dark:text-white font-semibold"
               >
                 {{ $t("header.nav.projects") }}
@@ -40,7 +40,7 @@
             <li>
               <NuxtLink
                 to="/education"
-                class="text-sm text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-white transition-colors duration-200 ease-out"
+                class="text-sm text-gray-500 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors duration-200 ease-out"
                 active-class="text-gray-600 dark:text-white font-semibold"
               >
                 {{ $t("header.nav.education") }}
@@ -50,7 +50,7 @@
             <li>
               <NuxtLink
                 to="/me"
-                class="text-sm text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-white transition-colors duration-200 ease-out"
+                class="text-sm text-gray-500 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors duration-200 ease-out"
                 active-class="text-gray-600 dark:text-white font-semibold"
               >
                 {{ $t("header.nav.me") }}
