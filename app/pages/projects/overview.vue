@@ -274,7 +274,6 @@
                 <h3 class="font-bold dark:text-gray-200">
                   {{ $t("experienceModal.analisysBefore") }}
                 </h3>
-                
               </div>
               <NuxtImg src="/images/before.png" class="w-full rounded-md" />
             </div>
@@ -284,7 +283,6 @@
                 <h3 class="font-bold dark:text-gray-200">
                   {{ $t("experienceModal.analisysAfter") }}
                 </h3>
-                
               </div>
               <NuxtImg src="/images/after.png" class="w-full rounded-md" />
             </div>
