@@ -70,9 +70,6 @@
       "strongTextLinkTwo": {
         "text": "Filipe Deschamps."
       }
-    },
-    "p4": {
-      "partOne": "Em breve contarei com mais detalhes como foi a minha transição de carreira."
     }
   },
   "experiences": {
@@ -132,13 +129,34 @@
   },
   "me": {
     "title": "Olá, Dino aqui!",
-    "p1": "Sou desenvolvedor web com quase cinco anos de experiencia no mercado de trabalho. Nesse período, meu foco principal tem sido em desenvolvimento frontend, porém, nos últimos dois anos tenho me dedicado a estudar e criar soluções backend e desde que iniciei a faculdade e me tornei aluno no ",
+    "p1": "Sou desenvolvedor web com cinco anos de experiencia no mercado de trabalho. Nesse período, meu foco principal tem sido em desenvolvimento frontend, porém, nos últimos dois anos tenho me dedicado a estudar e criar soluções backend e desde que iniciei a faculdade e me tornei aluno no ",
     "p2": "Minha intenção nesse espaço é compartilhar minha experiencia por meio da minha trajetória e dos projetos que venho desenvolvendo.",
     "p3": "Caso queira conhecer mais sobre meu trabalho, por favor entre em contato comigo por meio das minhas redes. Abraço!",
     "tabs": {
       "overview": "Resumo",
       "careerTransition": "Transição de carreira",
       "curiosities": "Curiosidades"
+    },
+    "careerTransition": {
+      "title": "Transição de carreira",
+      "overview": {
+        "p1": {
+          "partOne": "Eu sempre fui uma pessoa que gastava um certo tempo imaginando como seria a minha vida quando eu tivesse 30 anos. Confesso que, por muito tempo, me via dando aula de música e vivendo disso. Afinal, tocar era o que eu mais gostava de fazer e, durante um período, foi de onde tirei uma certa renda — principalmente na época da faculdade, que foi quando mais investi em uma carreira como músico."
+        },
+        "p2": {
+          "partOne": "Mas nem sempre foi assim. De 2009 a 2012, eu estava focado em ler e aprender, sozinho, a programar, já que sempre gostei de computadores, de informática e de tentar entender esse mundo.",
+          "partTwo": "Nessa época, consegui um material via torrent sobre programação com",
+          "strongText": " Java",
+          "partThree": ", mas os termos, os princípios e a lógica de programação nunca realmente faziam sentido para mim.",
+          "partFour": "Acho que eu vivia muito preocupado com dinheiro — ou melhor, com a falta dele — e, por isso, minha mente não estava livre para absorver algo novo."
+        },
+        "p3": {
+          "partOne": "Graças a Deus, isso mudou em 2019, dez anos após a minha primeira tentativa. Foi assistindo às aulas do professor",
+          "strongText": " Gustavo Guanabara",
+          "partTwo": "que comecei, de fato, a entender o universo da programação."
+        },
+        "cta": "Leia a primeira parte da minha transição de carreira."
+      }
     }
   },
   "projects": {
@@ -188,50 +206,46 @@
     "p5": {
       "partOne": "Isso resolveu apenas uma parte do problema. Agora, é necessário que outras pessoas realizem esse gerenciamento, daí a necessidade de um sistema que facilite esse trabalho e que esteja disponível na internet."
     },
-
     "technical": {
       "title": "Informações Técnicas",
-
       "mvc": {
         "title": "Arquitetura MVC (Model-View-Controller)",
         "description": "Separação clara de responsabilidades entre lógica de negócio, interface do usuário e controle do fluxo de dados, facilitando manutenção, escalabilidade e testabilidade."
       },
-
       "docker": {
         "title": "Infraestrutura com Docker",
         "description": "Ambiente isolado e replicável utilizando Docker e docker-compose, garantindo consistência entre desenvolvimento, testes e produção."
       },
-
       "database": {
         "title": "Versionamento de Banco de Dados",
         "description": "Gerenciamento das mudanças na estrutura do banco por meio de migrations, permitindo histórico, reversões seguras e sincronização entre ambientes."
       },
-
       "quality": {
         "title": "Qualidade e Padrões de Código",
         "description": "Uso de Prettier, linting e Conventional Commits para manter consistência, evitar erros comuns e facilitar a colaboração."
       },
-
       "tests": {
         "title": "Testes Automatizados",
         "description": "Testes unitários e de integração executados automaticamente para garantir confiabilidade e entregas mais seguras."
       },
-
       "auth": {
         "title": "Autenticação e Autorização",
         "description": "Sistema de autenticação seguro com senhas criptografadas, controle de acesso baseado em permissões e proteção de rotas."
       }
     },
-
     "stack": {
       "title": "Resumo das tecnologias utilizadas",
       "host": "Hospedagem",
       "frontend": {
         "title": "Frontend",
         "description": "Em breve",
-        "techs": ["React", "HTML", "CSS", "JavaScript"]
+        "techs": [
+          "React",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
       },
-
       "backend": {
         "title": "Backend",
         "techs": [
@@ -244,7 +258,6 @@
         ]
       }
     },
-
     "extra": {
       "partOne": "Além de uma arquitetura que favorece organização, separação de contexto e cobertura de testes (local e em CI), o sistema já conta com autenticação, autorização, criação de usuários, gerenciamento de migrations e health checks disponíveis."
     }
