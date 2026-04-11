@@ -3,18 +3,18 @@
     <ul
       class="flex gap-2 overflow-x-auto whitespace-nowrap md:overflow-visible md:whitespace-normal"
     >
-      <li v-for="item in EXPERIENCES" :key="item.title" class="flex-1">
+      <li v-for="item in items" :key="item.key" class="flex-1">
         <NuxtLink
           :to="item.link"
           class="flex items-center justify-center gap-2 py-2 px-2 text-sm border-b-2 border-transparent dark:text-gray-300 opacity-60 hover:opacity-100 [&.router-link-exact-active]:opacity-100 [&.router-link-exact-active]:text-gray-800 dark:[&.router-link-exact-active]:text-white [&.router-link-exact-active]:border-green-500 [&.router-link-exact-active]:font-semibold dark:[&.router-link-exact-active]:border-green-600"
         >
           <img
+            v-if="item.iconPath"
             class="h-4 w-4 rounded-full hidden md:inline"
-            :src="item.img_path"
-            alt="Logo da Big Data Health"
-            srcset=""
+            :src="item.iconPath"
+            :alt="item.iconAlt || item.label"
           />
-          <span>{{ item.company_name }}</span>
+          <span>{{ item.label }}</span>
         </NuxtLink>
       </li>
     </ul>
@@ -22,5 +22,15 @@
 </template>
 
 <script setup lang="ts">
-import { EXPERIENCES } from "./experiences-data";
+export interface TabItem {
+  key: string | number;
+  link: string;
+  label: string;
+  iconPath?: string;
+  iconAlt?: string;
+}
+
+defineProps<{
+  items: TabItem[];
+}>();
 </script>
