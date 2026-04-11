@@ -20,12 +20,6 @@
     <p class="text-gray-600 dark:text-gray-300 mb-3">
       {{ $t("me.p3") }}
     </p>
-
-    <div class="w-full">
-      <small class="dark:text-gray-400 text-gray-500">{{
-        $t("about.p4.partOne")
-      }}</small>
-    </div>
   </div>
 </template>
 
