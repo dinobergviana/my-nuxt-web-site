@@ -138,17 +138,17 @@
       "curiosities": "Curiosidades"
     },
     "careerTransition": {
-      "title": "Transição de carreira",
+      "title": "Resumo",
       "overview": {
         "p1": {
-          "partOne": "Eu sempre fui uma pessoa que gastava um certo tempo imaginando como seria a minha vida quando eu tivesse 30 anos. Confesso que, por muito tempo, me via dando aula de música e vivendo disso. Afinal, tocar era o que eu mais gostava de fazer e, durante um período, foi de onde tirei uma certa renda — principalmente na época da faculdade, que foi quando mais investi em uma carreira como músico."
+          "partOne": "Eu sempre fui uma pessoa que gastava um certo tempo imaginando como seria a minha vida quando eu tivesse 30 anos. Confesso que, por muito tempo, me via dando aula de música e vivendo disso. Afinal, tocar era o que eu mais gostava de fazer e, durante um período, foi de onde tirei uma certa renda, principalmente na época da faculdade, que foi quando mais investi em uma carreira como músico."
         },
         "p2": {
           "partOne": "Mas nem sempre foi assim. De 2009 a 2012, eu estava focado em ler e aprender, sozinho, a programar, já que sempre gostei de computadores, de informática e de tentar entender esse mundo.",
           "partTwo": "Nessa época, consegui um material via torrent sobre programação com",
-          "strongText": " Java",
-          "partThree": ", mas os termos, os princípios e a lógica de programação nunca realmente faziam sentido para mim.",
-          "partFour": "Acho que eu vivia muito preocupado com dinheiro — ou melhor, com a falta dele — e, por isso, minha mente não estava livre para absorver algo novo."
+          "strongText": "Java",
+          "partThree": "mas os termos, os princípios e a lógica de programação nunca realmente faziam sentido para mim.",
+          "partFour": "Acho que eu vivia muito preocupado com dinheiro (ou melhor, com a falta dele) e, por isso, minha mente não estava livre para absorver algo novo."
         },
         "p3": {
           "partOne": "Graças a Deus, isso mudou em 2019, dez anos após a minha primeira tentativa. Foi assistindo às aulas do professor",
