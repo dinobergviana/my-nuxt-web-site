@@ -6,7 +6,7 @@ export const EDUCATION_PT: EducationItem[] = [
     description:
       "Graduação voltada ao desenvolvimento de sistemas, lógica de programação, arquitetura de sistemas, bancos de dados e boas práticas de engenharia de software.",
     status: "Finalizado",
-    period: "07/2023 - 12/2025",
+    period: "07/2023 - 01/2026",
   },
   {
     id: "music",
