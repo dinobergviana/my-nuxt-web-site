@@ -20,7 +20,7 @@
       {{ $t('me.careerTransition.overview.p2.partFour') }}
     </p>
 
-    <p class="mb-3 text-gray-600 dark:text-gray-300">
+    <p class="mb-6 text-gray-600 dark:text-gray-300">
       {{ $t('me.careerTransition.overview.p3.partOne') }}
       <strong
         class="inline-block rounded-md border bg-gray-100 px-2 py-0.5 text-sm leading-none dark:bg-gray-800"
@@ -30,7 +30,7 @@
     </p>
 
     <button
-      class="rounded-md border border-green-600 bg-green-200 px-2 py-1 font-semibold text-green-800"
+      class="rounded-md border border-green-600 bg-green-200 px-2 py-1 font-semibold text-green-800 opacity-85 transition-all hover:opacity-100 dark:border-green-600 dark:bg-green-800 dark:text-white"
       type="button"
       @click="openModal"
     >
