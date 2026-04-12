@@ -23,6 +23,4 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-// Conteúdo da aba "Eu"
-</script>
+<script lang="ts" setup></script>
