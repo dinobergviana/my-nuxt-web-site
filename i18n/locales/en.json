@@ -174,7 +174,89 @@
           "strongText": " Gustavo Guanabara",
           "partTwo": "that I truly began to understand the world of programming."
         },
-        "cta": "Career transition - Part 1."
+        "cta": "Read career transition"
+      },
+      "content": {
+        "title": "Career transaction",
+        "p1": {
+          "partOne": "The first time I heard about programming was in 2011, after telling a friend that I wanted to improve my math skills. He suggested that I could learn math by studying programming. At that time, I was 22 years old."
+        },
+        "p2": {
+          "partOne": "He gave me some materials on a flash drive, including handouts and video lessons. The first one I read was about",
+          "strongText": "Java ",
+          "partTwo": "and another about VisualG and I didn’t understand anything at all. I tried to learn programming, but it simply didn’t click."
+        },
+        "p3": {
+          "partOne": "Programming logic didn’t make sense to me. I desperately needed a job, had no idea what I wanted to do in life, and didn’t even know how to study. A lot of time passed after that attempt. During those years, I worked different jobs, dropped out of one degree, and started another — a Bachelor's in Music — all within an eight-year period."
+        },
+        "p4": {
+          "partOne": "I didn’t mention this before, but I’ve always been interested in technology. I enjoy solving problems and working with logic — what I lacked was practice. I’ve always been curious about how computers and the internet work."
+        },
+        "p5": {
+          "partOne": "In 2019, after graduating, I was teaching music theory and classical guitar in Teresina, Brazil. The main reason I decided to change careers was the extremely low salary — it didn’t even reach",
+          "strongText": "R$800 per month."
+        },
+        "p6": {
+          "partOne": "Later that year, around September, I was at home studying guitar when I suddenly remembered programming. I immediately stopped, grabbed my laptop, and opened YouTube.",
+          "partTwo": "I had a",
+          "strongText": "Dell Inspiron",
+          "partThree": "that barely worked — it would freeze just by renaming a file. That was the machine I used to start learning."
+        },
+        "p7": {
+          "partOne": "Fortunately, programming content had improved a lot between 2012 and 2019. There was a lot of high-quality free material available, and YouTube recommended the",
+          "strongText": "Curso em Vídeo",
+          "partTwo": "channel by",
+          "strongTextTwo": "Professor Gustavo Guanabara",
+          "partThree": ". I took courses in HTML, CSS, Python, and JavaScript, but the one that truly changed my life was programming logic."
+        },
+        "p8": {
+          "partOne": "I studied this alongside the book",
+          "strongText": "Algorithms: Logic for Programming and Computer Development",
+          "partTwo": ". I completed all exercises using VisualG. I highly recommend both resources for beginners."
+        },
+        "p9": {
+          "partOne": "I deliberately went through these materials slowly — I didn’t want them to end. After finishing, I focused on programming fundamentals. Based on my wife's advice, who is also a developer, I chose a language to start building small projects.",
+          "partTwo": "I went back to the course and completed all",
+          "strongText": "Python",
+          "partThree": "modules. I was amazed by the teaching quality."
+        },
+        "p10": {
+          "partOne": "At this point, the year had turned, COVID-19 had reached Brazil, and in 2020 I decided that programming would become my profession."
+        },
+        "p11": {
+          "partOne": "In June, I saw an ad from",
+          "strongText": "Digital House",
+          "partTwo": "offering a full-stack web development course with scholarships up to 100%. There was only one full scholarship per state, so I gave it everything I had."
+        },
+        "p12": {
+          "partOne": "A few days after taking the test, I found out I had been selected. I was incredibly happy — I still keep that document as a trophy."
+        },
+        "p13": {
+          "partOne": "The course lasted 7 months, and I made the most of it. I started applying for jobs while still studying. I received many rejections, even with the market booming."
+        },
+        "p14": {
+          "partOne": "For the final project, my team built a school management system. It was challenging — from database modeling to frontend integration — but we made it work. Presenting it was a huge achievement."
+        },
+        "p15": {
+          "partOne": "After finishing the course, I felt a bit lost — which is normal after an intense learning period. I kept applying and getting rejected. I realized referrals worked better.",
+          "strongText": "Tip: build connections."
+        },
+        "p16": {
+          "partOne": "Through a referral, I got my first opportunity at",
+          "strongText": "BoxTi",
+          "partTwo": ", a software company in Brazil."
+        },
+        "p17": {
+          "partOne": "On March 11, 2021, I received the news that I had passed the technical stage. I was extremely happy — but also scared. I thought: \"I made it... now what?\""
+        },
+        "p18": {
+          "partOne": "The truth is, I overcame imposter syndrome and insecurity. Today, I have over five years of experience. I’ve gone through layoffs, changed companies, started a new degree, and joined curso.dev."
+        },
+        "p19": {
+          "partOne": "My goal with this story is to motivate you. If you’re starting out or unsure about your abilities, remember:",
+          "strongText": "it will work out.",
+          "partTwo": "Just don’t skip the fundamentals — they will give you the confidence to face any challenge."
+        }
       }
     }
   },

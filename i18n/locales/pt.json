@@ -155,7 +155,89 @@
           "strongText": " Gustavo Guanabara",
           "partTwo": "que comecei, de fato, a entender o universo da programação."
         },
-        "cta": "Transição de carreira - Parte 1."
+        "cta": "Ler transição de carreira"
+      },
+      "content": {
+        "title": "Transisão de carreira",
+        "p1": {
+          "partOne": "A primeira vez que ouvi falar em programação foi em 2011, após comentar com um amigo que gostaria de melhorar minhas habilidades com matemática. Ele sugeriu que eu poderia aprender matemática estudando programação. Na época, eu tinha 22 anos."
+        },
+        "p2": {
+          "partOne": "Ele me passou um material via pendrive que continha algumas apostilas e videoaulas. A primeira apostila que li era sobre a linguagem",
+          "strongText": "Java",
+          "partTwo": "e outra sobre o VisualG e, de cara, eu não entendi nada. Tentei aprender esse universo da programação, mas simplesmente não entrou na minha cabeça."
+        },
+        "p3": {
+          "partOne": "A lógica de programação não fazia sentido para mim. Eu precisava muito arrumar um emprego, não tinha noção do que queria fazer da vida e nem sabia estudar. Muito tempo se passou desde essa tentativa. Nesse período, passei por alguns empregos, abandonei uma graduação no quinto período e iniciei outra (bacharelado em Música pela UFMG), tudo isso ao longo de oito anos."
+        },
+        "p4": {
+          "partOne": "Eu não mencionei antes, mas sempre me identifiquei com o universo da informática. Gosto de resolver problemas, de lógica — o que me faltava era prática. Sempre fui muito curioso em entender como computadores e a internet funcionam."
+        },
+        "p5": {
+          "partOne": "Em 2019, recém-formado, eu dava aulas de teoria musical e violão clássico em uma escola de Teresina-PI. Acredito que o principal fator para mudar de profissão foi o salário extremamente baixo como professor — não chegava nem a",
+          "strongText": "R$800,00 por mês."
+        },
+        "p6": {
+          "partOne": "Foi nesse mesmo ano, por volta de setembro, que eu estava na sala do apartamento da minha esposa estudando violão e lembrei da programação. Na mesma hora, larguei o violão, peguei meu notebook e acessei o YouTube.",
+          "partTwo": "Lembro que eu tinha um",
+          "strongText": "Dell Inspiron",
+          "partThree": "que travava mais do que funcionava — ele chegava a travar ao renomear um arquivo. Foi nessa máquina que iniciei meus estudos."
+        },
+        "p7": {
+          "partOne": "Para minha sorte, os conteúdos de programação evoluíram muito entre 2012 e 2019. Havia muito material gratuito e de qualidade disponível, e acabei sendo impactado pelo algoritmo do YouTube com o canal",
+          "strongText": "Curso em Vídeo",
+          "partTwo": "do professor",
+          "strongTextTwo": "Gustavo Guanabara",
+          "partThree": ". Fiz cursos de HTML, CSS, Python e JavaScript, mas o que realmente mudou minha vida foi o curso de lógica de programação."
+        },
+        "p8": {
+          "partOne": "Esse curso foi feito em conjunto com o livro",
+          "strongText": "Algoritmos: Lógica para Programação e Desenvolvimento de Computadores",
+          "partTwo": "do autor José Augusto Manzano. Resolvi todos os exercícios utilizando VisualG. Recomendo fortemente essas duas fontes para quem está começando."
+        },
+        "p9": {
+          "partOne": "Fiz questão de consumir esses materiais da forma mais lenta possível — eu não queria que acabassem rápido. Após concluir, comecei a estudar fundamentos da programação. Por recomendação da minha esposa, que também é programadora, escolhi uma linguagem para desenvolver pequenos projetos e aplicar a lógica na prática.",
+          "partTwo": "Voltei então ao Curso em Vídeo e concluí todos os módulos de",
+          "strongText": "Python",
+          "partThree": ". Fiquei impressionado com a didática e qualidade do conteúdo."
+        },
+        "p10": {
+          "partOne": "Nesse ponto, o ano já havia virado, a pandemia de COVID-19 já tinha chegado ao Brasil, e em 2020 decidi que programação deixaria de ser um hobby para se tornar minha profissão."
+        },
+        "p11": {
+          "partOne": "Em junho, encontrei uma propaganda da",
+          "strongText": "Digital House",
+          "partTwo": "no Instagram sobre um curso de desenvolvimento web full stack com bolsas de até 100%. Havia apenas uma bolsa integral por estado, então eu precisava dar o meu máximo."
+        },
+        "p12": {
+          "partOne": "Alguns dias após realizar o processo seletivo, vi no edital que havia sido selecionado no Piauí. Fiquei extremamente feliz — guardo esse documento até hoje como um troféu."
+        },
+        "p13": {
+          "partOne": "O curso teve duração de 7 meses, e aproveitei ao máximo. Por recomendação dos professores, comecei a aplicar para vagas ainda durante o curso. Recebi vários \"nãos\", mesmo com o mercado aquecido."
+        },
+        "p14": {
+          "partOne": "O projeto final foi o desenvolvimento de um sistema completo. Minha equipe criou um sistema de gestão escolar — foi desafiador desde a modelagem do banco de dados até a integração com o frontend. Tivemos que pedir ajuda várias vezes, mas no final deu tudo certo. Apresentar esse projeto foi uma grande vitória."
+        },
+        "p15": {
+          "partOne": "Após concluir o curso, me senti um pouco perdido, o que é normal depois de um período intenso de aprendizado. Continuei aplicando para vagas e enfrentando rejeições. Percebi que tinha mais sucesso através de indicações.",
+          "strongText": "Dica: construa conexões."
+        },
+        "p16": {
+          "partOne": "Foi justamente por meio de uma indicação que consegui minha primeira oportunidade. Um ex-colega de trabalho da minha esposa me indicou para a",
+          "strongText": "BoxTi",
+          "partTwo": ", uma software house de Joinville-SC."
+        },
+        "p17": {
+          "partOne": "No dia 11/03/2021, recebi a notícia de que havia sido aprovado na etapa técnica e que receberia uma proposta. Fiquei extremamente feliz, mas também com medo. Pensei: \"Entrei no mercado... e agora?\""
+        },
+        "p18": {
+          "partOne": "O fato é que superei a síndrome do impostor e a insegurança. Hoje já são mais de cinco anos no mercado. Nesse período, passei por layoffs, mudei de empresa em busca de crescimento, iniciei uma nova graduação em Análise e Desenvolvimento de Sistemas e me tornei aluno do curso.dev."
+        },
+        "p19": {
+          "partOne": "Meu desejo com esse relato é motivar você que está começando ou pensando em entrar na área. Se você já está procurando emprego e tem dúvidas sobre sua capacidade, eu te digo:",
+          "strongText": "vai dar certo.",
+          "partTwo": "Só não pule etapas — valorize os fundamentos. Eles serão a base para enfrentar qualquer desafio com confiança."
+        }
       }
     }
   },

@@ -29,35 +29,15 @@
       {{ $t('me.careerTransition.overview.p3.partTwo') }}
     </p>
 
-    <button
+    <NuxtLink
+      to="/career-transition"
       class="rounded-md border border-green-600 bg-green-200 px-2 py-1 font-semibold text-green-800 opacity-85 transition-all hover:opacity-100 dark:border-green-600 dark:bg-green-800 dark:text-white"
-      type="button"
-      @click="openModal"
     >
       <span>
         {{ $t('me.careerTransition.overview.cta') }}
       </span>
-    </button>
-
-    <Modal @close-modal="closeModal" :is-open="isModalOpen">
-      <template #modal-title>
-        <div class="md:flex md:items-baseline md:gap-2">
-          <h2>Teste</h2>
-        </div>
-      </template>
-    </Modal>
+    </NuxtLink>
   </div>
 </template>
 
-<script lang="ts" setup>
-import Modal from '~/components/global/modal/modal.vue';
-const isModalOpen = ref(false);
-
-const openModal = () => {
-  isModalOpen.value = true;
-};
-
-const closeModal = () => {
-  isModalOpen.value = false;
-};
-</script>
+<script lang="ts" setup></script>
