@@ -321,7 +321,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from "vue";
+import { ref, computed, onMounted, onBeforeUnmount } from "vue";
 import { useI18n } from "vue-i18n";
 const { locale } = useI18n();
 
@@ -392,4 +392,19 @@ const statusClass = (status: string) => {
 
   return "bg-orange-500/10 text-orange-400";
 };
+
+// ESC close modal
+const escHandler = (e: KeyboardEvent) => {
+  if (e.key === "Escape" && isModalOpen.value) {
+    closeModal();
+  }
+};
+
+onMounted(() => {
+  window.addEventListener("keydown", escHandler);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener("keydown", escHandler);
+});
 </script>
