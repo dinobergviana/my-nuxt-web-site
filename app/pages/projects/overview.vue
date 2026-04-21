@@ -203,12 +203,8 @@
         </div>
       </div>
     </div>
- 
-    <Modal
-      @close-modal="closeModal"
-      :is-open="isModalOpen"
-    
-    >
+
+    <Modal @close-modal="closeModal" :is-open="isModalOpen">
       <template #modal-title>
         <h3 class="dark:text-gray-100">{{ $t("projectDeatils") }}</h3>
       </template>
@@ -411,5 +407,4 @@ onMounted(() => {
 onBeforeUnmount(() => {
   window.removeEventListener("keydown", escHandler);
 });
-
 </script>
